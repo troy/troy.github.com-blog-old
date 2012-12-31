@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Troy Davis">
-  <meta name="description" content="Troy Davis, Seattle">
+  <meta name="description" content="Inputs & Outputs">
 
   
     <title>Notes on "What Makes Startups Succeed" discussion - Troy Davis</title>
@@ -34,7 +34,7 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Troy Davis, Seattle" type="application/atom+xml">
+  <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Inputs & Outputs" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -91,8 +91,25 @@
 </nav>
         <aside class="sidebar">
           
-            <section>
-  <h1>Recent Posts</h1>
+            
+<section id="twitter">
+  <h2>Tweets</h2>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("troyd", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/troyd" class="twitter-follow-button" data-show-count="false">Follow @troyd</a>
+  
+</section>
+
+<section>
+  <h2>Recent</h2>
   <ul id="recent_posts">
     
       <li class="post">
@@ -118,25 +135,34 @@
   </ul>
 </section>
 
-
-<section id="twitter">
-  <h1 class="tweets">Tweets</h1>
-  <ul id="tweets">
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
     <li class="loading">Status updating...</li>
   </ul>
+  
+  <a href="https://github.com/troy">@troy</a> on Github
+  
   <script type="text/javascript">
     $.domReady(function(){
-      getTwitterFeed("troyd", 3, false);
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'troy',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
     });
   </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/troyd" class="twitter-follow-button" data-show-count="false">Follow @troyd</a>
-  
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
-
-
-
 
 
           
@@ -147,12 +173,11 @@
           </section>
 
           <section id="habit">
-            <h2>Habit</h2>
-              <p><a target="_blank" href="http://joesgoals.com">Daily goals</a></p>
-              <a target="_blank" href="http://joesgoals.com"><div id="goals"></div></a>  
-          </section>
-
-
+  <h2>Other</h2>
+  <p><a target="_blank" href="http://twitter.com/PedalOften">@PedalOften</a></p>
+  <p><a target="_blank" href="http://tacoapp.com/">Taco</a></p>
+  <p><a target="_blank" href="http://seattleix.com/">Seattle IX</a></p>
+</section>
         </aside>    
   	</div>
     
@@ -161,7 +186,7 @@
     <header class="twelve columns" role="banner">
     
 <hgroup>
-  <h1>Troy Davis, Seattle</h1>
+  <h1>Inputs & Outputs</h1>
 </hgroup>
 
     </header>
