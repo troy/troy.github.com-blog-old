@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Examining borrower privacy in peer-to-peer lending - Troy Davis, Seattle</title>
+  <meta name="author" content="Troy Davis">
+
+  
+  <meta name="description" content="I just noticed that the sales reports published by Lending Club&nbsp;contain enough personally-identifiable information (PII) to be, well, personally &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://troy.github.com/borrower-privacy-in-peer-to-peer-lending/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Troy Davis, Seattle" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7603079-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Troy Davis, Seattle</a></h1>
+  
+    <h2>Head over to http://twitter.com/troyd to see my more frequent updates.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:troy.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Examining Borrower Privacy in Peer-to-peer Lending</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-21T00:00:00-07:00" pubdate data-updated="true">Aug 21<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I just <a href="https://twitter.com/troyd/status/238085893280395264">noticed</a> that the sales reports published by <a href="http://lendingclub.com/">Lending Club</a>&nbsp;contain enough personally-identifiable information (PII) to be, well, personally-identifiable. Per the instructions on their&nbsp;<a href="http://www.lendingclub.com/public/privacy-policy.action">privacy policy</a>, I emailed this to the privacy role account.</p>
+<p>As a point of reference, here&#8217;s the equivalent&nbsp;<a href="http://www.prosper.com/prospectus/">prospectuses</a>&nbsp;and an example <a href="http://www.prosper.com/published/sec/sales/2012/sales_20120820-0900.htm">sales report</a>&nbsp;from Prosper. Prosper doesn&#8217;t seem to publicly disclose a borrower&#8217;s employer or city, only an job category and a state. Prosper&#8217;s freeform loan descriptions are more detailed and the borrower sometimes refers to a location, but the aggregate information is still not generally enough to identify the borrower, and never is unless the borrower over-discloses. I am not affiliated with either service.</p>
+<p>Here&#8217;s the email to Lending Club (August 21, 2012) and their reply (September 6, 2012):</p>
+<p><!--more--></p>
+<p><span style="font-family: arial; font-size: small;">Hi all,</span><p /><span style="font-family: arial; font-size: small;">I&#8217;m a prospective lender and I just skimmed the <a href="https://www.lendingclub.com/info/prospectus.action">prospectuses</a> and the <a href="https://www.lendingclub.com/info/sales-reports.action">sales report</a> filings, then I read them, the <a href="http://www.lendingclub.com/public/privacy-policy.action">privacy policy</a>, and the <a href="http://www.lendingclub.com/kb/index.php?CategoryID=19">privacy section</a> of Lending Club&#8217;s knowledge base in more detail. The privacy policy contains two material discrepancies, one of which I believe is substantial. I explain the discrepancies in detail below.</span></p>
+<p><span style="font-family: arial; font-size: small;">I believe the fix is relatively simple: the new borrower signup process, the privacy policy, and the knowledge base privacy section should all contain visible, obvious links to the sales reports. Right now they&#8217;re buried, and the privacy policy spends lots of words to (incompletely) describe how much will be disclosed. The borrower should be shown the actual information which will be disclosed about them, using the existing sales reports as an example. I believe this description explains the disclosure much more clearly:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote>If your loan is funded, Lending Club must publicly disclose certain information about you as part of public SEC filings. This includes employer, year hired, city, income, loan reason, and credit information. <a href="https://www.lendingclub.com/info/sales-reports.action">Click here to see examples of Lending Club loan disclosures</a>.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">I&#8217;m spending the time to write all of this down because I want to see peer-to-peer lending and Lending Club succeed, so please let me know if I can clarify anything here.&nbsp;Here&#8217;s more details about the 2 discrepancies:</span></p>
+<p><span style="font-family: arial; font-size: small;">1. The information disclosed about borrowers in sales reports is enough to identify many of them individually.&nbsp;Although the information doesn&#8217;t contain a real name, the privacy policy states:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote class="posterous_medium_quote">Personal but not personally identifiable information about borrowers is contained in loan listings that can be viewed by all users and is filed with the Securities and Exchange Commission and as such is made publicly available.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">This is inaccurate. Using the information on Lending Club&#8217;s sales reports, I could personally identify many individual borrowers, and take an educated guess about many more. In some cases this would take a bit of existing information, such as from discovering a loan request from a co-worker based on their listed employer. I can almost guarantee that another employee of Friendship Public Charter School, Reis Law,&nbsp;pair Networks, Fundly, and many other small- and mid-size employers listed on the 2012-08-21 sales report could name the borrower using only information from the report.</span></p>
+<div>
+<p><span style="font-family: arial; font-size: small;">In other cases, the combination of employer, year hired, city, income, and freeform text description is enough for a stranger to identify them using relatively simple Google, LinkedIn, or Facebook searches. For many companies, the combination of those fields is unique throughout the whole company. It&#8217;s often very unique, like because only a few people were hired in a given year. Also, the &#8220;Earliest credit line&#8221; field is often a reasonable proxy for the borrower&#8217;s age, and is at least a minimum age.</span>&nbsp;</p>
+<p><span style="font-family: arial; font-size: small;">In those cases, a single external corroboration such as a LinkedIn job announcement, a title transfer on BlockShopper, or a Facebook photo posted to the company&#8217;s page could be enough to attach a name.</span></p>
+<p><span style="font-family: arial; font-size: small;">2. The credit score information is both public and disclosed alongside other information which is personally identifiable. The data disclosure section says:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote class="posterous_medium_quote">Qualified Lending Club investors will also see certain credit data collected from or calculated based on your credit bureau file. It is necessary to allow prospective investors to see this information as they evaluate your loan request. The information displayed to investors includes a credit profile section and a credit history section. As noted above, this information is also contained anonymously in loan data files available on the statistics page.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">It goes on to define the fields disclosed as part of the credit profile and the credit history.</span></p>
+<p><span style="font-family: arial; font-size: small;">It doesn&#8217;t say that the credit information is disclosed alongside lots of other personal data. Even when that information is not enough to be personally-identifiable (discrepancy #1 above), it&#8217;s&nbsp;public and visible to anyone. It&#8217;s not visible only to &#8220;Qualified Lending Club investors,&#8221; and perhaps more importantly, the disclosure is not on a loan-by-loan basis. In reading the paragraph above, I would interpret it to say that my information will be temporarily disclosed to all qualified lenders (prospective investors) while my loan is being funded, then will be only shown to those lenders who actually funded my loan. That isn&#8217;t the case.</span></p>
+<div><span style="font-family: arial; font-size: small;">Thanks,</span></div>
+<p><span style="font-family: arial; font-size: small;">Troy</span></p>
+<p>&nbsp;</p>
+<p>Reply from Mark D&#8217;Amigo, Associate Counsel, Lending Club:</p>
+<blockquote>Mr. Davis:
+<p>&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Thank you for your email regarding the protection of personally identifiable information on the Lending Club website.&nbsp; Lending Club takes consumer privacy seriously and has implemented procedures and policies designed to protect consumer information.&nbsp; We appreciate your detailed feedback and have discussed your suggestions regarding our Privacy Policy and disclosures to members.&nbsp; However, we believe that our Privacy Policy is consistent and does not contain material discrepancies.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">As part of our consumer privacy efforts, Lending Club informs applicants regarding the type of information that will be disclosed to the public both in the Privacy Policy itself and throughout the application via the use of tool tips, a pop-up that notifies the applicant that information placed into certain fields is made available to the public.&nbsp; We also review loan titles and free-form answers provided by applicants in an attempt to limit the exposure of personally identifiable information that applicants may provide outside the marked application fields.&nbsp; Lastly, credit information is only available for viewing by Lending Club members and not available to non-members merely perusing the site.&nbsp; As you noted, from the information available on our site, members such as yourself can view the information about borrowers that Lending Club must file with the Securities and Exchange Commission.&nbsp; We do not agree, however, that this constitutes &ldquo;personally identifiable&rdquo; information.&nbsp; Your letter indicates that you were only able to take an &ldquo;educated guess&rdquo; about the identity of some borrowers using information you gathered from other sources.&nbsp; The fact that certain limited information regarding borrowers is viewable through the Lending Club website &#8211; which, again, Lending Club flags as publicly disclosed in the application itself and in our Privacy Policy &#8211; and that similar information may also be available through external sources that contain additional information does not, in our view, indicate that Lending Club displays personally identifiable information or that our Privacy Policy contains material discrepancies.&nbsp; We also do not believe that the manner in which certain personal information is presented on the website is inconsistent with our Privacy Policy or other consumer protection initiatives.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Although we disagree with your conclusions and interpretations, we appreciate your email and thank you for your feedback.&nbsp; We periodically review our consumer privacy policies and processes and will take your specific suggestions under consideration as part of that review process.&nbsp; Thank you very much for your time and your interest in Lending Club.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Sincerely yours,</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Mark D&rsquo;Arrigo</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Associate Counsel</p>
+</blockquote>
+</div></div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Troy Davis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-21T00:00:00-07:00" pubdate data-updated="true">Aug 21<span>st</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/a-few-days-with-the-slimfold-tyvek-wallet/" title="Previous Post: A few days with the SlimFold Tyvek Wallet">&laquo; A few days with the SlimFold Tyvek Wallet</a>
+      
+      
+        <a class="basic-alignment right" href="/why-web-apps-suck-at-invoices-and-vice-versa/" title="Next Post: Why Web apps suck at invoices (and vice versa)">Why Web apps suck at invoices (and vice versa) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/why-web-apps-suck-at-invoices-and-vice-versa/">Why Web apps suck at invoices (and vice versa)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/borrower-privacy-in-peer-to-peer-lending/">Examining borrower privacy in peer-to-peer lending</a>
+      </li>
+    
+      <li class="post">
+        <a href="/a-few-days-with-the-slimfold-tyvek-wallet/">A few days with the SlimFold Tyvek Wallet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/cost-analysis-of-king-county-bike-share-busin/">Cost analysis of King County Bike Share Business Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/making-2-factor-authentication-viral/">Making 2-factor authentication grow faster than linear</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("troyd", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/troyd" class="twitter-follow-button" data-show-count="false">Follow @troyd</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Troy Davis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

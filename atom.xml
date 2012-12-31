@@ -4,7 +4,7 @@
   <title><![CDATA[Troy Davis, Seattle]]></title>
   <link href="http://troy.github.com/atom.xml" rel="self"/>
   <link href="http://troy.github.com/"/>
-  <updated>2012-12-31T04:22:18-08:00</updated>
+  <updated>2012-12-31T04:33:59-08:00</updated>
   <id>http://troy.github.com/</id>
   <author>
     <name><![CDATA[Troy Davis]]></name>
@@ -12,5 +12,610 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Why Web apps suck at invoices (and vice versa)]]></title>
+    <link href="http://troy.github.com/why-web-apps-suck-at-invoices-and-vice-versa/"/>
+    <updated>2012-09-04T00:00:00-07:00</updated>
+    <id>http://troy.github.com/why-web-apps-suck-at-invoices-and-vice-versa</id>
+    <content type="html"><![CDATA[<p><span style="color: #222222;">On the&nbsp;</span><a href="https://scoutapp.com/">Scout</a><span style="color: #222222;">&nbsp;support&nbsp;</span><a href="https://groups.google.com/group/scoutapp">mailing list</a>, a prospective customer asked to receive an invoice instead of the typical credit card payment. I have some unique experience with that, so I posted the comment below as food for thought (see&nbsp;<a href="https://groups.google.com/group/scoutapp/browse_thread/thread/660f3ade8bcd5928/e3dce7fb91a7d1b2?#e3dce7fb91a7d1b2">thread</a>).</p>
+<p>This is &#8220;Why Web apps suck at invoices&#8221; and &#8220;Why invoices suck for Web apps,&#8221; all rolled into one.&nbsp;Next time someone requests an invoice, send them here.</p>
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: #222222;"><!--more--></div>
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: #222222;">Subject: invoice billing (was: Re: Fees for Rails Apps..)</div>
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: #222222;">I&#8217;m not affiliated with Scout except as a customer, but I run an unrelated subscription Web service that sells to businesses and I&#8217;m occasionally asked the same question.&nbsp;It sounds like a really simple request, so I can understand the frustration at not being able to accommodate it.</div>
+<p><span style="color: #222222;">I wanted to add some color about how challenging it is to provide invoices.&nbsp;I&#8217;m speaking only about my experience, not Scout&#8217;s.&nbsp;Here&#8217;s why this is often a much bigger pain than it looks like, and is often actually a disadvantage to both parties:</span></p>
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: #222222;">
+<ul>
+<li>Everything is a one-off. Almost everyone who wants an invoice also needs some other customization: the delivery process, the followup, the formatting (&#8220;We&#8217;re in Germany and our government requires you to tell us who we are&#8221;), whatever. Aside from tracking those one-offs, they makes it harder to solve or automate the other issues below. Which leads me to..</li>
+</ul>
+<ul>
+<li>Everything requires a human. If you don&#8217;t pay, a human has to email you, and it will almost never be worth the time to automate that process (especially in light of customer-specific processes above). Even something as simple as a credit becomes a time sink. A human needs to figure out how much is due (best case, transferring the amount from a summary email that a developer had to implement; worst case, calculating it manually); figure out how to get you the money (edit a future invoice, reissue an existing invoice, or cut you a check); deliver that credit, probably to someone in accounting who doesn&#8217;t know anything about what&#8217;s being purchased; process the payment; and come back a few weeks later to verify it was paid.</li>
+</ul>
+<ul>
+<li>Someone has to go to the PO Box and then to the bank, and it needs to happen often enough that you don&#8217;t look like an idiot for depositing a 2 month old check.</li>
+</ul>
+<ul>
+<li>Reconciliation is harder. Accounting typically needs an entry for every individual customer payment, rather than one per day per credit card or however other transactions are handled.</li>
+</ul>
+<ul>
+<li>Having an elastic payment method is really awesome, and our service and many others bake that assumption into our UX decisions and business processes. By &#8220;elastic&#8221; I mean that the amount isn&#8217;t set in stone a month before the service is provided. What should happen if you add a new host that you didn&#8217;t plan for? Does the vendor extend credit, or do they issue an invoice with a pro-rated line item and make you wait until it&#8217;s paid?&nbsp;How about 100 new hosts?&nbsp;Before long, the customer is predicting and committing to a certain amount of usage, quite possibly just to make billing simpler, and we&#8217;ve undone 15 years of software-as-a-service progress.</li>
+</ul>
+<ul>
+<li>All of this distracts from making the product better. Whether a company has 2 people or 100, the resources are finite, and at some level any other work is in place of product improvements.&nbsp;No Web service will ever be great at invoicing, most will never be good at it, and not one will ever enjoy it. That &#8220;morale debt&#8221; accumulates.</li>
+</ul>
+<ul>
+<li>The overhead will eventually be reflected in prices, and it&#8217;s way higher than the ~3% for credit cards.&nbsp;This thread started as a question about fees. One reason that Scout is such a good value is that their decisions mostly optimize for practical value. Building off its usage-based fees,&nbsp;would you be willing to pay a $25/invoice fee, and/or have a $500/invoice minimum? From my own experience, that&#8217;s the absolute minimum it takes to make this practical, and I&#8217;m probably still way too low.</li>
+</ul>
+</div>
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline; color: #222222;">
+<p />
+<div style="margin: 0px; padding: 0px; border: 0px; vertical-align: baseline;">None of this is rocket science, it just takes time, and that&#8217;s why invoices suck for typical business subscription services.&nbsp;I consider it a positive that Scout is savvy enough to focus on what they&#8217;re good at.</div>
+<p><span style="color: #222222;">Finally, a potential solution: get&nbsp;a company card that&#8217;s only used for recurring purchases like this. You&#8217;re freed from monthly employee expense reports and accounting gains&nbsp;authoritative information&nbsp;about the transaction, since it&#8217;s essentially their card.</span></p>
+</div>
+<p>&nbsp;</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Examining borrower privacy in peer-to-peer lending]]></title>
+    <link href="http://troy.github.com/borrower-privacy-in-peer-to-peer-lending/"/>
+    <updated>2012-08-21T00:00:00-07:00</updated>
+    <id>http://troy.github.com/borrower-privacy-in-peer-to-peer-lending</id>
+    <content type="html"><![CDATA[<p>I just <a href="https://twitter.com/troyd/status/238085893280395264">noticed</a> that the sales reports published by <a href="http://lendingclub.com/">Lending Club</a>&nbsp;contain enough personally-identifiable information (PII) to be, well, personally-identifiable. Per the instructions on their&nbsp;<a href="http://www.lendingclub.com/public/privacy-policy.action">privacy policy</a>, I emailed this to the privacy role account.</p>
+<p>As a point of reference, here&#8217;s the equivalent&nbsp;<a href="http://www.prosper.com/prospectus/">prospectuses</a>&nbsp;and an example <a href="http://www.prosper.com/published/sec/sales/2012/sales_20120820-0900.htm">sales report</a>&nbsp;from Prosper. Prosper doesn&#8217;t seem to publicly disclose a borrower&#8217;s employer or city, only an job category and a state. Prosper&#8217;s freeform loan descriptions are more detailed and the borrower sometimes refers to a location, but the aggregate information is still not generally enough to identify the borrower, and never is unless the borrower over-discloses. I am not affiliated with either service.</p>
+<p>Here&#8217;s the email to Lending Club (August 21, 2012) and their reply (September 6, 2012):</p>
+<p><!--more--></p>
+<p><span style="font-family: arial; font-size: small;">Hi all,</span><p /><span style="font-family: arial; font-size: small;">I&#8217;m a prospective lender and I just skimmed the <a href="https://www.lendingclub.com/info/prospectus.action">prospectuses</a> and the <a href="https://www.lendingclub.com/info/sales-reports.action">sales report</a> filings, then I read them, the <a href="http://www.lendingclub.com/public/privacy-policy.action">privacy policy</a>, and the <a href="http://www.lendingclub.com/kb/index.php?CategoryID=19">privacy section</a> of Lending Club&#8217;s knowledge base in more detail. The privacy policy contains two material discrepancies, one of which I believe is substantial. I explain the discrepancies in detail below.</span></p>
+<p><span style="font-family: arial; font-size: small;">I believe the fix is relatively simple: the new borrower signup process, the privacy policy, and the knowledge base privacy section should all contain visible, obvious links to the sales reports. Right now they&#8217;re buried, and the privacy policy spends lots of words to (incompletely) describe how much will be disclosed. The borrower should be shown the actual information which will be disclosed about them, using the existing sales reports as an example. I believe this description explains the disclosure much more clearly:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote>If your loan is funded, Lending Club must publicly disclose certain information about you as part of public SEC filings. This includes employer, year hired, city, income, loan reason, and credit information. <a href="https://www.lendingclub.com/info/sales-reports.action">Click here to see examples of Lending Club loan disclosures</a>.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">I&#8217;m spending the time to write all of this down because I want to see peer-to-peer lending and Lending Club succeed, so please let me know if I can clarify anything here.&nbsp;Here&#8217;s more details about the 2 discrepancies:</span></p>
+<p><span style="font-family: arial; font-size: small;">1. The information disclosed about borrowers in sales reports is enough to identify many of them individually.&nbsp;Although the information doesn&#8217;t contain a real name, the privacy policy states:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote class="posterous_medium_quote">Personal but not personally identifiable information about borrowers is contained in loan listings that can be viewed by all users and is filed with the Securities and Exchange Commission and as such is made publicly available.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">This is inaccurate. Using the information on Lending Club&#8217;s sales reports, I could personally identify many individual borrowers, and take an educated guess about many more. In some cases this would take a bit of existing information, such as from discovering a loan request from a co-worker based on their listed employer. I can almost guarantee that another employee of Friendship Public Charter School, Reis Law,&nbsp;pair Networks, Fundly, and many other small- and mid-size employers listed on the 2012-08-21 sales report could name the borrower using only information from the report.</span></p>
+<div>
+<p><span style="font-family: arial; font-size: small;">In other cases, the combination of employer, year hired, city, income, and freeform text description is enough for a stranger to identify them using relatively simple Google, LinkedIn, or Facebook searches. For many companies, the combination of those fields is unique throughout the whole company. It&#8217;s often very unique, like because only a few people were hired in a given year. Also, the &#8220;Earliest credit line&#8221; field is often a reasonable proxy for the borrower&#8217;s age, and is at least a minimum age.</span>&nbsp;</p>
+<p><span style="font-family: arial; font-size: small;">In those cases, a single external corroboration such as a LinkedIn job announcement, a title transfer on BlockShopper, or a Facebook photo posted to the company&#8217;s page could be enough to attach a name.</span></p>
+<p><span style="font-family: arial; font-size: small;">2. The credit score information is both public and disclosed alongside other information which is personally identifiable. The data disclosure section says:</span></p>
+<div style="font-family: arial; font-size: small;">
+<blockquote class="posterous_medium_quote">Qualified Lending Club investors will also see certain credit data collected from or calculated based on your credit bureau file. It is necessary to allow prospective investors to see this information as they evaluate your loan request. The information displayed to investors includes a credit profile section and a credit history section. As noted above, this information is also contained anonymously in loan data files available on the statistics page.</blockquote>
+</div>
+<p><span style="font-family: arial; font-size: small;">It goes on to define the fields disclosed as part of the credit profile and the credit history.</span></p>
+<p><span style="font-family: arial; font-size: small;">It doesn&#8217;t say that the credit information is disclosed alongside lots of other personal data. Even when that information is not enough to be personally-identifiable (discrepancy #1 above), it&#8217;s&nbsp;public and visible to anyone. It&#8217;s not visible only to &#8220;Qualified Lending Club investors,&#8221; and perhaps more importantly, the disclosure is not on a loan-by-loan basis. In reading the paragraph above, I would interpret it to say that my information will be temporarily disclosed to all qualified lenders (prospective investors) while my loan is being funded, then will be only shown to those lenders who actually funded my loan. That isn&#8217;t the case.</span></p>
+<div><span style="font-family: arial; font-size: small;">Thanks,</span></div>
+<p><span style="font-family: arial; font-size: small;">Troy</span></p>
+<p>&nbsp;</p>
+<p>Reply from Mark D&#8217;Amigo, Associate Counsel, Lending Club:</p>
+<blockquote>Mr. Davis:
+<p>&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Thank you for your email regarding the protection of personally identifiable information on the Lending Club website.&nbsp; Lending Club takes consumer privacy seriously and has implemented procedures and policies designed to protect consumer information.&nbsp; We appreciate your detailed feedback and have discussed your suggestions regarding our Privacy Policy and disclosures to members.&nbsp; However, we believe that our Privacy Policy is consistent and does not contain material discrepancies.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">As part of our consumer privacy efforts, Lending Club informs applicants regarding the type of information that will be disclosed to the public both in the Privacy Policy itself and throughout the application via the use of tool tips, a pop-up that notifies the applicant that information placed into certain fields is made available to the public.&nbsp; We also review loan titles and free-form answers provided by applicants in an attempt to limit the exposure of personally identifiable information that applicants may provide outside the marked application fields.&nbsp; Lastly, credit information is only available for viewing by Lending Club members and not available to non-members merely perusing the site.&nbsp; As you noted, from the information available on our site, members such as yourself can view the information about borrowers that Lending Club must file with the Securities and Exchange Commission.&nbsp; We do not agree, however, that this constitutes &ldquo;personally identifiable&rdquo; information.&nbsp; Your letter indicates that you were only able to take an &ldquo;educated guess&rdquo; about the identity of some borrowers using information you gathered from other sources.&nbsp; The fact that certain limited information regarding borrowers is viewable through the Lending Club website &#8211; which, again, Lending Club flags as publicly disclosed in the application itself and in our Privacy Policy &#8211; and that similar information may also be available through external sources that contain additional information does not, in our view, indicate that Lending Club displays personally identifiable information or that our Privacy Policy contains material discrepancies.&nbsp; We also do not believe that the manner in which certain personal information is presented on the website is inconsistent with our Privacy Policy or other consumer protection initiatives.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Although we disagree with your conclusions and interpretations, we appreciate your email and thank you for your feedback.&nbsp; We periodically review our consumer privacy policies and processes and will take your specific suggestions under consideration as part of that review process.&nbsp; Thank you very much for your time and your interest in Lending Club.</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">&nbsp;</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Sincerely yours,</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Mark D&rsquo;Arrigo</p>
+<p style="margin: 0px; color: #222222; font-family: arial, sans-serif;">Associate Counsel</p>
+</blockquote>
+</div>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A few days with the SlimFold Tyvek Wallet]]></title>
+    <link href="http://troy.github.com/a-few-days-with-the-slimfold-tyvek-wallet/"/>
+    <updated>2012-08-19T00:00:00-07:00</updated>
+    <id>http://troy.github.com/a-few-days-with-the-slimfold-tyvek-wallet</id>
+    <content type="html"><![CDATA[<p>My <a href="http://slimfoldwallet.com/">SlimFold Wallet</a> arrived in Bangkok. Here&#8217;s a photo of mine when loaded.</p>
+<p>After five days - and two walks through monsoonal downpours - I highly recommend it. A few smart UX choices make all the difference:</p>
+<ul>
+<li>Each section actually holds two cards. In the photo, you can see both card pockets on one of the sections. There&#8217;s two more sections (four pockets) inside. It doesn&#8217;t try to make a statement about how much crap I should carry.</li>
+</ul>
+<ul>
+<li>Cards are held firmly because the Tyvek isn&#8217;t pre-streched. Each pocket retains whatever capacity you stretch it to. (My tendency to RTFM/Skim TFM&nbsp;paid off here: the instructions warn not to ever stuff two cards into one pocket.)</li>
+</ul>
+<ul>
+<li>They chose a good compromise between thickness, capacity, and physical size. It&#8217;s slightly larger than a typical trifold, and in return, can hold 10 cards and still stay hipster thin.</li>
+</ul>
+<ul>
+<li>The ID pocket is secured by a folding tab, and more remarkably, it actually stays closed.</li>
+</ul>
+<p>The creator notes that he made and tested over 100 prototypes, and it shows. It&#8217;s available in Plutonian Gray, Steal Me Orange, and now Everyone Asks For It Black.</p>
+<p>[[posterous-content:iEovqkHcoEudbpritrab]]</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cost analysis of King County Bike Share Business Plan]]></title>
+    <link href="http://troy.github.com/cost-analysis-of-king-county-bike-share-busin/"/>
+    <updated>2012-08-09T00:00:00-07:00</updated>
+    <id>http://troy.github.com/cost-analysis-of-king-county-bike-share-busin</id>
+    <content type="html"><![CDATA[<p>I posted <a href="http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/#comment-168712">a comment</a>&nbsp;on this Seattle Bike Blog <a href="http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/">post</a>&nbsp;with a basic cost analysis of the King County Bike Share Business Plan (<a href="http://pugetsoundbikeshare.org/">site</a>,&nbsp;<a href="http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf">PDF</a>). This is the text of my comment.</p>
+<p><!--more--></p>
+<p>At scale, the project forecasts 2200 bikes supported by an annual operating (not build out) cost of $4.6 million. That&#8217;s $2090/bike. It forecasts 2.68 million trips per year at an average of 2 miles/trip. If those numbers are accurate, a trip would cost $1.72. A mile, $0.86.</p>
+<p>I don&#8217;t have a strong reaction to those costs. I would gladly pay $2/trip myself as an entirely usage-based fee. The forecasted cost is in line with Metro and Sound Transit fares. While it&#8217;s lower than their costs per boarding (for Metro, $3.70 in 2008; <a href="http://en.wikipedia.org/wiki/King_County_Metro#Operating_Costs">source</a>), the shorter, denser routes are much cheaper to deliver than the system-wide average.</p>
+<p>The data to compare route-level stats doesn&#8217;t exist. Shorter, denser routes are the closest comparables to phase 1. However, one could see bike sharing allowing the last mile of trips that would have otherwise been taken by car (and instead use bus or train). Not enough data to know.</p>
+<p>My own conclusion: the costs are definitely &#8220;in the zone&#8221; for transit and might be a little cheaper than existing options.</p>
+<p>Crucially, the total cost is incredibly small compared to any other transit implementation, and thereby, much lower risk. As a point of reference, Metro received $37.5 million to add 2 RapidRide Bus Rapid Transit (BRT) routes (<a href="http://www.dot.gov/affairs/2012/fta3812.html">source</a>). Even excluding all other revenue sources, the total build out costs of all phases are equivalent to one BRT route.</p>
+<p>As another perspective, the 4.3 mile Northgate light rail extension has a lifetime budget of $2.1 billion (70x-100x more than the total 5 year projected cost), and the South Lake Union Streetcar was $56.4 million (<a href="http://en.wikipedia.org/wiki/South_Lake_Union_Streetcar">source</a>).&nbsp;</p>
+<p>I don&#8217;t mean to provide these as comparables. For me, the lower cost just means the barrier for my endorsement is much lower. In urban transit, $20 million is an experiment. In this case, the &#8220;experiment&#8221; happens to fund the whole system.</p>
+<p>Notes:</p>
+<ul>
+<li>relies on internally-created usage forecasts. While the forecasted 2.4 trips/bike in year 1 is within the range seen in other cities, that range is very broad (0.9 to 3.7). As you&#8217;d expect of a transit system, usage is the key to a low cost per trip.</li>
+</ul>
+<ul>
+<li>ignores the $14.4 million in build out expenses because they do seem to be one-time (stations) or long depreciation (vending machines), and because the report notes &#8220;presenting sponsorship is expected to cover all but $2.15 [of] .. $14.4 million.&#8221; The unfunded 2.15 million is not a material impact.</li>
+</ul>
+<p>Source: King County <a href="http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf">Bike Share Business Plan</a> (2012-01-27), pages 26-27, 36.</p>
+<p>&nbsp;</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Making 2-factor authentication grow faster than linear]]></title>
+    <link href="http://troy.github.com/making-2-factor-authentication-viral/"/>
+    <updated>2012-07-16T00:00:00-07:00</updated>
+    <id>http://troy.github.com/making-2-factor-authentication-viral</id>
+    <content type="html"><![CDATA[<p>I&#8217;m doing what I can to spread the gospel of 2-factor authentication. My hope is that it will be adopted at a faster-than-linear rate, ideally much faster.</p>
+<p>2FA isn&#8217;t a silver bullet, but it&#8217;s a gigantic improvement for relatively little effort. The elements that prevented mainstream adoption - key fobs, constantly re-entering keys - are not present in modern implementations like Google&#8217;s. With most of the usability tradeoffs eliminated, we&#8217;re left with a fairly typical sales problem (and of course, more operators implementing Google&#8217;s 2FA or an equally elegant alternative).</p>
+<p>For my part, &#8220;doing what I can&#8221; means:</p>
+<div><!--more--></div>
+<div>
+<ul>
+<li>requiring 2FA on systems I maintain, at least where SSH keys aren&#8217;t practical or aren&#8217;t sufficient</li>
+<li>sharing my success stories, especially how I solved common objections to 2FA (it&#8217;s annoying to use; I only have a few users; it&#8217;s a pain to setup)</li>
+<li>helping others find accurate, deep descriptions of current threats (like&nbsp;<a href="http://krebsonsecurity.com/">Krebs on Security</a>) so they treat&nbsp;malware and botnets (and thus keystroke logging) as an endemic threat</li>
+</ul>
+</div>
+<div>
+<p>I think with enough satisfied users as advocates, 2FA could grow exponentially for a while (albeit with a&nbsp;<a href="http://www.wolframalpha.com/input/?i=1.03%5Ex">tiny base</a>&nbsp;today).&nbsp;Google has basically turned 2FA into an impulse decision with a simple pitch: &#8220;Have 5 minutes? Use wifi hotspots? Protect your email from hackers (free).&#8221;&nbsp;I&#8217;d settle for&nbsp;<a href="http://en.wikipedia.org/wiki/Logistic_function">logistic growth</a>&nbsp;up to something short of 100% adoption, though I&#8217;m not sure a hard&nbsp;<a href="http://20bits.com/article/three-myths-of-viral-growth">carrying capacity</a>&nbsp;exists. Future incremental usability improvements should make it palatable for more people.</p>
+</div>
+<div>Sales starts with awareness: that it exists,&nbsp;that it&#8217;s already being used by seemingly-sane people to solve similar problems (indeed,&nbsp;<a href="http://en.wikipedia.org/wiki/Social_proof">social proof</a>), and&nbsp;that it stands up to daily production use.&nbsp;Here&#8217;s an email that I sent to the Seattle Internet Exchange <a href="http://www.seattleix.net/faq.htm">chat</a> mailing list.</div>
+<p />
+<div><strong>To: chat@</strong></div>
+<p />
+<div>Passing this on in case anyone else could use flexible, painless, free 2-factor auth for servers and network devices.</div>
+<p />
+<div>I&#8217;ve been testing Google&#8217;s 2-factor authentication via a <a href="http://code.google.com/p/google-authenticator/wiki/PamModuleInstructions">PAM</a>. It&#8217;s working beautifully. Google has iOS, Android, and Blackberry one-time password <a href="http://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=1066447">apps</a>. Ubuntu and Debian package the module as libpam-google-authenticator. During setup, it spits out the key as an ASCII QR code that the mobile apps read.</div>
+<p />
+<div>I haven&#8217;t tried having RADIUS use google-authenticator&#8217;s PAM, but it seems like it would work. Other people talk about using it:&nbsp;<a href="http://code.google.com/p/google-authenticator/issues/detail?id=145">http://code.google.com/p/google-authenticator/issues/detail?id=145</a>.</div>
+<p />
+<div>By default, SSH with challenge/response prompts for the challenge first (with a prompt of its own), but PAM supports a <a href="http://code.google.com/p/google-authenticator/issues/detail?id=39">concatenated mode</a>&nbsp;where the OTP is prepended to the static secret.&nbsp;This should play well with network devices that present a single password prompt.&nbsp;Google&#8217;s module validates the OTP, then passes the secret on to the next module as usual.</div>
+<p />
+<div>Also,&nbsp;SSH authorized keys still work (assuming the SSH config permits them), so you can decide how annoying one-time passwords will be.</div>
+<p />
+<div>Finally, worth noting that this setup is completely separate from having a Google account. An account isn&#8217;t required. This setup uses Google&#8217;s mobile app implementation of <a href="http://tools.ietf.org/html/rfc6238">time-based one-time passwords</a>, the app&#8217;s ability to import your own key(s), and a PAM that they maintain, all of which are <a href="http://code.google.com/p/google-authenticator/source/browse">OSS</a>.</div>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Answering "What one thing should Apple work on?"]]></title>
+    <link href="http://troy.github.com/answering-what-one-thing-should-apple-work-on/"/>
+    <updated>2012-05-21T00:00:00-07:00</updated>
+    <id>http://troy.github.com/answering-what-one-thing-should-apple-work-on</id>
+    <content type="html"><![CDATA[<div style="">Apple market research surveys often end with a wonderfully engaging question: what one thing should Apple work on? Here&#8217;s my most recent answer (submitted on May 20, 2012).</div>
+<div style=""><!--more--></div>
+<p />
+<div style="">Context:</div>
+<div style="">
+<ul>
+<li><span style="color: #222222; font-family: arial, sans-serif;">I&#8217;m an incredibly satisfied Apple customer.&nbsp;If I could come up with a glaring problem, it would be below. Although this is my #1 suggestion, in absolute terms it hardly ranks.</span></li>
+<li><span style="color: #222222; font-family: arial, sans-serif;">I mentioned &#8220;non-Apple apps&#8221; because other survey questions differentiated between Apple and third-party apps. It isn&#8217;t how I categorize them.</span></li>
+<li><span style="color: #222222; font-family: arial, sans-serif;">This is an unedited Web form submission, not an essay.</span></li>
+</ul>
+</div>
+<div style=""><span style="color: #222222; font-family: arial, sans-serif;">As an aside, this question is infinitely more useful than the question that most short surveys ask, &#8220;Would you recommend us to someone else?&#8221; (</span><a href="http://en.wikipedia.org/wiki/Net_Promoter" style="font-family: arial, sans-serif;">Net Promoter</a><span style="color: #222222; font-family: arial, sans-serif;"> Score).</span></div>
+<p />
+<div style=""><em><span style="color: #222222; font-family: arial, sans-serif;">Question: What one thing should Apple work on?</span></em></div>
+<p />
+<div style=""><strong>Short</strong>: Use Apple resources to help encourage the next 10 Omni Groups and the next 10 Instapapers.</div>
+<p />
+<div style=""><strong>Long</strong>: A lot of my time is spent using non-Apple apps, which is completely fine, but makes me wonder how many opportunities exist for Apple to reach out to authors of popular niche or &#8220;power user&#8221; apps - Simplenote, Notational Velocity, Sublime Text, iTerm, TextMate, WindowShade X, and many more - and find ways to either make their lives easier as ISVs, or make the power of those apps available to more users.</div>
+<p />
+<div style="">Some of these ISV apps have mainstream potential, and those that don&#8217;t still have tons more appeal beyond the distribution they get today (people actively seeking them out). Apple&#8217;s decision to create Reading List rather than work with Instapaper made its NIH perspective really obvious: even an amazing product from one of the most.</div>
+<p />
+<div style="">Apple has tons of happy fanboy ISVs who are eager (thrilled!) to adapt or even design their strategies around Apple&#8217;s. There&#8217;s zero risk of being abandoned by ISVs or partners due to lack of relevance, like happened with CodeWarrior and nearly with Office.</div>
+<p />
+<div style="">The very real risk is not making the most of the fanboys that Apple has, or tempering their excitement until they recede from True Fans to merely satisfied users. Apple has done an amazing job of creating opportunities for commercial success with the iOS and Mac App Stores, but they&#8217;ve been very hands-off, fairly self-serving (with the well-jusified 30% fee), and rarely backed by actual Apple resources, strategic decisions (&#8220;wow, users love Instapaper, it&#8217;s cheap, the author is as committed as anyone can ever be to the platform &#8211; let&#8217;s bundle Instapaper&#8221;) or, well, passion.</div>
+<p />
+<div style="">(The best counterexample I can think of is actually Apple&#8217;s iPhone TV commercials, and they&#8217;re only counterexamples in that they show just how big of an impact Apple can have when it uses strategic resources to help ISVs.)</div>
+<p />
+<div style="">So my challenge, my wish, is that in a few years I can name 9 more thriving OS X ISVs instead of just Omni Group. It&#8217;s that I can iOS app authors whose businesses have thrived not just because of the App Store, but because Apple took an interest in their businesses and identified ways to bring their products to more people, improve the integration, or just make their lives easier as ISVs.</div>
+<p />
+<div style="">(Obligatory disclaimer: I&#8217;m not an ISV and I don&#8217;t have a horse in this race. My only hat is as a user.)</div>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Towards a transparent wireless carrier customer dashboard]]></title>
+    <link href="http://troy.github.com/towards-a-transparent-wireless-carrier-custom/"/>
+    <updated>2011-09-03T00:00:00-07:00</updated>
+    <id>http://troy.github.com/towards-a-transparent-wireless-carrier-custom</id>
+    <content type="html"><![CDATA[<p>This is the mobile carrier customer dashboard that I want (or see as a&nbsp;<a href="http://www.flickr.com/photos/yortlabs/sets/72157627583858838/">Flickr set</a>). The annotations tell the story.</p>
+<p><!--more-->I&#8217;m hoping that at least one of Sprint, T-Mobile, Verizon, or AT&amp;T will eventually realize that transparency is a differentiator (if only because they run out of other ways to stand out).&nbsp;Most of these dashboard elements are possible with existing data that carriers already collect, and in some cases already have in this form for internal use.</p>
+<p>This shows two variations on the same dashboard landing page.&nbsp;Click for larger versions to read the annotations.</p>
+<p>[[posterous-content:GslDpiJbGqewtbdCrvcv]][[posterous-content:xwhJpmsFdDCgnJEpljFa]]</p>
+<p>Same wireframes as a <a href="http://www.flickr.com/photos/yortlabs/sets/72157627583858838/">Flickr set</a>.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One-click Canon PIXMA MX870 scanning in OS X]]></title>
+    <link href="http://troy.github.com/one-click-canon-pixma-mx870-scanning-in-os-x/"/>
+    <updated>2011-08-28T00:00:00-07:00</updated>
+    <id>http://troy.github.com/one-click-canon-pixma-mx870-scanning-in-os-x</id>
+    <content type="html"><![CDATA[<p>RSS readers: ignore this. Just documenting this fix for anyone else who has the same problem.</p>
+<p>Problem: Canon PIXMA MX870 says &#8220;Set the PC to start scanning&#8221; when the &#8220;Black&#8221; or &#8220;Color&#8221; scan start buttons are pressed.</p>
+<p><!--more--><strong><span style="font-size: small;">How I enabled one-button scanning</span></strong>&nbsp;</p>
+<div>1. Install most of the OS X drivers and software from <a href="http://usa.canon.com/cusa/consumer/products/printers_multifunction/office_all_in_one_inkjet_printers/pixma_mx870#DriversAndSoftware">canon.com</a>. I think I installed all of the drivers, or at least ran their downloaded installers. As of this writing, that&#8217;s ICA Driver, CUPS Driver, Scanner Driver, Mini Master Setup. I also installed MP Navigator and IJ Network Tool from the software downloads. Reboot.</div>
+<p />
+<div>2. After installing the &#8220;Canon IJ Network Scanner Selector,&#8221; a printer/scanner icon should appear in the dock. The installer sets up the app to run at startup, which I left enabled. The dock dropdown &#8220;Scan images using the operations panel of the scanner&#8221; option is enabled. The scanner MAC address is listed and selected in&nbsp;&#8220;Open Settings&#8221;:</div>
+<div>
+<p>[[posterous-content:ivgHvtIdEjEprulitIau]][[posterous-content:hJCjkaskcwItrzsCDopw]]</p>
+</div>
+<div>3. Run MP Navigator (3.1) and on the main menu, there&#8217;s an option in the upper right &#8220;One-click.&#8221; Mouseover it and a different menu will be shown, including a &#8220;Start scanning by clicking the button&#8221; checkbox. This was not the default. I wish I was making this up.</div>
+<div>[[posterous-content:EnprHAlIAlFGAgprmdcx]]</div>
+<p />
+<div>4. On that MP Navigator One-click screen, click Preferences. Note that you may have 2 entries under &#8220;Product Name&#8221; (&#8220;MX870 Series&#8221; and &#8220;MX870 Series (Network: &lt;Your MAC&gt;).&#8221; I disabled &#8220;Compress scanned images when transferring&#8221; for both product names. On the Scanner Button Settings screen, I changed the paths under &#8220;Save to PC&#8221; but didn&#8217;t make any other changes.</div>
+<div>[[posterous-content:pAtzAvfkaEvIbrabIfoh]][[posterous-content:keBlmFxakfygadlEgJqA]]</div>
+<p />
+<div>5. After making these changes, I was still seeing &#8220;Set the PC to start scanning&#8221;&nbsp;when I tried to scan. I shut down MP Navigator and restarted the printer (with the PC&nbsp;on) and it started auto-scanning. I didn&#8217;t restart the PC except after step 1. I&#8217;m not sure whether the problem was a one-time issue because the settings changed or a recurring one with the order that they were originally powered on.</div>
+<p />
+<div><strong><span style="font-size: small;">Notes</span></strong></div>
+<p />
+<div>My scanner LCD options (Document or Photo, DPI) are interpreted correctly. Scanning PDFs from the document feeder and bitmap images from the platen both work. Bitmaps from the ADF are not supported (the scanner says to use the platen). I haven&#8217;t tried PDFs from the platen.</div>
+<p />
+<div>Tested with: OS X 10.6.8, Canon IJ Network Scanner Selector 4.5.0, MP Navigator EX 3.1.3, MX870 driver&nbsp;10.51.1.0.</div>
+<p />
+<div>Here&#8217;s the printer options from System Preferences. I didn&#8217;t make any changes:</div>
+<div>[[posterous-content:zsyikpocljaIaEgnCzJH]][[posterous-content:cflpEBvCCJiHtlckiuDH]]</div>
+<p>&nbsp;</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Zipcar Prize proposal: user-sourced car sharing planning algorithm]]></title>
+    <link href="http://troy.github.com/zipcar-prize-user-sourced-car-sharing-assignm/"/>
+    <updated>2011-06-12T00:00:00-07:00</updated>
+    <id>http://troy.github.com/zipcar-prize-user-sourced-car-sharing-assignm</id>
+    <content type="html"><![CDATA[<p><strong>Update (December, 2012)</strong>:&nbsp;<a href="http://car2go.com">car2go.com</a> seems to be trying this and even uses municipal parking spaces, so trips could end essentially anywhere.</p>
+<p><a href="http://www.zipcar.com/">Zipcar</a> customers must return a car to the same parking spot that it was borrowed from. That means customers must rent (and pay for) one specific car for their entire trip, even when it will be parked in an urban area for many hours during the trip.</p>
+<p>In 2009, I emailed Zipcar about cloning <a href="http://www.netflixprize.com/">The Netflix Prize</a> for a similar purpose: crowd-sourcing (really, expert-sourcing) a set of algorithms, incentives, and restrictions that would let Zipcar offer one-way rentals.&nbsp;Like Netflix, The Zipcar Prize would release an anonymized set of trip data, parking space locations, and an evaluation method (which might emphasize certain aspects, as Netflix <a href="http://www.netflixprize.com//faq#prize">did</a>).</p>
+<p>This would be a mix of:</p>
+<ul>
+<li><strong>incentives</strong>: &#8220;We&#8217;ll discount $2 for returning it a mere 5 blocks away from your preferred location&#8221;</li>
+<li><strong>fees</strong>: &#8220;Returning to this location will cost $4 more&#8221;</li>
+<li><strong>enforced policies</strong>, like: must reserve 1 day in advance; one-way trip can&#8217;t leave a lot empty; only offered at certain urban lots (initially)</li>
+</ul>
+<p>The email after the jump has lots more details (slightly formatted and edited).&nbsp;As far as I know, no one has tackled this. Zipcar hasn&#8217;t and I didn&#8217;t receive a reply.</p>
+<p>The first car-sharing service to pull it off will have an amazing competitive advantage: paying for only what you actually need and the ability to <strong>get</strong> a car to the right place at the right time.</p>
+<p>&nbsp;</p>
+<p><!--more-->Hi &lt;Zipcar executive&gt;,</p>
+<p>Hope this finds you well. I signed up for Zipcar and found that it didn&#8217;t have the killer feature for me: the ability to return a car to a different lot, even if that spot had to be selected at reservation time.&nbsp;<a href="http://twitter.com/troyd/status/3625900233" target="_blank">This tweet</a>&nbsp;has a bit more.</p>
+<p>Nothing new there, but here&#8217;s why I&#8217;m emailing. Wishing for this feature (and not finding it in the <a href="http://www.zipcar.com/how/">FAQ</a>) led me to wonder whether, as a technical and generally creative guy, I could try my hand at a skunkworks location/availability optimization for returning cars to a second location. Specifically, at:</p>
+<ul>
+<li><strong>minimizing additional parking spaces</strong></li>
+<li><strong>maximizing availability of at least 1 car at every lot</strong></li>
+<li><strong>minimizing distance between user&#8217;s requested destination lot and system&#8217;s permitted destistination lot</strong></li>
+</ul>
+<p>The first hard part is getting a machine-parsable, anonymized rental history and lot locations, which is why I&#8217;m emailing. With an anonymized rental history (where users are identified by GUIDs) and &#8220;home&#8221; car locations, I or anyone could make 5 or 10 fake scenarios where some percent of users request different destination lots at time of reservation.</p>
+<p>It could play out like a <a href="http://www.netflixprize.com/">Netflix Prize</a>&nbsp;for scheduling. Zipcar would get a ton of press, customers would try to solve one of your most intriguing scale problems, it would go a long way to associate Zipcar with open source and open government (which the Flexcar brand had a stronger association to), and it would cement Zipcar&#8217;s justification for a $50 late fee as necessary rather than onerous.</p>
+<p>At least in metro Seattle, I think you have enough cars to pull it off, especially with a few restrictions, like that you can&#8217;t return a car to a different destination lot when it leaves the origin lot empty (because all other cars there are already reserved). That restriction would reduce - potentially avoid - any decrease in local coverage, preserving customer satisfaction.</p>
+<p>Moreover, that restriction would motivate people to make one-way reservations farther in advance, which would let the system guide folks to alternative destination lots (&#8220;You&#8217;re starting in Ballard. We can&#8217;t let you return it to 4th &amp; Wall, but we&#8217;d love for you to return it to 2nd &amp; Vine 5 blocks away.&#8221;).</p>
+<p>I could even see a $X tax on same-day alternative destination lot reservations, although that negates some of the long-term value it would create for Zipcar. Eventually, you&#8217;d want everyone using this with reckless abandon, since it turns customers into your car gofers and makes otherwise-impractical trips affordable.</p>
+<p>If something like a Netflix Contest is interesting, or you already have these data files), please let me know.<span style="color: #888888;">&nbsp;</span></p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2 common problems with OAuth client libraries]]></title>
+    <link href="http://troy.github.com/2-common-problems-with-oauth-client-libraries/"/>
+    <updated>2011-06-12T00:00:00-07:00</updated>
+    <id>http://troy.github.com/2-common-problems-with-oauth-client-libraries</id>
+    <content type="html"><![CDATA[<p>I posted a long <a href="http://groups.google.com/group/fusion-tables-users-group/msg/535854503fa21868">explanation</a> to the fusion-tables-users group about using third-party libraries with Fusion Tables over OAuth. It might also help folks debugging OAuth problems or adding OAuth support to existing libraries. Full text below.</p>
+<p><!--more--><span style="">Just an update for the archives and anyone else debugging this. I went through the <a href="http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16">Python example</a> </span><span style="">and it does work for POST requests in the body. I tested CREATE and INSERT.</span></p>
+<p><span style="">Here are the 2 things that were tripping up the Ruby GData library coupled with someone&#8217;s monkeypatched OAuth auth_handler (GData::Auth::OAuth). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.</span></p>
+<p><span style="">Here goes:</span></p>
+<p><span style="">1. The GData::Auth::OAuth only pulled out GET params from the URL, not POST params in the request body. POST params need to be sorted alongside the OAuth parameters when creating the signature base, so this immediately made my signatures invalid.</span></p>
+<p><span style="">I saw a couple causes for this in other libraries:</span></p>
+<ul>
+<li>designing for GET and then exposing a convenience POST method as&nbsp;<span style="">an afterthought (without looking at the body params)</span></li>
+<li><span style="">one person wrote the HTTP client, another wrote the OAuth signer, </span><span style="">and a third wrote the Fusion Tables library or GData extension, and a </span><span style="">corner case got missed (or callers can sign requests before a body is </span><span style="">even defined)</span></li>
+</ul>
+<p><span style="">2. Most language built-in URI encoders are designed for <a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1">x-www-form-urlencoded</a>, with spaces as plus characters. OAuth wants</span> <span style="">everything UTF-8, ie U+0020 or %20 for space. The confusing part for Fusion Tables is that this works in GET requests: <a href="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1">select+*+from+317391+limit+1</a></span></p>
+<p><span style=""><a href="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1"></a></span><span style="">.. but that space encoding won&#8217;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&#8217;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.</span></p>
+<p><span style="">Finally, if it helps anyone, here&#8217;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:</span></p>
+<p><span style=""><span style="font-family: arial, sans-serif; font-size: 12px;">POST&amp;http%3A%2F%2F<a href="http://www.google.com/url?sa=D&amp;q=www.google.com%252Ffusiontables%252Fapi" rel="nofollow" target="_blank" style="color: #0000cc;">www.google.com%2Ffusiontables%2Fapi</a>&nbsp;<br />%2Fquery&amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce&nbsp;<br />%3D75556368%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp&nbsp;<br />%3D1305155510%26oauth_token&nbsp;<br />%3D1%252F98y2rqyfdfhuaiheworh327rahyADYSAIYuioydadio%26oauth_version&nbsp;<br />%3D1.0%26sql%3DCREATE%2520TABLE%2520%2527data.csv&nbsp;<br />%2527%2520%2528%2527col2%2527%253A%2520STRING%252C%2527col3%2527%253A&nbsp;<br />%2520STRING%252C%2527col1%2527%253A%2520STRING%2529</span></span></p>
+<p><span style="">that signature string is for the param:</span></p>
+<p><span style="font-family: arial, sans-serif; font-size: 12px;">sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A&nbsp;<br />+STRING%2C%27col1%27%3A+STRING%29</span></p>
+<p><span style="">I&#8217;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.</span></p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[6 tasty sandwiches in Belltown]]></title>
+    <link href="http://troy.github.com/6-tasty-sandwiches-in-belltown/"/>
+    <updated>2011-05-29T00:00:00-07:00</updated>
+    <id>http://troy.github.com/6-tasty-sandwiches-in-belltown</id>
+    <content type="html"><![CDATA[<p>Guest posted on BelltownPeople.com: &#8221;<a href="http://belltownpeople.com/2011/05/29/6-great-sandwiches-in-belltown">6 great sandwiches in Belltown</a>&#8221; (Seattle neighborhood). Copied below.</p>
+<p><!--more--><span style="color: #333333; font-size: 12px; line-height: 18px;">Here&#8217;s a few well-executed sandwiches in or near our &#8216;hood.&nbsp;Using the most liberal possible definition of &#8220;sandwich&#8221; and&nbsp;in no particular order:</span></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">1. El Cubano,&nbsp;<a href="http://www.cyclopsseattle.com/menu/menu.html" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Cyclops</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">Sweet meets savory: &#8220;Roasted pulled pork, sliced pit ham, Jarlsberg cheese, thin sliced pickle, dijon mustard and poblano aioli on a grilled ciabatta.&#8221; Early-afternoon weekend brunch material here.</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">2. East Coast or Chicken Chipotle,&nbsp;<a href="http://www.yelp.com/biz/mikes-east-coast-sandwiches-seattle" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Mike&#8217;s East Coast Sandwiches</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">Fresh off the panini grill at Cafe Two at Antioch College (with Stumptown drip coffee), Forza Coffee at Fisher Plaza, and Motore Coffee (9th &amp; Lenora).</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">3. New Town Special,&nbsp;<a href="http://www.yelp.com/biz/new-town-market-seattle" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">New Town Market</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">I recommend smoked turkey instead of peppermill turkey. The same Boar&#8217;s Head menu is available at&nbsp;<a href="http://www.yelp.com/biz/westlake-specialty-market-seattle" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Westlake Specialty Market</a>&nbsp;(7th &amp; Westlake).</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">4. Your custom deli sandwich, ordered online,&nbsp;<a href="http://www.specialtys.com/Begin.aspx" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Specialty&#8217;s Cafe</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">Use their sandwich configurator to build a custom sandwich, then order and pay online for pick up in 15 minutes (yes, this actually works!). It&#8217;s like they timed a leisurely walk from Belltown to 5th and Union. My pick: the&nbsp;<a href="https://twitter.com/#!/troyd/status/70897277027360768" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Taguchi Goat Club</a>.</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">5. Spicy Moroccan Pita,&nbsp;<a href="http://www.zeitooncafe.com/Entree.pdf" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">Zeitoon Cafe</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">&#8220;Dolme, hummus, tabouli, lettuce, cucumber, garlic sauce, house sauce, hot sauce and tzatziky.&#8221; Pro tip: ask for light or no house sauce, and cut it in half before eating or you&#8217;ll wear some leftovers home.</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">6. The Gaucho Dip or 410 Burger,&nbsp;<a href="http://www.elgaucho.com/elgaucho/images/menus_seattle/bar.pdf" style="line-height: 1.5; text-align: left; color: #1e7fb6; text-decoration: none; padding: 0px; margin: 0px;">El Gaucho Bar</a></p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">The menu does its job: &#8220;Sliced Certified angus Beef prime top&nbsp;sirloin, toasted baguette, chimichurri&nbsp;aioli, english Coastal Cheddar, house&nbsp;au jus, taro chips.&#8221; For 50% off, pair with a glass of wine and a friend (or an iPad) during &#8220;The Gaucho 120&#8221; (minutes of happy hour).</p>
+<p style="margin-top: 15px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: 1.5; text-align: left; padding: 0px;">Enjoy!</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New RSS feed URL]]></title>
+    <link href="http://troy.github.com/new-rss-feed-url/"/>
+    <updated>2011-05-22T00:00:00-07:00</updated>
+    <id>http://troy.github.com/new-rss-feed-url</id>
+    <content type="html"><![CDATA[<p>If you&#8217;re reading this via RSS, please change the feed URL to:&nbsp;<a href="http://feeds.feedburner.com/troydavis">http://feeds.feedburner.com/troydavis</a></p>
+<p>I&#8217;ll make the old URL 301 redirect for a few weeks, but that&#8217;s not enough for some RSS readers to update their subscriptions (Google Reader, I&#8217;m looking at you). Cue manual labor. Paste in&nbsp;<a href="http://feeds.feedburner.com/troydavis">http://feeds.feedburner.com/troydavis</a>&nbsp;and you should be good to go.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A bit about preventing toll fraud]]></title>
+    <link href="http://troy.github.com/a-bit-about-preventing-toll-fraud/"/>
+    <updated>2011-05-20T00:00:00-07:00</updated>
+    <id>http://troy.github.com/a-bit-about-preventing-toll-fraud</id>
+    <content type="html"><![CDATA[<div class="im" style="color: #500050;"><span style="color: #000000;">Recently posted this reply to the voiceops mailing list. Pasted below or <a href="https://puck.nether.net/pipermail/voiceops/2011-May/002499.html">read the original</a>.</span></div>
+<div class="im" style="color: #500050;"><!--more--></div>
+<div class="im" style="color: #500050;">On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber&nbsp;wrote:<br />&gt; Hi folks,<br />&gt; We have been hit twice in the past two days with calls to 011-252-XXXXXXXX<br />&gt; (calls to Somalia I believe, and the originating IP is from Pakistan)<br /><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">&nbsp;</span></div>
+<div class="im" style="color: #500050;"><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">Others have suggested NCC-specific firewall policies. I&#8217;ll put in a&nbsp;plug for using per-country-code dialplan routes and omitting really&nbsp;expensive countries.</span></div>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Obviously that won&#8217;t work for worldwide wholesale transport carriers.&nbsp;For everyone else, the most expensive CCs to call aren&#8217;t worth the&nbsp;trouble. There are very few folks with legitimate needs to call, say,&nbsp;Sierra Leone, that aren&#8217;t served by Skype. They don&#8217;t represent enough&nbsp;revenue to justify the risk.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Those few legit higher-volume folks are willing to prepay using&nbsp;reliable methods. They&#8217;re usually apologetic that their countries&nbsp;receive enough fraudulent calls to need such a policy.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Basically scroll through&nbsp;<a href="http://www.voicetrading.com/en/calling-rates.html" target="_blank" style="color: #147dba;">http://www.voicetrading.com/en/calling-rates.html</a>&nbsp;and omit routes for&nbsp;any country that&#8217;s had a civil war in the past 20 years. Fringe&nbsp;benefit: when a country code splits, you won&#8217;t get caught with a rate&nbsp;deck hole (see Timor-Leste, St Maarten).</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">If you want to get slick, have a call attempt to those country codes&nbsp;page your admins as a honeynet (honeyroute?). Somebody&#8217;s probably up&nbsp;to something.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Doesn&#8217;t prevent calls to expensive mobile routes in countries you do&nbsp;reach, they&#8217;re just a lot less interesting to fraudsters (woo, I can&nbsp;call Proximus!?) and the per-minute costs are mostly way lower.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Troy</span></p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[From concept sketches to live Web page]]></title>
+    <link href="http://troy.github.com/from-concept-sketches-to-live-web-page/"/>
+    <updated>2010-10-30T00:00:00-07:00</updated>
+    <id>http://troy.github.com/from-concept-sketches-to-live-web-page</id>
+    <content type="html"><![CDATA[<p>I uploaded a few concept sketches, a final sketch, a final wireframe, and the end result of Cloudvox&#8217;s home page redesign. They&#8217;re in&nbsp;<a href="http://www.flickr.com/photos/yortlabs/sets/72157625144671421/" title="Cloudvox home page end-to-end UX">this Cloudvox Flickr set</a>&nbsp;with some annotations.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Notes on "What Makes Startups Succeed" discussion]]></title>
+    <link href="http://troy.github.com/notes-on-what-makes-startups-succeed-discussi/"/>
+    <updated>2009-10-14T00:00:00-07:00</updated>
+    <id>http://troy.github.com/notes-on-what-makes-startups-succeed-discussi</id>
+    <content type="html"><![CDATA[<p>4 VCs, a moderator, and a roomful of people.  Here&#8217;s the gist.</p>
+<p>Now that we&#8217;ve publicly launched Cloudvox, and anyone can use it (and buy it!), I finally get to see the outdoors again.  I went to this panel on 10/14/2009 and took as many notes as I could.  I missed some things, and tried not to take any comments out of context.<!--more--><strong>Who</strong></p>
+<ul>
+<li>Andy Sack, <a href="http://www.founderscoop.com/">Founder&#8217;s Co-Op</a></li>
+<li>Mark Ashida, <a href="http://www.ovp.com/">OVP Venture Partners</a></li>
+<li>Mike Mathieu, <a href="http://www.frontseat.org/">Front Seat</a></li>
+<li>Pete Higgins, <a href="http://www.secondave.com/">Second Avenue Partners</a></li>
+</ul>
+<p>Moderated by Dave McShea of <a href="http://perkinscoie.com/">Perkins Coie</a> in Seattle.  Notes are chronological over 1 hour.  Bold is mine.</p>
+<p>&nbsp;</p>
+<p><strong>How do you evaluate a company as an investor?</strong></p>
+<p>Sack:</p>
+<p>&#8220;Accelerating on the downhill&#8221; (recession) as much more more important than speeding uphill</p>
+<p>Higgins:</p>
+<p>With right customers, recession means prospects are reevaluating costs, chance to stand out. Cheaper inputs (staff).</p>
+<p>&nbsp;</p>
+<p><strong>What mistakes do you see often?</strong></p>
+<p>Higgins:</p>
+<p>1) Business plans hard to understand. Entrepreneur unwilling to <strong>synthesize down to the real bet they&#8217;re making</strong> &#8211; might mean they don&#8217;t know it.</p>
+<p>2) &#8220;We don&#8217;t have any&#8221; competition.  <strong>Generally that&#8217;s &#8220;meeting over.&#8221;</strong> Too narrow def of competition.</p>
+<p>3) Under-rating domain expertise when they have it/have been the customer</p>
+<p>4) Not realizing VCs treat a meeting like an interview or date.  Can you work with together deeply? Listen!<strong> Don&#8217;t pitch/sell.</strong> Testing reactions, pushing buttons.</p>
+<p>Mathieu:</p>
+<p>Describe investment as series of risks - then <strong>help investors calculate market price for your risks.</strong></p>
+<p>Not getting 2nd meeting probably means risk higher than you think.</p>
+<p>80% * 80% * 80% (series of risks) is worse odds than a coin flip. How can you extract the risks?</p>
+<p>Ashida:</p>
+<p>Team reduces risk - have these people worked together? Experience is risk mitigation</p>
+<p>&nbsp;</p>
+<p><strong>What constitutes differentiation?</strong></p>
+<p>Ashida:</p>
+<p>&#8220;In the eye of the beholder.&#8221;</p>
+<p>At Housevalues there wasn&#8217;t a patentable one.</p>
+<p>Likes technical barriers. Stuff that&#8217;s hard to do.  Doesn&#8217;t have to be patentable.</p>
+<p>Marketing barrier &#8220;not as confident that it&#8217;s sustainable especially on a national basis.&#8221;</p>
+<p>Barriers are truly lower with SaaS: <strong>domain/customer expertise must be strong differentiator</strong> &#8220;because it&#8217;s just software&#8221;</p>
+<p>&nbsp;</p>
+<p>Audience: <strong>At Amazon, Bezos ranked 25 things to sell before choosing books.  How do you sell?</strong></p>
+<p>Higgins:</p>
+<p>Book market incredibly fragmented, easy purchase.</p>
+<p>Contrast with selling infrastructure to mobile where 5 guys decide your success.  Consider: Do customers tend to buy new stuff?</p>
+<p>Who are adjacent players?</p>
+<p>Often best to find industry with lots of established players who just haven&#8217;t picked up on changes. Like unmanned airplanes (Insitu).</p>
+<p>Had tailwinds: Gov&#8217;t wanted it, incumbents culturally unable to do small cheap product. <strong>But run when big player decides it&#8217;s strategic. Elephants will step on you.</strong></p>
+<p>Mathieu:</p>
+<p>With BetterBills, Seattle City Light finance group loved new bill format, but 6 months of customer delay.</p>
+<p>Competitor emerged who realized that <strong>motivated customer was conservation group, not accounting.</strong></p>
+<p>Ask who&#8217;s truly motivated to buy</p>
+<p>&nbsp;</p>
+<p><strong>Cash is king. How do you evaluate capital requirements and manage cash?</strong></p>
+<p>Mathieu:</p>
+<p>Cash matters first, then changes to cashflow (<strong>they merge</strong>).</p>
+<p>You hear all this advice: banks will only give you money when you need it, raise more than you need.</p>
+<p>All Star started with $200k. Got profitable in 3 months, went into 2nd market.</p>
+<p>From cashflow positive to losing $50k/mo.  Wife caught on.</p>
+<p>2 changes fixed: 1) marketing must break even on performance 2) tie customer price to your performance.</p>
+<p>Cashflow doesn&#8217;t go away 5 years in, profitable, new controller made many millions worth of payments on same day. Balance -$200k.</p>
+<p><strong>Use prepay and annual subscriptions. Biggest customer prepaid quarterly</strong> and cut need for outside capital</p>
+<p>Sack:</p>
+<p>Yeah cash management matters, but so does time: wasting a year of founding team!</p>
+<p><strong>No bank balance to measure this. Certain period to see evidence that dream can be reality (~3 years).</strong></p>
+<p>&#8220;Like cash, time is a resource that goes away&#8221;</p>
+<p>One company: had epiphany 8 months in, changed directions, 18 months in.</p>
+<p>Not exactly where they wanted to be. Should we change again?</p>
+<p>No!  <strong>Won&#8217;t have made any progress before losing confidence.</strong></p>
+<p>&nbsp;</p>
+<p><strong>What VC trends do you see?</strong></p>
+<p>Ashida:</p>
+<p>Critical how you get money. VCs running out of money - so much budgeted for existing investments.</p>
+<p>A year behind and all need 1 more round. Not all portfolio cos are covered.</p>
+<p><strong>Non-participating VCs will get crushed. Reduced to common, 10:1 reverse not uncommon</strong></p>
+<p>Also 1 person stuck writing $5mm check is way higher bar than 3 sharing.</p>
+<p>Finding new outside VC is hard when tainted by non-participating existing VC</p>
+<p>I&#8217;m probably going to be here long after you&#8217;re gone (longer than founders).</p>
+<p>No escape for us: 7-8 years</p>
+<p>&nbsp;</p>
+<p><strong>What habits should entrepreneurs use or avoid?</strong></p>
+<p>Sack:</p>
+<p>Recurring rituals. Write out and book on calendar.</p>
+<p>Daily: blog, tweet, the 1 thing that must get done today.</p>
+<p>Weekly: Sun night look at week ahead and pick 1 priority for week.</p>
+<p>Quarterly: take time off. Have a weekend.</p>
+<p>Mathieu:</p>
+<p>Know yourself.</p>
+<p><strong>What types of stuff do you just have to grind through?  Know what&#8217;s missing in you and patch holes</strong></p>
+<p>Had demo of alpha-stage niche site.  Missing: had no idea of was whether anyone would pay - a must fix.</p>
+<p>Told entrepreneur <strong>&#8220;When you leave you&#8217;re going to go home and say &#8216;I should talk with customers to see whether they&#8217;ll pay, but first I have to fix this bug and add these features&#8230;&#8217;&#8221;</strong>.</p>
+<p>Not bad thing as long as you know and fill.</p>
+<p>Higgins:</p>
+<p>After 3 people, entrepreneurs under-manage.</p>
+<p>Board emails: at least 1 a week.</p>
+<p>Ashida:</p>
+<p>1 page &#8220;plan of record&#8221; so when staff overhears stuff, have reference that plan is not changing. A little formal.</p>
+<p>&nbsp;</p>
+<p><strong>What&#8217;s the 1 big mistake that comes to mind?</strong></p>
+<p>Ashida:</p>
+<p><strong>&#8220;I&#8217;m good at this&#8221; when it&#8217;s clear you&#8217;re not.</strong></p>
+<p>Either mis-representing, or poor self-awareness.</p>
+<p>Also not asking what customers actually think. Too much trust where a technology appears to fit w/o asking</p>
+<p>Sack:</p>
+<p><strong>It&#8217;s not a pitch, it&#8217;s a conversation.</strong></p>
+<p>Engage. What is investor truly interested in? Ask them stuff!</p>
+<p>If I leave without having talked, I&#8217;m not engaged.</p>
+<p>&nbsp;</p>
+<p><strong>Revenue forecasts are a shot in the dark.  What should I do?</strong></p>
+<p>Higgins:</p>
+<p>Agree. <strong>Somebody told entrepreneurs that 3rd year should be profitable.</strong></p>
+<p><strong>How much does it cost to learn/get to the point where you have some confidence?</strong></p>
+<p>Sack:</p>
+<p>Forecast is to get comfortable playing with model and levers.</p>
+<p><strong>See/tweak unit economics.</strong></p>
+<p>Higgins:</p>
+<p>Most businesses have an analog.</p>
+<p>Sniff test, ie if you&#8217;re a distribution company and are 10x more profitable than other distributors.</p>
+<p>&nbsp;</p>
+<p><strong>What are VCs looking for an in exit strategy?</strong></p>
+<p>Higgins:</p>
+<p>Least successful slide - phrase &#8220;IPO or M&amp;A&#8221; useless.</p>
+<p>Generally look elsewhere when VCs gets particular about exit strategy.</p>
+<p>Ashida:</p>
+<p>Might disagree a bit. Security industry has many exits but small - $10-20mm, bought out in year 2.</p>
+<p>Should inform your raise, plans. We look at P/E and P/S. Ethanol P/S &lt;1, learn from it.</p>
+<p>&nbsp;</p>
+<p><strong>What&#8217;s the weakest point of a recent deal you actually did? How did you address it?</strong></p>
+<p>Ashida:</p>
+<p>2 guys from Microsoft.  Missing marketing. That was big risk - need to find someone who works well with them.</p>
+<p><strong>Solved with a (one!) person.</strong></p>
+<p>Higgins:</p>
+<p>Not sure it&#8217;s working yet, but: invested in &#8220;3 guys and dog at UW.&#8221;</p>
+<p>Research risk. New ideas every day but maybe not towards product.</p>
+<p>&#8220;Boring engineering management&#8221; stuff - runs an eng mtg every week. Dates, task list.</p>
+<p>&nbsp;</p>
+<p><strong>Really early seed-stage capital seems broken.  What&#8217;s the new model?</strong></p>
+<p>Ashida:</p>
+<p>Disagree that there&#8217;s not seed money for good ideas. I&#8217;m willing.</p>
+<p>Symform was 2 guys. Met 7 months before.</p>
+<p>More peer review from ideas in Silicon Valley: <strong>95% of bad ideas there get killed by peers.</strong></p>
+<p>Sack:</p>
+<p>Seed has gotten harder compared to 18 months ago.</p>
+<p><strong>&#8220;Deal that doesn&#8217;t get done&#8221; is often the best deal</strong>: No (or much less) VC relaxes the pressure on revenue.</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Opinions from Mark Anderson of Strategic News Service (SNS)]]></title>
+    <link href="http://troy.github.com/opinions-from-mark-anderson-of-strategic-news/"/>
+    <updated>2009-09-30T00:00:00-07:00</updated>
+    <id>http://troy.github.com/opinions-from-mark-anderson-of-strategic-news</id>
+    <content type="html"><![CDATA[<p>I went to a Q&amp;A with Mark Anderson of <a href="http://www.stratnews.com/">Strategic News Service</a> (SNS) and took down some direct and near-direct quotes  Mark is unique for sharing fairly specific opinions; right or wrong, that&#8217;s rare.  Notes are chronological over 90 minutes.  I tried not to take any comments out of context.</p>
+<p><!--more-->Unemployment:</p>
+<blockquote class="posterous_short_quote">&#8220;Economy has split&#8221; &#8220;Second-order problems caused by joblessness&#8221; &#8220;Large sea anchor attached to the American economy&#8221;</blockquote>
+<p>Currencies:</p>
+<blockquote class="posterous_medium_quote">&#8220;Old religion: all currencies traded on open markets&#8221; &#8220;China and Japan will reverse&#8221; past positions (now want weak currencies; US not buying and they are starting to sell to local consumers) Currency buyers and sellers are nations now, making entirely deliberate choices</blockquote>
+<p>IP in Asia</p>
+<blockquote class="posterous_short_quote">&#8220;You will notice that IP is not strongly protected in Asia, and that is where all the action is now&#8221; &#8220;Don&#8217;t bring the Coke recipe&#8221;</blockquote>
+<p>Q4 2009</p>
+<blockquote class="posterous_short_quote">&#8220;Q4 is being underrated by almost everyone&#8221; &#8220;netbook will be the best selling format ever&#8221; &#8220;I think it&#8217;s going to be Windows 7&#8221; (vs. Ubuntu) &#8220;huge Christmas&#8221; &#8220;PC sales will be positive&#8221;</blockquote>
+<p>FCC</p>
+<blockquote class="posterous_short_quote">&#8220;Current FCC commissioner is great&#8221; (Genachowski)</blockquote>
+<p>USD Inflation</p>
+<blockquote class="posterous_medium_quote">how to hedge against the dollar: buy tin for Peruvian shanties (joke) inflation a risk for many or all global currencies, not just USD &#8220;total liquidity pool was $36 trillion, and&nbsp;doubled&nbsp;it in 6 years&#8221; &#8220;huge car wreck that has to come up .. they all know it&#8221; &#8220;no one has ever done it [quantitative easing] right, so let&#8217;s do it now&#8221; (central bankers perspective)</blockquote>
+<p>&nbsp;</p>
+<p>How He&#8217;d Distribute SNS in 2009</p>
+<blockquote class="posterous_medium_quote">still probably use email, but hate spam, and still growing problem is identifying senders correctly, and &#8220;multiple levels of knowing one another&#8221; &#8220;it&#8217;s not Facebook&#8221; &#8220;Someone&#8217;s going to figure out what David Anderson [CEO of Sendmail] couldn&#8217;t do&#8221;</blockquote>
+<p>Peak Oil &amp; Energy</p>
+<blockquote class="posterous_medium_quote">&#8220;there is no peak oil&#8221; &#8220;that little scam [peak oil]&#8221; &#8220;need consistent high price for oil. I&#8217;m fine with $80 plus or minus $10 for 10 years&#8221; &#8220;pricing umbrella to convert to something else&#8221; (besides petroleum) &#8220;ultimately I think energy ought to be free&#8221;</blockquote>
+<p>Countries as Investment Opportunities</p>
+<blockquote class="posterous_short_quote">&#8220;Australia .. Canada&#8221; &#8220;I hate Russia&#8221; &#8220;very careful elsewhere&#8221; of Russia (later): &#8220;all there is is corruption, kleptocracy, and resources&#8221;</blockquote>
+<p>Heathcare</p>
+<blockquote class="posterous_medium_quote">&#8220;heathcare is destroying the competitiveness of our businesses&#8221; &#8220;what killed GM&#8221; (if you asked them) &#8220;I would get rid of all heath insurance companies .. I would dissolve them&#8221; &#8220;I feel no fear from starting from scratch&#8221;</blockquote>
+<p>What Problems &amp; Opportunities Keep You Awake at Night?</p>
+<blockquote class="posterous_short_quote">&#8220;market manipulation&#8221; &#8220;inability of nation to respond to problems&#8221; most important trend: &#8220;about 2 billion people rise up from UN poverty level of $1/day .. to $2/day or $4/day&#8221;</blockquote>
+<p>Boeing</p>
+<blockquote class="posterous_medium_quote">&#8220;I think Boeing is dead man walking&#8221; used to know &#8220;never to take crowd jewels of IP outof the country&#8221; &#8220;EADS has forced them to this&#8221; competitors will &#8220;all be 10 years [behind]&#8221; .. &#8220;sounds like General Motors to me&#8221; &#8220;biggest customer just became biggest competitor&#8221;</blockquote>
+<p>Smartphones (iPhone specifically)</p>
+<blockquote class="posterous_short_quote">&#8220;Steve&#8217;s done the world a favor by striking this deal with AT&amp;T&#8221; &#8220;the best software platform we&#8217;ve ever dreamed of&#8221; (smartphones)</blockquote>
+<p>Africa</p>
+<blockquote class="posterous_short_quote">&#8220;I don&#8217;t know&#8221; (how to make it self-sustaining)</blockquote>
+<p>American Empire</p>
+<blockquote class="posterous_short_quote">&#8220;Yes we are in the decline of the American empire&#8221; &#8220;we deserve what we got&#8221; &#8220;we aren&#8217;t as smart as we think we are&#8221; &#8220;our promise is so high and our achivement is so low&#8221;</blockquote>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Towards BPM-based "Exercise Radio" Stations]]></title>
+    <link href="http://troy.github.com/towards-bpm-based-exercise-radio-stations/"/>
+    <updated>2009-09-25T00:00:00-07:00</updated>
+    <id>http://troy.github.com/towards-bpm-based-exercise-radio-stations</id>
+    <content type="html"><![CDATA[<p>Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow.  A couple ideas.</p>
+<p><!--more-->The closest are <a href="http://developer.echonest.com/">Echo Nest&#8217;s API</a> (get_tempo) and <a href="http://www.last.fm/api">Last.fm&#8217;s API</a> (Track.getInfo).  Echo Nest&#8217;s requires uploading the song audio data (which I don&#8217;t have). Last.fm&#8217;s can be queried with metadata (artist+song name) yet doesn&#8217;t provide BPM.  This NYTimes <a href="http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/">Gadgetwise blog post</a> has local file (MP3) and podcast options.</p>
+<p>I posted this to the <a href="http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730">Last.fm Web Services</a> discussion group, and <a href="http://twitter.com/troyd/status/4352076414">asked on Twitter</a>.  I&#8217;ll update this post if something comes of it.</p>
+<blockquote>I prefer to exercise to music, and it&#8217;s much nicer when the beats per minute matches what I&#8217;m physically doing. I think this could happen 3 ways:  1) Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.  2) Adding BPM as a new radio station &#8220;station type&#8221; (from <a href="http://www.last.fm/api/radio)">http://www.last.fm/api/radio)</a> and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140  3) A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if track.getInfo included BPM.  There&#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: <a href="http://developer.echonest.com/docs/method/get_tempo/">http://developer.echonest.com/docs/method/get_tempo/</a> (but it too needs the bits; it&#8217;s not an existing database).  Mass BPM calculations would be a killer use for Map/Reduce&#8230;</blockquote>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Anatomy of a Malware Ad on NYTimes com]]></title>
+    <link href="http://troy.github.com/anatomy-of-a-malware-ad-on-nytimes-com/"/>
+    <updated>2009-09-13T00:00:00-07:00</updated>
+    <id>http://troy.github.com/anatomy-of-a-malware-ad-on-nytimes-com</id>
+    <content type="html"><![CDATA[<p>On Saturday evening, Avast displayed a malware warning as I loaded a nytimes.com article.&nbsp; After some digging, here&#8217;s the malware I found.</p>
+<h2><!--more-->Ad Delivery</h2>
+<p><span>nytimes.com article pages include an ad placement with the HTML DOM ID <code>adxBigAd</code>.&nbsp; From loading a few articles, they seems to rotate between a banner and an iframe.</span> <span>On this article, a 300x250 iframe was inlining this URL: <code>tradenton.com</code> slash <code>?id=21610438</code></span> <em>(note: I don&#8217;t recommend visiting it, and have URLs are not linked where possible)</em> <span>A comment gave the campaign ID as<code>Vonage01_1163613_nyt12</code>, though it was obviously unrelated to Vonage.&nbsp; tradenton.com was registered Sept. 2, 2009, so it may have had a previous owner. </span></p>
+<h2><span>Injection</span></h2>
+<p><span>tradenton.com serves a 15-line HTML snipped containing this JavaScript:</span>
+<script src="http://gist.github.com/186462.js"></script>
+<span> As anyone who has looked at phishing links knows, this is nasty on a couple levels.  It&#8217;s eval()&#8217;ing escaped code, which is almost never needed to serve an ad.  Note that the variable <code>action_URL</code> is defined but never used.  After unescaping the code, this is what&#8217;s being run:</span>
+<script src="http://gist.github.com/186464.js"></script>
+What&#8217;s served by <code>harlingens.com</code> slash <code>includes02.js</code>?  Aha!  The eval&#8217;ed JavaScript is requesting a second Javascript, which hits <code>action_URL</code>:
+<script src="http://gist.github.com/186466.js"></script>
+</p>
+<h2>Malware</h2>
+<p><span>Now we&#8217;re talking.  Requesting that <code>action_URL</code> on <code>sex-and-the-city.cn</code> actually serves a HTTP 302 Redirect to <code>protection-check07.com</code> slash <code>1/?sess=%3DGQx3jzwMi02MyZpcD0yMDguNzUuNTcuMTIxJnRpbWU9MTI1NjgwMI0MaQ%3DN</code>.  And we hit pay dirt.  It&#8217;s a fake page for a non-existent antivirus app, which is actually malware.  Titled &#8221;<code>My computer Online Scan</code>&#8221;, this page displays this JS alert:</span></p>
+<p><span> [[posterous-content:bgqmAGjDAyatJCqftmkv]]<br /><strong>&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<p><span><strong>Popup from malware advertised on nytimes.com</strong><br /> </span></p>
+<p><span>Then resizes the browser window into a full-screen application-style, as if it had become a virus scanner.  Some highlights from the static content and JS on this page:</span></p>
+<p><span><code> Dont close this window, if your want you PC to be protected.</code></span></p>
+<p><span><code>353 trojans</code></span></p>
+<p><span><code>You need to remove this threat as soon as possible!</code></span></p>
+<p><span><code>Scan procedures finished.</code></span></p>
+<p><span><code>431 Probably harmfull items was found!</code></span></p>
+<p>&nbsp;</p>
+<p><span>Here&#8217;s a screen shot: </span></p>
+<p><span>[[posterous-content:cmgxbjEIaashFcynAJbp]]<br /><strong>screenshot of web page of malware advertised on nytimes.com</strong></span></p>
+<p><span><strong>&nbsp;</strong><br /> </span> <span>Here&#8217;s <a href="http://gist.github.com/186467">full HTML source</a> in a gist viewer.</span> <span>As usual, these phishers haven&#8217;t sprung for spelling or grammar checkers.</span></p>
+<p><span>The page also uses IP-based geocoding by inlining its own iframe called <code>geoip.php</code>, which has city-level granularity (though it was off by 1,000 miles for me).  The &#8220;Full System Cleanup&#8221; link goes to <code>/download.php?id=2006-63</code> on the same server, which serves a file called <code>Scanner-b4ba2_2006-63.exe</code>.</span></p>
+<p><span>That redirects to <code>/download/Scanner-b4ba2_2006-63.exe</code>, a static file with the checksum <code>6c5b5669151337ca51ec45b1f5785d02</code>.  Running strings on this 167 KB program - too small for any virus scanner - has it requesting administrator privileges, though I haven&#8217;t done detailed forensics.</span></p>
+<h2>Notes</h2>
+<p><span>As of Sept. 12, 2009, <code>tradenton.com</code> and <code>harlingens.com</code> resolved to 212.117.166.69.  <code>sex-and-the-city.cn</code> resolved to 94.102.48.29.  <code>protection-check07.com</code> had 3 A records: 91.212.107.5, 94.102.51.26, 88.198.107.25.  Also, I changed indentation and spacing for readability, so checksums on gist may not match source files.</span></p>]]></content>
+  </entry>
   
 </feed>
