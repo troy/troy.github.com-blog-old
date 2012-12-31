@@ -5,12 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>A bit about preventing toll fraud - Troy Davis, Seattle</title>
   <meta name="author" content="Troy Davis">
+  <meta name="description" content="Troy Davis, Seattle">
+
+  
+    <title>A bit about preventing toll fraud - Troy Davis</title>
+  
+
 
   
   <meta name="description" content="Recently posted this reply to the voiceops mailing list. Pasted below or read the original. On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber&nbsp; &hellip;">
   
+
+
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -18,10 +25,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://troy.github.com/a-bit-about-preventing-toll-fraud/">
-  <link href="/favicon.png" rel="icon">
+  <link rel="canonical" href="http://troy.github.com/a-bit-about-preventing-toll-fraud">
+  <link href="/favicon.ico" rel="icon">
+  <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Troy Davis, Seattle" type="application/atom+xml">
@@ -45,17 +55,29 @@
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Troy Davis, Seattle</a></h1>
-  
-    <h2>Head over to http://twitter.com/troyd to see my more frequent updates.</h2>
-  
-</hgroup>
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+<body   >
+
+	<div class="container">
+
+		<div class="four columns">
+  			<nav role="navigation"><ul class="title">
+  <li><a href="/">Ryan Deussing</a></li>
+</ul>
+  
+<ul class="main-navigation">
+
+  <li class="other"><a href="/">Blog</a></li>
+  <li class="other"><a href="/blog/categories/persons-of-interest">Persons of Interest</a></li>
+  <li class="other"><a href="/projects">Projects</a></li>
+
+
+  <li class="other"><a target="_blank" href="http://linkedin.com/in/ryandeussing">About</a></li>
+</ul>
+
+
+<ul class="subscription" data-subscription="rss">
+  <li class="other"><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
@@ -66,102 +88,13 @@
   </fieldset>
 </form>
   
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
+
+
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">A Bit About Preventing Toll Fraud</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-20T00:00:00-07:00" pubdate data-updated="true">May 20<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><div class="im" style="color: #500050;"><span style="color: #000000;">Recently posted this reply to the voiceops mailing list. Pasted below or <a href="https://puck.nether.net/pipermail/voiceops/2011-May/002499.html">read the original</a>.</span></div>
-<div class="im" style="color: #500050;"><!--more--></div>
-<div class="im" style="color: #500050;">On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber&nbsp;wrote:<br />&gt; Hi folks,<br />&gt; We have been hit twice in the past two days with calls to 011-252-XXXXXXXX<br />&gt; (calls to Somalia I believe, and the originating IP is from Pakistan)<br /><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">&nbsp;</span></div>
-<div class="im" style="color: #500050;"><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">Others have suggested NCC-specific firewall policies. I&#8217;ll put in a&nbsp;plug for using per-country-code dialplan routes and omitting really&nbsp;expensive countries.</span></div>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Obviously that won&#8217;t work for worldwide wholesale transport carriers.&nbsp;For everyone else, the most expensive CCs to call aren&#8217;t worth the&nbsp;trouble. There are very few folks with legitimate needs to call, say,&nbsp;Sierra Leone, that aren&#8217;t served by Skype. They don&#8217;t represent enough&nbsp;revenue to justify the risk.</span></p>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Those few legit higher-volume folks are willing to prepay using&nbsp;reliable methods. They&#8217;re usually apologetic that their countries&nbsp;receive enough fraudulent calls to need such a policy.</span></p>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Basically scroll through&nbsp;<a href="http://www.voicetrading.com/en/calling-rates.html" target="_blank" style="color: #147dba;">http://www.voicetrading.com/en/calling-rates.html</a>&nbsp;and omit routes for&nbsp;any country that&#8217;s had a civil war in the past 20 years. Fringe&nbsp;benefit: when a country code splits, you won&#8217;t get caught with a rate&nbsp;deck hole (see Timor-Leste, St Maarten).</span></p>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">If you want to get slick, have a call attempt to those country codes&nbsp;page your admins as a honeynet (honeyroute?). Somebody&#8217;s probably up&nbsp;to something.</span></p>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Doesn&#8217;t prevent calls to expensive mobile routes in countries you do&nbsp;reach, they&#8217;re just a lot less interesting to fraudsters (woo, I can&nbsp;call Proximus!?) and the per-minute costs are mostly way lower.</span></p>
-<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Troy</span></p></div>
-
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Troy Davis</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-20T00:00:00-07:00" pubdate data-updated="true">May 20<span>th</span>, 2011</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/from-concept-sketches-to-live-web-page/" title="Previous Post: From concept sketches to live Web page">&laquo; From concept sketches to live Web page</a>
-      
-      
-        <a class="basic-alignment right" href="/new-rss-feed-url/" title="Next Post: New RSS feed URL">New RSS feed URL &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
+        <aside class="sidebar">
+          
+            <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
@@ -189,8 +122,8 @@
 </section>
 
 
-<section>
-  <h1>Latest Tweets</h1>
+<section id="twitter">
+  <h1 class="tweets">Tweets</h1>
   <ul id="tweets">
     <li class="loading">Status updating...</li>
   </ul>
@@ -209,18 +142,98 @@
 
 
 
+          
+
+          <section id="code">
+            <h2>Code</h2>
+              <p><a target="_blank" href="https://github.com/ryandeussing" target="_blank">GitHub</a></p>         
+          </section>
+
+          <section id="habit">
+            <h2>Habit</h2>
+              <p><a target="_blank" href="http://joesgoals.com">Daily goals</a></p>
+              <a target="_blank" href="http://joesgoals.com"><div id="goals"></div></a>  
+          </section>
+
+
+        </aside>    
+  	</div>
+    
+    
+
+    <header class="twelve columns" role="banner">
+    
+<hgroup>
+  <h1>Troy Davis, Seattle</h1>
+</hgroup>
+
+    </header>
+
+    
+
+  	<div id="main" class="twelve columns">
+	    <div id="content">
+	      <div>
+<article class="hentry" role="article">
   
-</aside>
+  <header>
+    
+      <h1 class="entry-title">A Bit About Preventing Toll Fraud</h1>
+    
+    
+      <p class="meta">
+        
+      </p>
+    
+  </header>
 
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Troy Davis -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+
+
+<div class="entry-content"><div class="im" style="color: #500050;"><span style="color: #000000;">Recently posted this reply to the voiceops mailing list. Pasted below or <a href="https://puck.nether.net/pipermail/voiceops/2011-May/002499.html">read the original</a>.</span></div>
+<div class="im" style="color: #500050;"><!--more--></div>
+<div class="im" style="color: #500050;">On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber&nbsp;wrote:<br />&gt; Hi folks,<br />&gt; We have been hit twice in the past two days with calls to 011-252-XXXXXXXX<br />&gt; (calls to Somalia I believe, and the originating IP is from Pakistan)<br /><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">&nbsp;</span></div>
+<div class="im" style="color: #500050;"><span style="font-family: Arial, Helvetica, sans-serif; border-collapse: separate; color: #000000;">Others have suggested NCC-specific firewall policies. I&#8217;ll put in a&nbsp;plug for using per-country-code dialplan routes and omitting really&nbsp;expensive countries.</span></div>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Obviously that won&#8217;t work for worldwide wholesale transport carriers.&nbsp;For everyone else, the most expensive CCs to call aren&#8217;t worth the&nbsp;trouble. There are very few folks with legitimate needs to call, say,&nbsp;Sierra Leone, that aren&#8217;t served by Skype. They don&#8217;t represent enough&nbsp;revenue to justify the risk.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Those few legit higher-volume folks are willing to prepay using&nbsp;reliable methods. They&#8217;re usually apologetic that their countries&nbsp;receive enough fraudulent calls to need such a policy.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Basically scroll through&nbsp;<a href="http://www.voicetrading.com/en/calling-rates.html" target="_blank" style="color: #147dba;">http://www.voicetrading.com/en/calling-rates.html</a>&nbsp;and omit routes for&nbsp;any country that&#8217;s had a civil war in the past 20 years. Fringe&nbsp;benefit: when a country code splits, you won&#8217;t get caught with a rate&nbsp;deck hole (see Timor-Leste, St Maarten).</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">If you want to get slick, have a call attempt to those country codes&nbsp;page your admins as a honeynet (honeyroute?). Somebody&#8217;s probably up&nbsp;to something.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Doesn&#8217;t prevent calls to expensive mobile routes in countries you do&nbsp;reach, they&#8217;re just a lot less interesting to fraudsters (woo, I can&nbsp;call Proximus!?) and the per-minute costs are mostly way lower.</span></p>
+<p><span style="border-collapse: collapse; font-family: arial, sans-serif;">Troy</span></p></div>
+
+
+  <footer>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/from-concept-sketches-to-live-web-page/" title="Previous Post: From concept sketches to live Web page">&laquo; Previous post</a>
+      
+      
+        <a class="basic-alignment right" href="/new-rss-feed-url/" title="next Post: New RSS feed URL">Next post &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+	    </div>
+  	</div>
+  
+  <footer role="contentinfo"  class="sixteen columns"><center>
+<p class="credit">
+  <span class="credit">Powered by <a href="http://github.com">GitHub</a>, <a href="https://github.com/imathis/octopress">Octopress</a>, &amp; <a href="https://github.com/dhgamache/Skeleton">Skeleton</a></span>.
 </p>
-
+</center>
 </footer>
+  
   
 
 
@@ -243,5 +256,16 @@
 
 
 
+
+<script>
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
+</script>
+
 </body>
 </html>
+
+
+	</div> <!-- container -->

@@ -5,13 +5,20 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Towards BPM-based "Exercise Radio" Stations - Troy Davis, Seattle</title>
   <meta name="author" content="Troy Davis">
+  <meta name="description" content="Troy Davis, Seattle">
+
+  
+    <title>Towards BPM-based "Exercise Radio" Stations - Troy Davis</title>
+  
+
 
   
   <meta name="description" content="Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.
 The closest are &hellip;">
   
+
+
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -19,10 +26,13 @@ The closest are &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://troy.github.com/towards-bpm-based-exercise-radio-stations/">
-  <link href="/favicon.png" rel="icon">
+  <link rel="canonical" href="http://troy.github.com/towards-bpm-based-exercise-radio-stations">
+  <link href="/favicon.ico" rel="icon">
+  <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Troy Davis, Seattle" type="application/atom+xml">
@@ -46,17 +56,29 @@ The closest are &hellip;">
 
 </head>
 
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Troy Davis, Seattle</a></h1>
-  
-    <h2>Head over to http://twitter.com/troyd to see my more frequent updates.</h2>
-  
-</hgroup>
 
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+<body   >
+
+	<div class="container">
+
+		<div class="four columns">
+  			<nav role="navigation"><ul class="title">
+  <li><a href="/">Ryan Deussing</a></li>
+</ul>
+  
+<ul class="main-navigation">
+
+  <li class="other"><a href="/">Blog</a></li>
+  <li class="other"><a href="/blog/categories/persons-of-interest">Persons of Interest</a></li>
+  <li class="other"><a href="/projects">Projects</a></li>
+
+
+  <li class="other"><a target="_blank" href="http://linkedin.com/in/ryandeussing">About</a></li>
+</ul>
+
+
+<ul class="subscription" data-subscription="rss">
+  <li class="other"><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
@@ -67,96 +89,13 @@ The closest are &hellip;">
   </fieldset>
 </form>
   
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
+
+
 
 </nav>
-  <div id="main">
-    <div id="content">
-      <div>
-<article class="hentry" role="article">
-  
-  <header>
-    
-      <h1 class="entry-title">Towards BPM-based "Exercise Radio" Stations</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-09-25T00:00:00-07:00" pubdate data-updated="true">Sep 25<span>th</span>, 2009</time>
-        
-      </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow.  A couple ideas.</p>
-<p><!--more-->The closest are <a href="http://developer.echonest.com/">Echo Nest&#8217;s API</a> (get_tempo) and <a href="http://www.last.fm/api">Last.fm&#8217;s API</a> (Track.getInfo).  Echo Nest&#8217;s requires uploading the song audio data (which I don&#8217;t have). Last.fm&#8217;s can be queried with metadata (artist+song name) yet doesn&#8217;t provide BPM.  This NYTimes <a href="http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/">Gadgetwise blog post</a> has local file (MP3) and podcast options.</p>
-<p>I posted this to the <a href="http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730">Last.fm Web Services</a> discussion group, and <a href="http://twitter.com/troyd/status/4352076414">asked on Twitter</a>.  I&#8217;ll update this post if something comes of it.</p>
-<blockquote>I prefer to exercise to music, and it&#8217;s much nicer when the beats per minute matches what I&#8217;m physically doing. I think this could happen 3 ways:  1) Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.  2) Adding BPM as a new radio station &#8220;station type&#8221; (from <a href="http://www.last.fm/api/radio)">http://www.last.fm/api/radio)</a> and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140  3) A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if track.getInfo included BPM.  There&#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: <a href="http://developer.echonest.com/docs/method/get_tempo/">http://developer.echonest.com/docs/method/get_tempo/</a> (but it too needs the bits; it&#8217;s not an existing database).  Mass BPM calculations would be a killer use for Map/Reduce&#8230;</blockquote></div>
-
-
-  <footer>
-    <p class="meta">
-      
-  
-
-<span class="byline author vcard">Posted by <span class="fn">Troy Davis</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-09-25T00:00:00-07:00" pubdate data-updated="true">Sep 25<span>th</span>, 2009</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/anatomy-of-a-malware-ad-on-nytimes-com/" title="Previous Post: Anatomy of a Malware Ad on NYTimes.com">&laquo; Anatomy of a Malware Ad on NYTimes.com</a>
-      
-      
-        <a class="basic-alignment right" href="/opinions-from-mark-anderson-of-strategic-news/" title="Next Post: Opinions from Mark Anderson of Strategic News Service (SNS)">Opinions from Mark Anderson of Strategic News Service (SNS) &raquo;</a>
-      
-    </p>
-  </footer>
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
+        <aside class="sidebar">
+          
+            <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
@@ -184,8 +123,8 @@ The closest are &hellip;">
 </section>
 
 
-<section>
-  <h1>Latest Tweets</h1>
+<section id="twitter">
+  <h1 class="tweets">Tweets</h1>
   <ul id="tweets">
     <li class="loading">Status updating...</li>
   </ul>
@@ -204,18 +143,92 @@ The closest are &hellip;">
 
 
 
+          
+
+          <section id="code">
+            <h2>Code</h2>
+              <p><a target="_blank" href="https://github.com/ryandeussing" target="_blank">GitHub</a></p>         
+          </section>
+
+          <section id="habit">
+            <h2>Habit</h2>
+              <p><a target="_blank" href="http://joesgoals.com">Daily goals</a></p>
+              <a target="_blank" href="http://joesgoals.com"><div id="goals"></div></a>  
+          </section>
+
+
+        </aside>    
+  	</div>
+    
+    
+
+    <header class="twelve columns" role="banner">
+    
+<hgroup>
+  <h1>Troy Davis, Seattle</h1>
+</hgroup>
+
+    </header>
+
+    
+
+  	<div id="main" class="twelve columns">
+	    <div id="content">
+	      <div>
+<article class="hentry" role="article">
   
-</aside>
+  <header>
+    
+      <h1 class="entry-title">Towards BPM-based "Exercise Radio" Stations</h1>
+    
+    
+      <p class="meta">
+        
+      </p>
+    
+  </header>
 
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Troy Davis -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+
+
+<div class="entry-content"><p>Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow.  A couple ideas.</p>
+<p><!--more-->The closest are <a href="http://developer.echonest.com/">Echo Nest&#8217;s API</a> (get_tempo) and <a href="http://www.last.fm/api">Last.fm&#8217;s API</a> (Track.getInfo).  Echo Nest&#8217;s requires uploading the song audio data (which I don&#8217;t have). Last.fm&#8217;s can be queried with metadata (artist+song name) yet doesn&#8217;t provide BPM.  This NYTimes <a href="http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/">Gadgetwise blog post</a> has local file (MP3) and podcast options.</p>
+<p>I posted this to the <a href="http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730">Last.fm Web Services</a> discussion group, and <a href="http://twitter.com/troyd/status/4352076414">asked on Twitter</a>.  I&#8217;ll update this post if something comes of it.</p>
+<blockquote>I prefer to exercise to music, and it&#8217;s much nicer when the beats per minute matches what I&#8217;m physically doing. I think this could happen 3 ways:  1) Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.  2) Adding BPM as a new radio station &#8220;station type&#8221; (from <a href="http://www.last.fm/api/radio)">http://www.last.fm/api/radio)</a> and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140  3) A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if track.getInfo included BPM.  There&#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: <a href="http://developer.echonest.com/docs/method/get_tempo/">http://developer.echonest.com/docs/method/get_tempo/</a> (but it too needs the bits; it&#8217;s not an existing database).  Mass BPM calculations would be a killer use for Map/Reduce&#8230;</blockquote></div>
+
+
+  <footer>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/anatomy-of-a-malware-ad-on-nytimes-com/" title="Previous Post: Anatomy of a Malware Ad on NYTimes.com">&laquo; Previous post</a>
+      
+      
+        <a class="basic-alignment right" href="/opinions-from-mark-anderson-of-strategic-news/" title="next Post: Opinions from Mark Anderson of Strategic News Service (SNS)">Next post &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+	    </div>
+  	</div>
+  
+  <footer role="contentinfo"  class="sixteen columns"><center>
+<p class="credit">
+  <span class="credit">Powered by <a href="http://github.com">GitHub</a>, <a href="https://github.com/imathis/octopress">Octopress</a>, &amp; <a href="https://github.com/dhgamache/Skeleton">Skeleton</a></span>.
 </p>
-
+</center>
 </footer>
+  
   
 
 
@@ -238,5 +251,16 @@ The closest are &hellip;">
 
 
 
+
+<script>
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
+</script>
+
 </body>
 </html>
+
+
+	</div> <!-- container -->
