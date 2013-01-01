@@ -8,10 +8,10 @@
   <meta name="author" content="Troy Davis">
   <meta name="description" content="Inputs & Outputs">
 
-  <title>Cost analysis of King County Bike Share Business Plan - Troy Davis, Seattle</title>
+  <title>Short, fast micro-whois - Troy Davis, Seattle</title>
 
   
-  <meta name="description" content="I posted a comment on this Seattle Bike Blog post with a basic cost analysis of the King County Bike Share Business Plan (site, PDF). This is the &hellip;">
+  <meta name="description" content="90% of my whois queries are to check whether a domain name is registered, where I don&#8217;t need any details. Here&#8217;s a Bash function to check &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://troy.yort.com/cost-analysis-of-king-county-bike-share-busin">
+  <link rel="canonical" href="http://troy.yort.com/short-fast-micro-whois">
   <link href="/favicon.png" rel="icon">
   <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
@@ -142,7 +142,7 @@
   
   <header>
     
-      <h1 class="entry-title">Cost Analysis of King County Bike Share Business Plan</h1>
+      <h1 class="entry-title">Short, Fast Micro-whois</h1>
     
     
       <p class="meta">
@@ -162,43 +162,49 @@
     
 
 
-<div class="entry-content"><p>I posted <a href="http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/#comment-168712">a comment</a> on this Seattle Bike Blog <a href="http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/">post</a> with a basic cost analysis of the King County Bike Share Business Plan (<a href="http://pugetsoundbikeshare.org/">site</a>, <a href="http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf">PDF</a>). This is the text of my comment.</p>
+<div class="entry-content"><p>90% of my whois queries are to check whether a domain name is registered, where I don&#8217;t need any details. Here&#8217;s a Bash function to check domain availability; type one character, get one character.</p>
 
-<hr />
+<p><strong>Problem</strong>: I want a responsive checker that I can start in an instant, with almost no typing. It should be omnipresent: accessible from as many desktop windows as possible, without task switching. Rather than showing details, output should be short so I can see my query history evolve. And since most domains are registered (and I want to get past them), response time matters for registered domains more than available ones.</p>
 
-<p>At scale, the project forecasts 2200 bikes supported by an annual operating (not build out) cost of $4.6 million. That&#8217;s $2090/bike. It forecasts 2.68 million trips per year at an average of 2 miles/trip. If those numbers are accurate, a trip would cost $1.72. A mile, $0.86.</p>
+<p><strong>Solution</strong>: I have this bash function in my .bashrc (update: two versions by request &#8211; shell script and Ruby). You can <a href="http://gist.github.com/82956">download micro-whois here</a>.</p>
 
-<p>I don&#8217;t have a strong reaction to those costs. I would gladly pay $2/trip myself as an entirely usage-based fee. The forecasted cost is in line with Metro and Sound Transit fares. While it&#8217;s lower than their costs per boarding (for Metro, $3.70 in 2008; <a href="http://en.wikipedia.org/wiki/King_County_Metro#Operating_Costs">source</a>), the shorter, denser routes are much cheaper to deliver than the system-wide average.</p>
-
-<p>The data to compare route-level stats doesn&#8217;t exist. Shorter, denser routes are the closest comparables to phase 1. However, one could see bike sharing allowing the last mile of trips that would have otherwise been taken by car (and instead use bus or train). Not enough data to know.</p>
-
-<p>My own conclusion: the costs are definitely &#8220;in the zone&#8221; for transit and might be a little cheaper than existing options.</p>
-
-<p>Crucially, the total cost is incredibly small compared to any other transit implementation, and thereby, much lower risk. As a point of reference, Metro received $37.5 million to add 2 RapidRide Bus Rapid Transit (BRT) routes (<a href="http://www.dot.gov/affairs/2012/fta3812.html">source</a>). Even excluding all other revenue sources, the total build out costs of all phases are equivalent to one BRT route.</p>
-
-<p>As another perspective, the 4.3 mile Northgate light rail extension has a lifetime budget of $2.1 billion (70x-100x more than the total 5 year projected cost), and the South Lake Union Streetcar was $56.4 million (<a href="http://en.wikipedia.org/wiki/South_Lake_Union_Streetcar">source</a>).</p>
-
-<p>I don&#8217;t mean to provide these as comparables. For me, the lower cost just means the barrier for my endorsement is much lower. In urban transit, $20 million is an experiment. In this case, the &#8220;experiment&#8221; happens to fund the whole system.</p>
-
-<p>Notes:</p>
-
-<ul>
-<li><p>relies on internally-created usage forecasts. While the forecasted 2.4 trips/bike in year 1 is within the range seen in other cities, that range is very broad (0.9 to 3.7). As you&#8217;d expect of a transit system, usage is the key to a low cost per trip.</p></li>
-<li><p>ignores the $14.4 million in build out expenses because they do seem to be one-time (stations) or long depreciation (vending machines), and because the report notes &#8220;presenting sponsorship is expected to cover all but $2.15 [of] .. $14.4 million.&#8221; The unfunded 2.15 million is not a material impact.</p></li>
-</ul>
+<script src="https://gist.github.com/82956.js"></script>
 
 
-<p>Source: King County <a href="http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf">Bike Share Business Plan</a> (2012-01-27), pages 26-27, 36.</p>
+<p>and voila, zero-effort domain name availability:</p>
+
+<pre><code>$ d yort.com
+1
+$ d ihopethisonedomainisnotregistered.com
+0
+</code></pre>
+
+<p>Registered:</p>
+
+<pre><code>$ time d yort.com
+1 real 0m0.260s
+
+$ time whois -n yort.com
+.. [ 60 lines ]
+real 0m0.782s
+</code></pre>
+
+<p>Unregistered:</p>
+
+<pre><code>$ time d ihopethisonedomainisnotregistered.com
+real 0m0.649s
+
+$ time whois -n ihopethisonedomainisnotregistered.com
+real 0m0.657s
+</code></pre>
 </div>
 
 
   <footer>
     <p class="meta">
       
-        <a class="basic-alignment left" href="/making-2-factor-authentication-viral/" title="Previous Post: Making 2-factor authentication grow faster than linear">&laquo; Previous post</a>
       
-      
-        <a class="basic-alignment right" href="/a-few-days-with-the-slimfold-tyvek-wallet/" title="next Post: A few days with the SlimFold Tyvek Wallet">Next post &raquo;</a>
+        <a class="basic-alignment right" href="/self-signed-imap-ssl-certs-on-iphone/" title="next Post: Self-Signed IMAP Certs on iPhone">Next post &raquo;</a>
       
     </p>
   </footer>

@@ -132,16 +132,6 @@
 </section>
         </aside>    
   	</div>
-    
-    
-
-    <header class="twelve columns" role="banner">
-    
-<hgroup>
-  <h1>Inputs & Outputs</h1>
-</hgroup>
-
-    </header>
 
     
 
@@ -173,22 +163,50 @@
 
 
 <div class="entry-content"><p>I posted a long <a href="http://groups.google.com/group/fusion-tables-users-group/msg/535854503fa21868">explanation</a> to the fusion-tables-users group about using third-party libraries with Fusion Tables over OAuth. It might also help folks debugging OAuth problems or adding OAuth support to existing libraries. Full text below.</p>
-<p><!--more--><span style="">Just an update for the archives and anyone else debugging this. I went through the <a href="http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16">Python example</a> </span><span style="">and it does work for POST requests in the body. I tested CREATE and INSERT.</span></p>
-<p><span style="">Here are the 2 things that were tripping up the Ruby GData library coupled with someone&#8217;s monkeypatched OAuth auth_handler (GData::Auth::OAuth). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.</span></p>
-<p><span style="">Here goes:</span></p>
-<p><span style="">1. The GData::Auth::OAuth only pulled out GET params from the URL, not POST params in the request body. POST params need to be sorted alongside the OAuth parameters when creating the signature base, so this immediately made my signatures invalid.</span></p>
-<p><span style="">I saw a couple causes for this in other libraries:</span></p>
+
+<hr />
+
+<p>Just an update for the archives and anyone else debugging this. I went through the <a href="http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16">Python example</a> and it does work for POST requests in the body. I tested CREATE and INSERT.</p>
+
+<p>Here are the 2 things that were tripping up the Ruby GData library coupled with someone&#8217;s monkeypatched OAuth auth_handler (<code>GData::Auth::OAuth</code>). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.</p>
+
+<p>Here goes:</p>
+
+<ol>
+<li><p>The <code>GData::Auth::OAuth</code> only pulled out GET params from the URL, not POST params in the request body. POST params need to be sorted alongside the OAuth parameters when creating the signature base, so this immediately made my signatures invalid.</p>
+
+<p> I saw a couple causes for this in other libraries:</p>
+
 <ul>
-<li>designing for GET and then exposing a convenience POST method as&nbsp;<span style="">an afterthought (without looking at the body params)</span></li>
-<li><span style="">one person wrote the HTTP client, another wrote the OAuth signer, </span><span style="">and a third wrote the Fusion Tables library or GData extension, and a </span><span style="">corner case got missed (or callers can sign requests before a body is </span><span style="">even defined)</span></li>
+<li>designing for GET and then exposing a convenience POST method as&nbsp;an afterthought (without looking at the body params)</li>
+<li>one person wrote the HTTP client, another wrote the OAuth signer, and a third wrote the Fusion Tables library or GData extension, and a corner case got missed (or callers can sign requests before a body is even defined)</li>
 </ul>
-<p><span style="">2. Most language built-in URI encoders are designed for <a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1">x-www-form-urlencoded</a>, with spaces as plus characters. OAuth wants</span> <span style="">everything UTF-8, ie U+0020 or %20 for space. The confusing part for Fusion Tables is that this works in GET requests: <a href="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1">select+*+from+317391+limit+1</a></span></p>
-<p><span style=""><a href="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1"></a></span><span style="">.. but that space encoding won&#8217;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&#8217;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.</span></p>
-<p><span style="">Finally, if it helps anyone, here&#8217;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:</span></p>
-<p><span style=""><span style="font-family: arial, sans-serif; font-size: 12px;">POST&amp;http%3A%2F%2F<a href="http://www.google.com/url?sa=D&amp;q=www.google.com%252Ffusiontables%252Fapi" rel="nofollow" target="_blank" style="color: #0000cc;">www.google.com%2Ffusiontables%2Fapi</a>&nbsp;<br />%2Fquery&amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce&nbsp;<br />%3D75556368%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp&nbsp;<br />%3D1305155510%26oauth_token&nbsp;<br />%3D1%252F98y2rqyfdfhuaiheworh327rahyADYSAIYuioydadio%26oauth_version&nbsp;<br />%3D1.0%26sql%3DCREATE%2520TABLE%2520%2527data.csv&nbsp;<br />%2527%2520%2528%2527col2%2527%253A%2520STRING%252C%2527col3%2527%253A&nbsp;<br />%2520STRING%252C%2527col1%2527%253A%2520STRING%2529</span></span></p>
-<p><span style="">that signature string is for the param:</span></p>
-<p><span style="font-family: arial, sans-serif; font-size: 12px;">sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A&nbsp;<br />+STRING%2C%27col1%27%3A+STRING%29</span></p>
-<p><span style="">I&#8217;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.</span></p></div>
+</li>
+<li><p>Most language built-in URI encoders are designed for <a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1">x-www-form-urlencoded</a>, with spaces as plus characters. OAuth wants everything UTF-8, ie <code>U+0020</code> or <code>%20</code> for space. The confusing part for Fusion Tables is that this works in GET requests: <a href="" title="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1">select+*+from+317391+limit+1</a></p>
+
+<p> .. but that space encoding won&#8217;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&#8217;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.</p></li>
+</ol>
+
+
+<p>Finally, if it helps anyone, here&#8217;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:</p>
+
+<pre><code>POST&amp;http%3A%2F%2Fwww.google.com%2Ffusiontables%2Fapi 
+%2Fquery&amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce 
+%3D75556368%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp 
+%3D1305155510%26oauth_token 
+%3D1%252F98y2rqyfdfhuaiheworh327rahyADYSAIYuioydadio%26oauth_version 
+%3D1.0%26sql%3DCREATE%2520TABLE%2520%2527data.csv 
+%2527%2520%2528%2527col2%2527%253A%2520STRING%252C%2527col3%2527%253A 
+%2520STRING%252C%2527col1%2527%253A%2520STRING%2529
+</code></pre>
+
+<p>that signature string is for the param:</p>
+
+<pre><code>sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A+STRING%2C%27col1%27%3A+STRING%29
+</code></pre>
+
+<p>I&#8217;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.</p>
+</div>
 
 
   <footer>

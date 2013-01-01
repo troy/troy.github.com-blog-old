@@ -11,8 +11,7 @@
   <title>Towards BPM-based "Exercise Radio" Stations - Troy Davis, Seattle</title>
 
   
-  <meta name="description" content="Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.
-The closest are &hellip;">
+  <meta name="description" content="Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas. The closest are &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -133,16 +132,6 @@ The closest are &hellip;">
 </section>
         </aside>    
   	</div>
-    
-    
-
-    <header class="twelve columns" role="banner">
-    
-<hgroup>
-  <h1>Inputs & Outputs</h1>
-</hgroup>
-
-    </header>
 
     
 
@@ -173,16 +162,33 @@ The closest are &hellip;">
     
 
 
-<div class="entry-content"><p>Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow.  A couple ideas.</p>
-<p><!--more-->The closest are <a href="http://developer.echonest.com/">Echo Nest&#8217;s API</a> (get_tempo) and <a href="http://www.last.fm/api">Last.fm&#8217;s API</a> (Track.getInfo).  Echo Nest&#8217;s requires uploading the song audio data (which I don&#8217;t have). Last.fm&#8217;s can be queried with metadata (artist+song name) yet doesn&#8217;t provide BPM.  This NYTimes <a href="http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/">Gadgetwise blog post</a> has local file (MP3) and podcast options.</p>
-<p>I posted this to the <a href="http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730">Last.fm Web Services</a> discussion group, and <a href="http://twitter.com/troyd/status/4352076414">asked on Twitter</a>.  I&#8217;ll update this post if something comes of it.</p>
-<blockquote>I prefer to exercise to music, and it&#8217;s much nicer when the beats per minute matches what I&#8217;m physically doing. I think this could happen 3 ways:  1) Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.  2) Adding BPM as a new radio station &#8220;station type&#8221; (from <a href="http://www.last.fm/api/radio)">http://www.last.fm/api/radio)</a> and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140  3) A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if track.getInfo included BPM.  There&#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: <a href="http://developer.echonest.com/docs/method/get_tempo/">http://developer.echonest.com/docs/method/get_tempo/</a> (but it too needs the bits; it&#8217;s not an existing database).  Mass BPM calculations would be a killer use for Map/Reduce&#8230;</blockquote></div>
+<div class="entry-content"><p>Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.</p>
+
+<p>The closest are <a href="http://developer.echonest.com/">Echo Nest&#8217;s API</a> (<code>get_tempo</code>) and <a href="http://www.last.fm/api">Last.fm&#8217;s</a> API (<code>Track.getInfo</code>). Echo Nest&#8217;s requires uploading the song audio data (which I don&#8217;t have). Last.fm&#8217;s can be queried with metadata (artist+song name) yet doesn&#8217;t provide BPM. This NYTimes <a href="http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/">Gadgetwise blog post</a> has local file (MP3) and podcast options.</p>
+
+<p>I posted this to the <a href="http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730">Last.fm Web Services</a> discussion group, and <a href="http://twitter.com/troyd/status/4352076414">asked on Twitter</a>. I&#8217;ll update this post if something comes of it.</p>
+
+<hr />
+
+<p>I prefer to exercise to music, and it&#8217;s much nicer when the beats per minute matches what I&#8217;m physically doing. I think this could happen 3 ways:</p>
+
+<ol>
+<li><p>Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.</p></li>
+<li><p>Adding BPM as a new radio station &#8220;station type&#8221; (from <a href="http://www.last.fm/api/radio">http://www.last.fm/api/radio</a> and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140</p></li>
+<li><p>A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if <code>track.getInfo</code> included BPM.</p>
+
+<p> There&#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: <a href="http://developer.echonest.com/docs/method/get_tempo/">http://developer.echonest.com/docs/method/get_tempo/</a> (but it too needs the bits; it&#8217;s not an existing database).</p>
+
+<p> Mass BPM calculations would be a killer use for Map/Reduce.</p></li>
+</ol>
+
+</div>
 
 
   <footer>
     <p class="meta">
       
-        <a class="basic-alignment left" href="/anatomy-of-a-malware-ad-on-nytimes-com/" title="Previous Post: Anatomy of a Malware Ad on NYTimes.com">&laquo; Previous post</a>
+        <a class="basic-alignment left" href="/auction-lifecycle-for-data-geeks/" title="Previous Post: Auction Lifecycle for Data Geeks">&laquo; Previous post</a>
       
       
         <a class="basic-alignment right" href="/opinions-from-mark-anderson-of-strategic-news/" title="next Post: Opinions from Mark Anderson of Strategic News Service (SNS)">Next post &raquo;</a>
