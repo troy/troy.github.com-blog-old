@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GMail Wishlist
+title: GMail wishlist
 date: Aug 9, 2009
 ---
 

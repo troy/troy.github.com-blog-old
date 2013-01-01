@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Short, fast micro-whois
-date: Mar 21, 2008
+date: Mar 21, 2009
 ---
 
 90% of my whois queries are to check whether a domain name is registered, where I don't need any details. Here's a Bash function to check domain availability; type one character, get one character.
