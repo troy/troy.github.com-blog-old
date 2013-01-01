@@ -6,7 +6,7 @@ date: Aug 19, 2012
 
 My [SlimFold Wallet](http://slimfoldwallet.com/) arrived in Bangkok. Here's a photo of mine when loaded.
 
-![Photo of SlimFold Tyvek Wallet in use](http://images.yort.com/blog/slimfold-tyvek-wallet.jpg)
+![Photo of SlimFold Tyvek Wallet in use](http://images.yort.com/blog/slimfold-tyvek-wallet-1.jpg)
 
 After five days - and two walks through monsoonal downpours - I highly recommend it. A few smart UX choices make all the difference.
 

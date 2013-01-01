@@ -46,7 +46,15 @@ section#twitter {
 }
 
 fieldset[role="search"] input {
-  width: 125px;
-  margin-top: -17px;
-  margin-bottom: 30px;
+  width: 8em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+div.entry-content ul {
+  list-style: disc inside none;
+}
+
+div.entry-content ul li {
+  padding-left: 1em;
 }

@@ -17,14 +17,12 @@
           {% include other.html %}
         </aside>    
   	</div>
-    
-    {% unless page.url contains '/blog/' %}
 
+    {% if page.url == '/index.html' %}
     <header class="twelve columns" role="banner">
     {% include header.html %}
     </header>
-
-    {% endunless %}
+    {% endif %}
 
   	<div id="main" class="twelve columns">
 	    <div id="content">
