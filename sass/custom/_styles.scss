@@ -44,3 +44,9 @@ ul#tweets {
 section#twitter {
   margin-bottom: -15px;
 }
+
+fieldset[role="search"] input {
+  width: 125px;
+  margin-top: -17px;
+  margin-bottom: 30px;
+}
