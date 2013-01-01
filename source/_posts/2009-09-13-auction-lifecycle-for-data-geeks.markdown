@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auction Lifecycle for Data Geeks
+title: Auction lifecycle for data geeks
 date: Sep 13, 2009
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Self-Signed IMAP Certs on iPhone
+title: Self-signed IMAP certs on iPhone
 date: Aug 13, 2008
 ---
 

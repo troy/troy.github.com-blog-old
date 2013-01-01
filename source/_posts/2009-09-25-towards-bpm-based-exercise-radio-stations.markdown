@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Towards BPM-based "Exercise Radio" Stations
+title: Towards BPM-based "Exercise Radio" stations
 date: Sep 25, 2009
 ---
 

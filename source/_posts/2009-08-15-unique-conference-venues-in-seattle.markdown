@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unique Conference Venues in Seattle
+title: Unique conference venues in Seattle
 date: Aug 15, 2009
 ---
 
