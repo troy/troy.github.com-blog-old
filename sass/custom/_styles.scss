@@ -21,9 +21,18 @@ sub {
 }
 
 // troy
+body {
+  background: #fff;
+}
+
+time .month, time .day, time .year {
+  color: #666 !important;
+  font-size: 80%;
+}
+
 section {
   border-top: 2px solid #444;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-top: 10px;
   h2 {
     color: #333;
@@ -31,10 +40,6 @@ section {
     letter-spacing: -1px;
     line-height: 1em;  
   }
-}
-
-p.credit span {
-  font-size: 50%
 }
 
 ul#tweets {
@@ -57,4 +62,8 @@ div.entry-content ul {
 
 div.entry-content ul li {
   padding-left: 1em;
+}
+
+aside.sidebar ul#recent_posts a {
+  font-size: 80%;
 }
