@@ -24,7 +24,7 @@ The first car-sharing service to pull it off will have an amazing competitive ad
 
 * * *
 
-Hi <Zipcar executive>,
+Hi \<Zipcar executive\>,
 
 Hope this finds you well. I signed up for Zipcar and found that it didn't have the killer feature for me: the ability to return a car to a different lot, even if that spot had to be selected at reservation time. [This tweet](http://twitter.com/troyd/status/3625900233) has a bit more.
 
