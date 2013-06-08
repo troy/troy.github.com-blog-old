@@ -14,6 +14,7 @@ My responses boil down to 3 things:
 
 1. demonstrating that I understand what the user asked for, whether it’s by restating it in my own words or talking through the pros and cons of what they propose.
 2. either clarifying what they’re asking for and why (the back story that led to needing it) or when none is needed needed (like because the request stands alone or we’ve already thought about it), sharing our thought process about it rather than just an answer.
+
     This is by far the most important part because it means the user is a peer in the process. They should have the opportunity to explain why I’m (we’re) wrong, just like a co-worker of mine would. if I’m suggesting some other way to solve the same problem, it forces me to talk through (justify) its pros and cons clearly.
 3. providing a clear resolution, whether it’s that nothing will be done, that’s the use is on our radar and I see the value but it’s not likely to happen anytime soon, or that we love it enough that it’s likely really soon. (We don’t do a roadmap or anything like that, and I think they – and committing to them – do more damage than good.)
 
