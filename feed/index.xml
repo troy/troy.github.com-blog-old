@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	
+	<title type="text" xml:lang="en"></title>
+	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
+  <link type="text" href="http://troy.yort.com/" rel="alternate"/>
+	<updated>2013-06-23T16:24:27-07:00</updated>
+  <id>http://troy.yort.com/</id>
+  <author>
+    <name></name>
+  </author>
+  <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
+  <updated>2013-06-23T16:24:27-07:00</updated>
+	
+	
+	<entry>
+		<title>Taco: Basecamp to Zendesk, all your tasks on one place</title>
+    <link href="http://troy.yort.com/taco-basecamp-to-zendesk/"/>
+		<updated>2013-06-22T16:00:00-07:00</updated>
+    <id>http://troy.yort.com/taco-basecamp-to-zendesk</id>
+    <content type="html">&lt;p&gt;My take on productivity, &lt;a href=&quot;http://tacoapp.com/&quot;&gt;Taco&lt;/a&gt;, is now on Kickstarter: &lt;a href=&quot;http://www.kickstarter.com/projects/tacoapp/taco-basecamp-to-zendesk-all-your-tasks-in-one-pla&quot;&gt;Taco: Basecamp to Zendesk, all your tasks in one place&lt;/a&gt;. As I told friends:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;&amp;#8220;Most of you know I run Papertrail and that it takes all of my time
+and then some. I&amp;#8217;ve stayed sane because of a unique Web app that I&amp;#8217;ve
+been prototyping and using daily for 23 months.&amp;#8221;&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Last week that secret weapon took on a life of its own when Taco launched &lt;a href=&quot;http://www.kickstarter.com/projects/tacoapp/taco-basecamp-to-zendesk-all-your-tasks-in-one-pla&quot;&gt;on Kickstarter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Even the creator of Rails took notice:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Nice kickstarter for a unified todolist that brings content together from Basecamp, Github, Google, and others: &lt;a href=&quot;http://t.co/To88EwsXh6&quot;&gt;http://t.co/To88EwsXh6&lt;/a&gt;&lt;/p&gt;&amp;mdash; DHH (@dhh) &lt;a href=&quot;https://twitter.com/dhh/statuses/347280173999202304&quot;&gt;June 19, 2013&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/scripts&gt;
+
+Take a look and see whether it fits the way you work. I look forward to bringing you the same fine productivity I&#8217;ve enjoyed for 2 years.
+
+</content>
+	</entry>
+	
+	<entry>
+		<title>The elements of a great customer support reply</title>
+    <link href="http://troy.yort.com/the-elements-of-a-great-customer-support-reply/"/>
+		<updated>2013-04-03T15:39:00-07:00</updated>
+    <id>http://troy.yort.com/the-elements-of-a-great-customer-support-reply</id>
+    <content type="html">&lt;p&gt;I wrote a comment reply on &amp;#8221;&lt;a href=&quot;http://supportops.co/a-better-feature-request-email/#comment-170&quot;&gt;A Better Feature Request Email&lt;/a&gt;&amp;#8221; (at &lt;a href=&quot;http://supportops.co&quot;&gt;SupportOps&lt;/a&gt;) that covers the elements which I think go into a great customer support reply. I also rewrote an example reply from the blog post. My comment is reposted below or you can read &lt;a href=&quot;http://supportops.co/a-better-feature-request-email/#comment-170&quot;&gt;the thread&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Your reply is absolute gold. I don’t have much to add. I completely agree it’s all about being authentic, whatever authentic is. I particularly love the &amp;#8220;You company should be customer inspired not customer driven.&amp;#8221; I can’t imagine any better way to state it.&lt;/p&gt;
+
+&lt;p&gt;My responses boil down to 3 things:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;demonstrating that I understand what the user asked for, whether it’s by restating it in my own words or talking through the pros and cons of what they propose.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;either clarifying what they’re asking for and why (the back story that led to needing it) or when none is needed needed (like because the request stands alone or we’ve already thought about it), sharing our thought process about it rather than just an answer.&lt;/p&gt;
+
+&lt;p&gt; This is by far the most important part because it means the user is a peer in the process. They should have the opportunity to explain why I’m (we’re) wrong, just like a co-worker of mine would. if I’m suggesting some other way to solve the same problem, it forces me to talk through (justify) its pros and cons clearly.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;providing a clear resolution, whether it’s that nothing will be done, that’s the use is on our radar and I see the value but it’s not likely to happen anytime soon, or that we love it enough that it’s likely really soon. (We don’t do a roadmap or anything like that, and I think they – and committing to them – do more damage than good.)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Now I need to put my keystrokes where my mouth is. For a new user with whom I’ve never interacted, I might write something like the reply below. I made up the facts to show a range of responses, though I may only have one. For questions which I’d answered before, the meat would be based on an existing reply. I’d adapt it to the recipient’s apparent interest – is it more &amp;#8220;I want..&amp;#8221; or &amp;#8220;You guys should..&amp;#8221; – and technical ability.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Hi James,&lt;/p&gt;
+
+&lt;p&gt;Thanks for trying SupportOps and moreover, for caring enough about it to spend the time to send this suggestion. I appreciate it.&lt;/p&gt;
+
+&lt;p&gt;There’s not a way to login with Facebook or Twitter credentials. I can understand why you’d want to, though, especially if you’ve standardized on one of them as your login service at other sites. Right now I have so many passwords that Keychain or LastPass are the only way to keep them all.&lt;/p&gt;
+
+&lt;p&gt;We do one thing that’s made logging in way less tedious for me: SupportOps’ login time (session duration) is 4 weeks. If you’ve checked “Keep me logged in,” you should not see a login prompt more than once a month.&lt;/p&gt;
+
+&lt;p&gt;Based on your email, I think we’ll improve it by resetting the timer on every page view. I know that yet another password isn’t great, but at least you’d almost never see a login prompt. I can’t commit to it, so I’ll let you know if and when that goes live.&lt;/p&gt;
+
+&lt;p&gt;Abstractly, I’d like to add third-party authentication. would probably be what we used, since it’s most related to SupportOps. That said, basically all of our dev resources are going into the core service right now. might be used by 20% of SupportCo users, and we’re not done with big changes that improve the service for almost everyone.&lt;/p&gt;
+
+&lt;p&gt;(I might also write: “One thing I’ve learned is that aside from the actual integration, providing a great user flow with third-party services is a lot harder than it seems. http://viget.com/extend/facebook-connect-ux-challenges explains more. I think maintaining a great UX would mean we’d need to invest the time to get it right.” -Troy)&lt;/p&gt;
+
+&lt;p&gt;I’d welcome feedback here, and thanks again for giving me the chance to talk through our current thinking. if you have any other questions, just let me know.&lt;/p&gt;
+
+&lt;p&gt;Troy&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Why Web apps suck at invoices (and vice versa)</title>
+    <link href="http://troy.yort.com/why-web-apps-suck-at-invoices-and-vice-versa/"/>
+		<updated>2012-09-04T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/why-web-apps-suck-at-invoices-and-vice-versa</id>
+    <content type="html">&lt;p&gt;On the &lt;a href=&quot;https://scoutapp.com/&quot;&gt;Scout&lt;/a&gt; support &lt;a href=&quot;https://groups.google.com/group/scoutapp&quot;&gt;mailing list&lt;/a&gt;, a prospective customer asked to receive an invoice instead of the typical credit card payment. I have some unique experience with that, so I posted the comment below as food for thought (see &lt;a href=&quot;https://groups.google.com/group/scoutapp/browse_thread/thread/660f3ade8bcd5928/e3dce7fb91a7d1b2?#e3dce7fb91a7d1b2&quot;&gt;thread&lt;/a&gt;).&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;This is &amp;#8220;Why Web apps suck at invoices&amp;#8221; and &amp;#8220;Why invoices suck for Web apps,&amp;#8221; all rolled into one. Next time someone requests an invoice, send them here.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Subject: invoice billing (was: Re: Fees for Rails Apps..)&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m not affiliated with Scout except as a customer, but I run an unrelated subscription Web service that sells to businesses and I&amp;#8217;m occasionally asked the same question. It sounds like a really simple request, so I can understand the frustration at not being able to accommodate it.&lt;/p&gt;
+
+&lt;p&gt;I wanted to add some color about how challenging it is to provide invoices. I&amp;#8217;m speaking only about my experience, not Scout&amp;#8217;s. Here&amp;#8217;s why this is often a much bigger pain than it looks like, and is often actually a disadvantage to both parties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Everything is a one-off. Almost everyone who wants an invoice also needs some other customization: the delivery process, the followup, the formatting (&amp;#8220;We&amp;#8217;re in Germany and our government requires you to tell us who we are&amp;#8221;), whatever. Aside from tracking those one-offs, they makes it harder to solve or automate the other issues below. Which leads me to..&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Everything requires a human. If you don&amp;#8217;t pay, a human has to email you, and it will almost never be worth the time to automate that process (especially in light of customer-specific processes above). Even something as simple as a credit becomes a time sink. A human needs to figure out how much is due (best case, transferring the amount from a summary email that a developer had to implement; worst case, calculating it manually); figure out how to get you the money (edit a future invoice, reissue an existing invoice, or cut you a check); deliver that credit, probably to someone in accounting who doesn&amp;#8217;t know anything about what&amp;#8217;s being purchased; process the payment; and come back a few weeks later to verify it was paid.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Someone has to go to the PO Box and then to the bank, and it needs to happen often enough that you don&amp;#8217;t look like an idiot for depositing a 2 month old check.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reconciliation is harder. Accounting typically needs an entry for every individual customer payment, rather than one per day per credit card or however other transactions are handled.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Having an elastic payment method is really awesome, and our service and many others bake that assumption into our UX decisions and business processes. By &amp;#8220;elastic&amp;#8221; I mean that the amount isn&amp;#8217;t set in stone a month before the service is provided. What should happen if you add a new host that you didn&amp;#8217;t plan for? Does the vendor extend credit, or do they issue an invoice with a pro-rated line item and make you wait until it&amp;#8217;s paid? How about 100 new hosts? Before long, the customer is predicting and committing to a certain amount of usage, quite possibly just to make billing simpler, and we&amp;#8217;ve undone 15 years of software-as-a-service progress.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;All of this distracts from making the product better. Whether a company has 2 people or 100, the resources are finite, and at some level any other work is in place of product improvements. No Web service will ever be great at invoicing, most will never be good at it, and not one will ever enjoy it. That &amp;#8220;morale debt&amp;#8221; accumulates.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The overhead will eventually be reflected in prices, and it&amp;#8217;s way higher than the ~3% for credit cards. This thread started as a question about fees. One reason that Scout is such a good value is that their decisions mostly optimize for practical value. Building off its usage-based fees, would you be willing to pay a $25/invoice fee, and/or have a $500/invoice minimum? From my own experience, that&amp;#8217;s the absolute minimum it takes to make this practical, and I&amp;#8217;m probably still way too low.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;None of this is rocket science, it just takes time, and that&amp;#8217;s why invoices suck for typical business subscription services. I consider it a positive that Scout is savvy enough to focus on what they&amp;#8217;re good at.&lt;/p&gt;
+
+&lt;p&gt;Finally, a potential solution: get a company card that&amp;#8217;s only used for recurring purchases like this. You&amp;#8217;re freed from monthly employee expense reports and accounting gains authoritative information about the transaction, since it&amp;#8217;s essentially their card.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Examining borrower privacy in peer-to-peer lending</title>
+    <link href="http://troy.yort.com/borrower-privacy-in-peer-to-peer-lending/"/>
+		<updated>2012-08-21T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/borrower-privacy-in-peer-to-peer-lending</id>
+    <content type="html">&lt;p&gt;I just &lt;a href=&quot;https://twitter.com/troyd/status/238085893280395264&quot;&gt;noticed&lt;/a&gt; that the sales reports published by &lt;a href=&quot;http://lendingclub.com/&quot;&gt;Lending Club&lt;/a&gt; contain enough personally-identifiable information (PII) to be, well, personally-identifiable. Per the instructions on their &lt;a href=&quot;http://www.lendingclub.com/public/privacy-policy.action&quot;&gt;privacy policy&lt;/a&gt;, I emailed this to the privacy role account.&lt;/p&gt;
+
+&lt;p&gt;As a point of reference, here&amp;#8217;s the equivalent &lt;a href=&quot;http://www.prosper.com/prospectus/&quot;&gt;prospectuses&lt;/a&gt; and an example &lt;a href=&quot;http://www.prosper.com/published/sec/sales/2012/sales_20120820-0900.htm&quot;&gt;sales report&lt;/a&gt; from Prosper. Prosper doesn&amp;#8217;t seem to publicly disclose a borrower&amp;#8217;s employer or city, only an job category and a state. Prosper&amp;#8217;s freeform loan descriptions are more detailed and the borrower sometimes refers to a location, but the aggregate information is still not generally enough to identify the borrower, and never is unless the borrower over-discloses. I am not affiliated with either service.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s the email to Lending Club (August 21, 2012) and their reply (September 6, 2012):&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m a prospective lender and I just skimmed the &lt;a href=&quot;https://www.lendingclub.com/info/prospectus.action&quot;&gt;prospectuses&lt;/a&gt; and the &lt;a href=&quot;https://www.lendingclub.com/info/sales-reports.action&quot;&gt;sales report&lt;/a&gt; filings, then I read them, the &lt;a href=&quot;http://www.lendingclub.com/public/privacy-policy.action&quot;&gt;privacy policy&lt;/a&gt;, and the &lt;a href=&quot;http://www.lendingclub.com/kb/index.php?CategoryID=19&quot;&gt;privacy section&lt;/a&gt; of Lending Club&amp;#8217;s knowledge base in more detail. The privacy policy contains two material discrepancies, one of which I believe is substantial. I explain the discrepancies in detail below.&lt;/p&gt;
+
+&lt;p&gt;I believe the fix is relatively simple: the new borrower signup process, the privacy policy, and the knowledge base privacy section should all contain visible, obvious links to the sales reports. Right now they&amp;#8217;re buried, and the privacy policy spends lots of words to (incompletely) describe how much will be disclosed. The borrower should be shown the actual information which will be disclosed about them, using the existing sales reports as an example. I believe this description explains the disclosure much more clearly:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;If your loan is funded, Lending Club must publicly disclose certain information about you as part of public SEC filings. This includes employer, year hired, city, income, loan reason, and credit information. &lt;a href=&quot;https://www.lendingclub.com/info/sales-reports.action&quot;&gt;Click here to see examples of Lending Club loan disclosures&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;I&amp;#8217;m spending the time to write all of this down because I want to see peer-to-peer lending and Lending Club succeed, so please let me know if I can clarify anything here. Here&amp;#8217;s more details about the 2 discrepancies:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The information disclosed about borrowers in sales reports is enough to identify many of them individually. Although the information doesn&amp;#8217;t contain a real name, the privacy policy states:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Personal but not personally identifiable information about borrowers is contained in loan listings that can be viewed by all users and is filed with the Securities and Exchange Commission and as such is made publicly available.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt; This is inaccurate. Using the information on Lending Club&amp;#8217;s sales reports, I could personally identify many individual borrowers, and take an educated guess about many more. In some cases this would take a bit of existing information, such as from discovering a loan request from a co-worker based on their listed employer. I can almost guarantee that another employee of Friendship Public Charter School, Reis Law, pair Networks, Fundly, and many other small- and mid-size employers listed on the 2012-08-21 sales report could name the borrower using only information from the report.&lt;/p&gt;
+
+&lt;p&gt; In other cases, the combination of employer, year hired, city, income, and freeform text description is enough for a stranger to identify them using relatively simple Google, LinkedIn, or Facebook searches. For many companies, the combination of those fields is unique throughout the whole company. It&amp;#8217;s often very unique, like because only a few people were hired in a given year. Also, the &amp;#8220;Earliest credit line&amp;#8221; field is often a reasonable proxy for the borrower&amp;#8217;s age, and is at least a minimum age.&lt;/p&gt;
+
+&lt;p&gt; In those cases, a single external corroboration such as a LinkedIn job announcement, a title transfer on BlockShopper, or a Facebook photo posted to the company&amp;#8217;s page could be enough to attach a name.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The credit score information is both public and disclosed alongside other information which is personally identifiable. The data disclosure section says:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Qualified Lending Club investors will also see certain credit data collected from or calculated based on your credit bureau file. It is necessary to allow prospective investors to see this information as they evaluate your loan request. The information displayed to investors includes a credit profile section and a credit history section. As noted above, this information is also contained anonymously in loan data files available on the statistics page.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt; It goes on to define the fields disclosed as part of the credit profile and the credit history.&lt;/p&gt;
+
+&lt;p&gt; It doesn&amp;#8217;t say that the credit information is disclosed alongside lots of other personal data. Even when that information is not enough to be personally-identifiable (discrepancy #1 above), it&amp;#8217;s public and visible to anyone. It&amp;#8217;s not visible only to &amp;#8220;Qualified Lending Club investors,&amp;#8221; and perhaps more importantly, the disclosure is not on a loan-by-loan basis. In reading the paragraph above, I would interpret it to say that my information will be temporarily disclosed to all qualified lenders (prospective investors) while my loan is being funded, then will be only shown to those lenders who actually funded my loan. That isn&amp;#8217;t the case.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Thanks,&lt;/p&gt;
+
+&lt;p&gt;Troy&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Reply from Mark D&amp;#8217;Arrigo, Associate Counsel, Lending Club:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Mr. Davis:&lt;/p&gt;
+
+&lt;p&gt;Thank you for your email regarding the protection of personally identifiable information on the Lending Club website.  Lending Club takes consumer privacy seriously and has implemented procedures and policies designed to protect consumer information.  We appreciate your detailed feedback and have discussed your suggestions regarding our Privacy Policy and disclosures to members.  However, we believe that our Privacy Policy is consistent and does not contain material discrepancies.&lt;/p&gt;
+
+&lt;p&gt;As part of our consumer privacy efforts, Lending Club informs applicants regarding the type of information that will be disclosed to the public both in the Privacy Policy itself and throughout the application via the use of tool tips, a pop-up that notifies the applicant that information placed into certain fields is made available to the public.  We also review loan titles and free-form answers provided by applicants in an attempt to limit the exposure of personally identifiable information that applicants may provide outside the marked application fields.  Lastly, credit information is only available for viewing by Lending Club members and not available to non-members merely perusing the site.  As you noted, from the information available on our site, members such as yourself can view the information about borrowers that Lending Club must file with the Securities and Exchange Commission.  We do not agree, however, that this constitutes &amp;#8220;personally identifiable&amp;#8221; information.  Your letter indicates that you were only able to take an &amp;#8220;educated guess&amp;#8221; about the identity of some borrowers using information you gathered from other sources.  The fact that certain limited information regarding borrowers is viewable through the Lending Club website &amp;#8211; which, again, Lending Club flags as publicly disclosed in the application itself and in our Privacy Policy &amp;#8211; and that similar information may also be available through external sources that contain additional information does not, in our view, indicate that Lending Club displays personally identifiable information or that our Privacy Policy contains material discrepancies.  We also do not believe that the manner in which certain personal information is presented on the website is inconsistent with our Privacy Policy or other consumer protection initiatives.&lt;/p&gt;
+
+&lt;p&gt;Although we disagree with your conclusions and interpretations, we appreciate your email and thank you for your feedback.  We periodically review our consumer privacy policies and processes and will take your specific suggestions under consideration as part of that review process.  Thank you very much for your time and your interest in Lending Club.&lt;/p&gt;
+
+&lt;p&gt;Sincerely yours,&lt;/p&gt;
+
+&lt;p&gt;Mark D&amp;#8217;Arrigo&lt;/p&gt;
+
+&lt;p&gt;Associate Counsel&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A few days with the SlimFold Tyvek Wallet</title>
+    <link href="http://troy.yort.com/a-few-days-with-the-slimfold-tyvek-wallet/"/>
+		<updated>2012-08-19T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/a-few-days-with-the-slimfold-tyvek-wallet</id>
+    <content type="html">&lt;p&gt;My &lt;a href=&quot;http://slimfoldwallet.com/&quot;&gt;SlimFold Wallet&lt;/a&gt; arrived in Bangkok. Here&amp;#8217;s a photo of mine when loaded.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/slimfold-tyvek-wallet-1.jpg&quot; alt=&quot;Photo of SlimFold Tyvek Wallet in use&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After five days - and two walks through monsoonal downpours - I highly recommend it. A few smart UX choices make all the difference.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Each section actually holds two cards. In the photo, you can see both card pockets on one of the sections. There&amp;#8217;s two more sections (four pockets) inside. It doesn&amp;#8217;t try to make a statement about how much crap I should carry.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cards are held firmly because the Tyvek isn&amp;#8217;t pre-streched. Each pocket retains whatever capacity you stretch it to. (My tendency to RTFM/Skim TFM paid off here: the instructions warn not to ever stuff two cards into one pocket.)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;They chose a good compromise between thickness, capacity, and physical size. It&amp;#8217;s slightly larger than a typical trifold, and in return, can hold 10 cards and still stay hipster thin.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The ID pocket is secured by a folding tab, and more remarkably, it actually stays closed.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The creator notes that he made and tested over 100 prototypes, and it shows. It&amp;#8217;s available in Plutonian Gray, Steal Me Orange, and now Everyone Asks For It Black.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Cost analysis of King County Bike Share Business Plan</title>
+    <link href="http://troy.yort.com/cost-analysis-of-king-county-bike-share-busin/"/>
+		<updated>2012-08-09T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/cost-analysis-of-king-county-bike-share-busin</id>
+    <content type="html">&lt;p&gt;I posted &lt;a href=&quot;http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/#comment-168712&quot;&gt;a comment&lt;/a&gt; on this Seattle Bike Blog &lt;a href=&quot;http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/&quot;&gt;post&lt;/a&gt; with a basic cost analysis of the King County Bike Share Business Plan (&lt;a href=&quot;http://pugetsoundbikeshare.org/&quot;&gt;site&lt;/a&gt;, &lt;a href=&quot;http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf&quot;&gt;PDF&lt;/a&gt;). This is the text of my comment.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;At scale, the project forecasts 2200 bikes supported by an annual operating (not build out) cost of $4.6 million. That&amp;#8217;s $2090/bike. It forecasts 2.68 million trips per year at an average of 2 miles/trip. If those numbers are accurate, a trip would cost $1.72. A mile, $0.86.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t have a strong reaction to those costs. I would gladly pay $2/trip myself as an entirely usage-based fee. The forecasted cost is in line with Metro and Sound Transit fares. While it&amp;#8217;s lower than their costs per boarding (for Metro, $3.70 in 2008; &lt;a href=&quot;http://en.wikipedia.org/wiki/King_County_Metro#Operating_Costs&quot;&gt;source&lt;/a&gt;), the shorter, denser routes are much cheaper to deliver than the system-wide average.&lt;/p&gt;
+
+&lt;p&gt;The data to compare route-level stats doesn&amp;#8217;t exist. Shorter, denser routes are the closest comparables to phase 1. However, one could see bike sharing allowing the last mile of trips that would have otherwise been taken by car (and instead use bus or train). Not enough data to know.&lt;/p&gt;
+
+&lt;p&gt;My own conclusion: the costs are definitely &amp;#8220;in the zone&amp;#8221; for transit and might be a little cheaper than existing options.&lt;/p&gt;
+
+&lt;p&gt;Crucially, the total cost is incredibly small compared to any other transit implementation, and thereby, much lower risk. As a point of reference, Metro received $37.5 million to add 2 RapidRide Bus Rapid Transit (BRT) routes (&lt;a href=&quot;http://www.dot.gov/affairs/2012/fta3812.html&quot;&gt;source&lt;/a&gt;). Even excluding all other revenue sources, the total build out costs of all phases are equivalent to one BRT route.&lt;/p&gt;
+
+&lt;p&gt;As another perspective, the 4.3 mile Northgate light rail extension has a lifetime budget of $2.1 billion (70x-100x more than the total 5 year projected cost), and the South Lake Union Streetcar was $56.4 million (&lt;a href=&quot;http://en.wikipedia.org/wiki/South_Lake_Union_Streetcar&quot;&gt;source&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t mean to provide these as comparables. For me, the lower cost just means the barrier for my endorsement is much lower. In urban transit, $20 million is an experiment. In this case, the &amp;#8220;experiment&amp;#8221; happens to fund the whole system.&lt;/p&gt;
+
+&lt;p&gt;Notes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;relies on internally-created usage forecasts. While the forecasted 2.4 trips/bike in year 1 is within the range seen in other cities, that range is very broad (0.9 to 3.7). As you&amp;#8217;d expect of a transit system, usage is the key to a low cost per trip.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ignores the $14.4 million in build out expenses because they do seem to be one-time (stations) or long depreciation (vending machines), and because the report notes &amp;#8220;presenting sponsorship is expected to cover all but $2.15 [of] .. $14.4 million.&amp;#8221; The unfunded 2.15 million is not a material impact.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Source: King County &lt;a href=&quot;http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf&quot;&gt;Bike Share Business Plan&lt;/a&gt; (2012-01-27), pages 26-27, 36.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Making 2-factor authentication grow faster than linear</title>
+    <link href="http://troy.yort.com/making-2-factor-authentication-viral/"/>
+		<updated>2012-07-16T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/making-2-factor-authentication-viral</id>
+    <content type="html">&lt;p&gt;I&amp;#8217;m doing what I can to spread the gospel of 2-factor authentication. My hope is that it will be adopted at a faster-than-linear rate, ideally much faster.&lt;/p&gt;
+
+&lt;p&gt;2FA isn&amp;#8217;t a silver bullet, but it&amp;#8217;s a gigantic improvement for relatively little effort. The elements that prevented mainstream adoption - key fobs, constantly re-entering keys - are not present in modern implementations like Google&amp;#8217;s. With most of the usability tradeoffs eliminated, we&amp;#8217;re left with a fairly typical sales problem (and of course, more operators implementing Google&amp;#8217;s 2FA or an equally elegant alternative).&lt;/p&gt;
+
+&lt;p&gt;For my part, &amp;#8220;doing what I can&amp;#8221; means:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;requiring 2FA on systems I maintain, at least where SSH keys aren&amp;#8217;t practical or aren&amp;#8217;t sufficient&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sharing my success stories, especially how I solved common objections to 2FA (it&amp;#8217;s annoying to use; I only have a few users; it&amp;#8217;s a pain to setup)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;helping others find accurate, deep descriptions of current threats (like &lt;a href=&quot;http://krebsonsecurity.com/&quot;&gt;Krebs on Security&lt;/a&gt;) so they treat malware and botnets (and thus keystroke logging) as an endemic threat&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;I think with enough satisfied users as advocates, 2FA could grow exponentially for a while (albeit with a &lt;a href=&quot;http://www.wolframalpha.com/input/?i=1.03%5Ex&quot;&gt;tiny base&lt;/a&gt; today). Google has basically turned 2FA into an impulse decision with a simple pitch: &amp;#8220;Have 5 minutes? Use wifi hotspots? Protect your email from hackers (free).&amp;#8221; I&amp;#8217;d settle for &lt;a href=&quot;http://en.wikipedia.org/wiki/Logistic_function&quot;&gt;logistic growth&lt;/a&gt; up to something short of 100% adoption, though I&amp;#8217;m not sure a hard &lt;a href=&quot;http://20bits.com/article/three-myths-of-viral-growth&quot;&gt;carrying capacity&lt;/a&gt; exists. Future incremental usability improvements should make it palatable for more people.&lt;/p&gt;
+
+&lt;p&gt;Sales starts with awareness: that it exists, that it&amp;#8217;s already being used by seemingly-sane people to solve similar problems (indeed, &lt;a href=&quot;http://en.wikipedia.org/wiki/Social_proof&quot;&gt;social proof&lt;/a&gt;), and that it stands up to daily production use. Here&amp;#8217;s an email that I sent to the Seattle Internet Exchange &lt;a href=&quot;http://www.seattleix.net/faq.htm&quot;&gt;chat&lt;/a&gt; mailing list.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;To: chat@&lt;/p&gt;
+
+&lt;p&gt;Passing this on in case anyone else could use flexible, painless, free 2-factor auth for servers and network devices.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been testing Google&amp;#8217;s 2-factor authentication via a &lt;a href=&quot;http://code.google.com/p/google-authenticator/wiki/PamModuleInstructions&quot;&gt;PAM&lt;/a&gt;. It&amp;#8217;s working beautifully. Google has iOS, Android, and Blackberry one-time password &lt;a href=&quot;http://support.google.com/accounts/bin/answer.py?hl=en&amp;amp;amp;answer=1066447&quot;&gt;apps&lt;/a&gt;. Ubuntu and Debian package the module as libpam-google-authenticator. During setup, it spits out the key as an ASCII QR code that the mobile apps read.&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;#8217;t tried having RADIUS use google-authenticator&amp;#8217;s PAM, but it seems like it would work. Other people talk about using it: &lt;a href=&quot;http://code.google.com/p/google-authenticator/issues/detail?id=145&quot;&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;By default, SSH with challenge/response prompts for the challenge first (with a prompt of its own), but PAM supports a &lt;a href=&quot;http://code.google.com/p/google-authenticator/issues/detail?id=39&quot;&gt;concatenated mode&lt;/a&gt; where the OTP is prepended to the static secret. This should play well with network devices that present a single password prompt. Google&amp;#8217;s module validates the OTP, then passes the secret on to the next module as usual.&lt;/p&gt;
+
+&lt;p&gt;Also, SSH authorized keys still work (assuming the SSH config permits them), so you can decide how annoying one-time passwords will be.&lt;/p&gt;
+
+&lt;p&gt;Finally, worth noting that this setup is completely separate from having a Google account. An account isn&amp;#8217;t required. This setup uses Google&amp;#8217;s mobile app implementation of &lt;a href=&quot;http://tools.ietf.org/html/rfc6238&quot;&gt;time-based one-time passwords&lt;/a&gt;, the app&amp;#8217;s ability to import your own key(s), and a PAM that they maintain, all of which are &lt;a href=&quot;http://code.google.com/p/google-authenticator/source/browse&quot;&gt;OSS&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Answering &#8220;What one thing should Apple work on?&#8221;</title>
+    <link href="http://troy.yort.com/answering-what-one-thing-should-apple-work-on/"/>
+		<updated>2012-05-21T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/answering-what-one-thing-should-apple-work-on</id>
+    <content type="html">&lt;p&gt;Apple market research surveys often end with a wonderfully engaging question: what one thing should Apple work on? Here&amp;#8217;s my most recent answer (submitted on May 20, 2012).&lt;/p&gt;
+
+&lt;p&gt;Context:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I&amp;#8217;m an incredibly satisfied Apple customer. If I could come up with a glaring problem, it would be below. Although this is my #1 suggestion, in absolute terms it hardly ranks.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I mentioned &amp;#8220;non-Apple apps&amp;#8221; because other survey questions differentiated between Apple and third-party apps. It isn&amp;#8217;t how I categorize them.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;This is an unedited Web form submission, not an essay.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;As an aside, this question is infinitely more useful than the question that most short surveys ask, &amp;#8220;Would you recommend us to someone else?&amp;#8221; (&lt;a href=&quot;http://en.wikipedia.org/wiki/Net_Promoter&quot;&gt;Net Promoter&lt;/a&gt; Score).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Question: What one thing should Apple work on?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Short&lt;/strong&gt;: Use Apple resources to help encourage the next 10 Omni Groups and the next 10 Instapapers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Long&lt;/strong&gt;: A lot of my time is spent using non-Apple apps, which is completely fine, but makes me wonder how many opportunities exist for Apple to reach out to authors of popular niche or &amp;#8220;power user&amp;#8221; apps - Simplenote, Notational Velocity, Sublime Text, iTerm, TextMate, WindowShade X, and many more - and find ways to either make their lives easier as ISVs, or make the power of those apps available to more users.&lt;/p&gt;
+
+&lt;p&gt;Some of these ISV apps have mainstream potential, and those that don&amp;#8217;t still have tons more appeal beyond the distribution they get today (people actively seeking them out). Apple&amp;#8217;s decision to create Reading List rather than work with Instapaper made its NIH perspective really obvious: even an amazing product from one of the most.&lt;/p&gt;
+
+&lt;p&gt;Apple has tons of happy fanboy ISVs who are eager (thrilled!) to adapt or even design their strategies around Apple&amp;#8217;s. There&amp;#8217;s zero risk of being abandoned by ISVs or partners due to lack of relevance, like happened with CodeWarrior and nearly with Office.&lt;/p&gt;
+
+&lt;p&gt;The very real risk is not making the most of the fanboys that Apple has, or tempering their excitement until they recede from True Fans to merely satisfied users. Apple has done an amazing job of creating opportunities for commercial success with the iOS and Mac App Stores, but they&amp;#8217;ve been very hands-off, fairly self-serving (with the well-jusified 30% fee), and rarely backed by actual Apple resources, strategic decisions (&amp;#8220;wow, users love Instapaper, it&amp;#8217;s cheap, the author is as committed as anyone can ever be to the platform &amp;#8211; let&amp;#8217;s bundle Instapaper&amp;#8221;) or, well, passion.&lt;/p&gt;
+
+&lt;p&gt;(The best counterexample I can think of is actually Apple&amp;#8217;s iPhone TV commercials, and they&amp;#8217;re only counterexamples in that they show just how big of an impact Apple can have when it uses strategic resources to help ISVs.)&lt;/p&gt;
+
+&lt;p&gt;So my challenge, my wish, is that in a few years I can name 9 more thriving OS X ISVs instead of just Omni Group. It&amp;#8217;s that I can iOS app authors whose businesses have thrived not just because of the App Store, but because Apple took an interest in their businesses and identified ways to bring their products to more people, improve the integration, or just make their lives easier as ISVs.&lt;/p&gt;
+
+&lt;p&gt;(Obligatory disclaimer: I&amp;#8217;m not an ISV and I don&amp;#8217;t have a horse in this race. My only hat is as a user.)&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Towards a transparent wireless carrier customer dashboard</title>
+    <link href="http://troy.yort.com/towards-a-transparent-wireless-carrier-custom/"/>
+		<updated>2011-09-03T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/towards-a-transparent-wireless-carrier-custom</id>
+    <content type="html">&lt;p&gt;This is the mobile carrier customer dashboard that I want (or see as a &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157627583858838/&quot;&gt;Flickr set&lt;/a&gt;). The annotations tell the story.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m hoping that at least one of Sprint, T-Mobile, Verizon, or AT&amp;amp;T will eventually realize that transparency is a differentiator (if only because they run out of other ways to stand out). Most of these dashboard elements are possible with existing data that carriers already collect, and in some cases already have in this form for internal use.&lt;/p&gt;
+
+&lt;p&gt;This shows two variations on the same dashboard landing page.&amp;nbsp;Click for larger versions to read the annotations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/wireless-dashboard-1.png&quot; alt=&quot;Wireless dashboard sketch #1&quot; /&gt;
+&lt;img src=&quot;http://images.yort.com/blog/wireless-dashboard-2.png&quot; alt=&quot;Wireless dashboard sketch #2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Same wireframes as a &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157627583858838/&quot;&gt;Flickr set&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>One-click Canon PIXMA MX870 scanning in OS X</title>
+    <link href="http://troy.yort.com/one-click-canon-pixma-mx870-scanning-in-os-x/"/>
+		<updated>2011-08-28T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/one-click-canon-pixma-mx870-scanning-in-os-x</id>
+    <content type="html">&lt;p&gt;Problem: Canon PIXMA MX870 says &amp;#8220;Set the PC to start scanning&amp;#8221; when the &amp;#8220;Black&amp;#8221; or &amp;#8220;Color&amp;#8221; scan start buttons are pressed.&lt;/p&gt;
+
+&lt;p&gt;Solution: How I enabled one-button scanning&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Install most of the OS X drivers and software from &lt;a href=&quot;http://usa.canon.com/cusa/consumer/products/printers_multifunction/office_all_in_one_inkjet_printers/pixma_mx870#DriversAndSoftware&quot;&gt;canon.com&lt;/a&gt;. I think I installed all of the drivers, or at least ran their downloaded installers. As of this writing, that&amp;#8217;s ICA Driver, CUPS Driver, Scanner Driver, Mini Master Setup. I also installed MP Navigator and IJ Network Tool from the software downloads. Reboot.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After installing the &amp;#8220;Canon IJ Network Scanner Selector,&amp;#8221; a printer/scanner icon should appear in the dock. The installer sets up the app to run at startup, which I left enabled. The dock dropdown &amp;#8220;Scan images using the operations panel of the scanner&amp;#8221; option is enabled. The scanner MAC address is listed and selected in &amp;#8220;Open Settings&amp;#8221;:&lt;/p&gt;
+
+&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run MP Navigator (3.1) and on the main menu, there&amp;#8217;s an option in the upper right &amp;#8220;One-click.&amp;#8221; Mouseover it and a different menu will be shown, including a &amp;#8220;Start scanning by clicking the button&amp;#8221; checkbox. This was not the default. I wish I was making this up.&lt;/p&gt;
+
+&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;On that MP Navigator One-click screen, click Preferences. Note that you may have 2 entries under &amp;#8220;Product Name&amp;#8221; (&amp;#8220;MX870 Series&amp;#8221; and &amp;#8220;MX870 Series (Network: &lt;Your MAC&gt;).&amp;#8221; I disabled &amp;#8220;Compress scanned images when transferring&amp;#8221; for both product names. On the Scanner Button Settings screen, I changed the paths under &amp;#8220;Save to PC&amp;#8221; but didn&amp;#8217;t make any other changes.&lt;/p&gt;
+
+&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;After making these changes, I was still seeing &amp;#8220;Set the PC to start scanning&amp;#8221; when I tried to scan. I shut down MP Navigator and restarted the printer (with the PC on) and it started auto-scanning. I didn&amp;#8217;t restart the PC except after step 1. I&amp;#8217;m not sure whether the problem was a one-time issue because the settings changed or a recurring one with the order that they were originally powered on.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;My scanner LCD options (Document or Photo, DPI) are interpreted correctly. Scanning PDFs from the document feeder and bitmap images from the platen both work. Bitmaps from the ADF are not supported (the scanner says to use the platen). I haven&amp;#8217;t tried PDFs from the platen.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tested with: OS X 10.6.8, Canon IJ Network Scanner Selector 4.5.0, MP Navigator EX 3.1.3, MX870 driver 10.51.1.0.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Here&amp;#8217;s the printer options from System Preferences. I didn&amp;#8217;t make any changes:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Zipcar Prize proposal: user-sourced car sharing planning algorithm</title>
+    <link href="http://troy.yort.com/zipcar-prize-user-sourced-car-sharing-assignm/"/>
+		<updated>2011-06-12T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/zipcar-prize-user-sourced-car-sharing-assignm</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Update (December, 2012)&lt;/strong&gt;: &lt;a href=&quot;http://car2go.com&quot;&gt;Car2Go&lt;/a&gt; seems to be trying this and even uses municipal parking spaces, so trips could end essentially anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zipcar.com/&quot;&gt;Zipcar&lt;/a&gt; customers must return a car to the same parking spot that it was borrowed from. That means customers must rent (and pay for) one specific car for their entire trip, even when it will be parked in an urban area for many hours during the trip.&lt;/p&gt;
+
+&lt;p&gt;In 2009, I emailed Zipcar about cloning &lt;a href=&quot;http://www.netflixprize.com/&quot;&gt;The Netflix Prize&lt;/a&gt; for a similar purpose: crowd-sourcing (really, expert-sourcing) a set of algorithms, incentives, and restrictions that would let Zipcar offer one-way rentals. Like Netflix, The Zipcar Prize would release an anonymized set of trip data, parking space locations, and an evaluation method (which might emphasize certain aspects, as Netflix &lt;a href=&quot;http://www.netflixprize.com//faq#prize&quot;&gt;did&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;This would be a mix of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;incentives&lt;/strong&gt;: &amp;#8220;We&amp;#8217;ll discount $2 for returning it a mere 5 blocks away from your preferred location&amp;#8221;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fees&lt;/strong&gt;: &amp;#8220;Returning to this location will cost $4 more&amp;#8221;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;enforced policies&lt;/strong&gt;, like: must reserve 1 day in advance; one-way trip can&amp;#8217;t leave a lot empty; only offered at certain urban lots (initially)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The email after the jump has lots more details (slightly formatted and edited). As far as I know, no one has tackled this. Zipcar hasn&amp;#8217;t and I didn&amp;#8217;t receive a reply.&lt;/p&gt;
+
+&lt;p&gt;The first car-sharing service to pull it off will have an amazing competitive advantage: paying for only what you actually need and the ability to &lt;strong&gt;get&lt;/strong&gt; a car to the right place at the right time.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hi &amp;lt;Zipcar executive&gt;,&lt;/p&gt;
+
+&lt;p&gt;Hope this finds you well. I signed up for Zipcar and found that it didn&amp;#8217;t have the killer feature for me: the ability to return a car to a different lot, even if that spot had to be selected at reservation time. &lt;a href=&quot;http://twitter.com/troyd/status/3625900233&quot;&gt;This tweet&lt;/a&gt; has a bit more.&lt;/p&gt;
+
+&lt;p&gt;Nothing new there, but here&amp;#8217;s why I&amp;#8217;m emailing. Wishing for this feature (and not finding it in the &lt;a href=&quot;http://www.zipcar.com/how/&quot;&gt;FAQ&lt;/a&gt;) led me to wonder whether, as a technical and generally creative guy, I could try my hand at a skunkworks location/availability optimization for returning cars to a second location. Specifically, at:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;minimizing additional parking spaces&lt;/li&gt;
+&lt;li&gt;maximizing availability of at least 1 car at every lot&lt;/li&gt;
+&lt;li&gt;minimizing distance between user&amp;#8217;s requested destination lot and system&amp;#8217;s permitted destistination lot&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;The first hard part is getting a machine-parsable, anonymized rental history and lot locations, which is why I&amp;#8217;m emailing. With an anonymized rental history (where users are identified by GUIDs) and &amp;#8220;home&amp;#8221; car locations, I or anyone could make 5 or 10 fake scenarios where some percent of users request different destination lots at time of reservation.&lt;/p&gt;
+
+&lt;p&gt;It could play out like a &lt;a href=&quot;http://www.netflixprize.com/&quot;&gt;Netflix Prize&lt;/a&gt; for scheduling. Zipcar would get a ton of press, customers would try to solve one of your most intriguing scale problems, it would go a long way to associate Zipcar with open source and open government (which the Flexcar brand had a stronger association to), and it would cement Zipcar&amp;#8217;s justification for a $50 late fee as necessary rather than onerous.&lt;/p&gt;
+
+&lt;p&gt;At least in metro Seattle, I think you have enough cars to pull it off, especially with a few restrictions, like that you can&amp;#8217;t return a car to a different destination lot when it leaves the origin lot empty (because all other cars there are already reserved). That restriction would reduce - potentially avoid - any decrease in local coverage, preserving customer satisfaction.&lt;/p&gt;
+
+&lt;p&gt;Moreover, that restriction would motivate people to make one-way reservations farther in advance, which would let the system guide folks to alternative destination lots (&amp;#8220;You&amp;#8217;re starting in Ballard. We can&amp;#8217;t let you return it to 4th &amp;amp; Wall, but we&amp;#8217;d love for you to return it to 2nd &amp;amp; Vine 5 blocks away.&amp;#8221;).&lt;/p&gt;
+
+&lt;p&gt;I could even see a $X tax on same-day alternative destination lot reservations, although that negates some of the long-term value it would create for Zipcar. Eventually, you&amp;#8217;d want everyone using this with reckless abandon, since it turns customers into your car gofers and makes otherwise-impractical trips affordable.&lt;/p&gt;
+
+&lt;p&gt;If something like a Netflix Contest is interesting, or you already have these data files), please let me know.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>2 common problems with OAuth client libraries</title>
+    <link href="http://troy.yort.com/2-common-problems-with-oauth-client-libraries/"/>
+		<updated>2011-06-12T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/2-common-problems-with-oauth-client-libraries</id>
+    <content type="html">&lt;p&gt;I posted a long &lt;a href=&quot;http://groups.google.com/group/fusion-tables-users-group/msg/535854503fa21868&quot;&gt;explanation&lt;/a&gt; to the fusion-tables-users group about using third-party libraries with Fusion Tables over OAuth. It might also help folks debugging OAuth problems or adding OAuth support to existing libraries. Full text below.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Just an update for the archives and anyone else debugging this. I went through the &lt;a href=&quot;http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16&quot;&gt;Python example&lt;/a&gt; and it does work for POST requests in the body. I tested CREATE and INSERT.&lt;/p&gt;
+
+&lt;p&gt;Here are the 2 things that were tripping up the Ruby GData library coupled with someone&amp;#8217;s monkeypatched OAuth auth_handler (&lt;code&gt;GData::Auth::OAuth&lt;/code&gt;). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.&lt;/p&gt;
+
+&lt;p&gt;Here goes:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The &lt;code&gt;GData::Auth::OAuth&lt;/code&gt; only pulled out GET params from the URL, not POST params in the request body. POST params need to be sorted alongside the OAuth parameters when creating the signature base, so this immediately made my signatures invalid.&lt;/p&gt;
+
+&lt;p&gt; I saw a couple causes for this in other libraries:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;designing for GET and then exposing a convenience POST method as&amp;nbsp;an afterthought (without looking at the body params)&lt;/li&gt;
+&lt;li&gt;one person wrote the HTTP client, another wrote the OAuth signer, and a third wrote the Fusion Tables library or GData extension, and a corner case got missed (or callers can sign requests before a body is even defined)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Most language built-in URI encoders are designed for &lt;a href=&quot;http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1&quot;&gt;x-www-form-urlencoded&lt;/a&gt;, with spaces as plus characters. OAuth wants everything UTF-8, ie &lt;code&gt;U+0020&lt;/code&gt; or &lt;code&gt;%20&lt;/code&gt; for space. The confusing part for Fusion Tables is that this works in GET requests: &lt;a href=&quot;&quot; title=&quot;https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1&quot;&gt;select+*+from+317391+limit+1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; .. but that space encoding won&amp;#8217;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&amp;#8217;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Finally, if it helps anyone, here&amp;#8217;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;POST&amp;amp;http%3A%2F%2Fwww.google.com%2Ffusiontables%2Fapi 
+%2Fquery&amp;amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce 
+%3D75556368%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp 
+%3D1305155510%26oauth_token 
+%3D1%252F98y2rqyfdfhuaiheworh327rahyADYSAIYuioydadio%26oauth_version 
+%3D1.0%26sql%3DCREATE%2520TABLE%2520%2527data.csv 
+%2527%2520%2528%2527col2%2527%253A%2520STRING%252C%2527col3%2527%253A 
+%2520STRING%252C%2527col1%2527%253A%2520STRING%2529
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;that signature string is for the param:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A+STRING%2C%27col1%27%3A+STRING%29
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&amp;#8217;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>6 tasty sandwiches in Belltown</title>
+    <link href="http://troy.yort.com/6-tasty-sandwiches-in-belltown/"/>
+		<updated>2011-05-29T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/6-tasty-sandwiches-in-belltown</id>
+    <content type="html">&lt;p&gt;Guest posted on BelltownPeople.com nd copied below.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s a few well-executed sandwiches in or near our &amp;#8216;hood. Using the most liberal possible definition of &amp;#8220;sandwich&amp;#8221; and in no particular order:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;El Cubano, &lt;a href=&quot;http://www.cyclopsseattle.com/menu/menu.html&quot;&gt;Cyclops&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt; Sweet meets savory: &amp;#8220;Roasted pulled pork, sliced pit ham, Jarlsberg cheese, thin sliced pickle, dijon mustard and poblano aioli on a grilled ciabatta.&amp;#8221; Early-afternoon weekend brunch material here.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;East Coast or Chicken Chipotle, &lt;a href=&quot;http://www.yelp.com/biz/mikes-east-coast-sandwiches-seattle&quot;&gt;Mike&amp;#8217;s East Coast Sandwiches&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; Update: Moved to Pioneer Square.&lt;/p&gt;
+
+&lt;p&gt; Fresh off the panini grill at Cafe Two at Antioch College (with Stumptown drip coffee), Forza Coffee at Fisher Plaza, and Motore Coffee (9th &amp;amp; Lenora).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;New Town Special, &lt;a href=&quot;http://www.yelp.com/biz/new-town-market-seattle&quot;&gt;New Town Market&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; I recommend smoked turkey instead of peppermill turkey. The same Boar&amp;#8217;s Head menu is available at &lt;a href=&quot;http://www.yelp.com/biz/westlake-specialty-market-seattle&quot;&gt;Westlake Specialty Market&lt;/a&gt; (7th &amp;amp; Westlake).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Your custom deli sandwich, ordered online, &lt;a href=&quot;http://www.specialtys.com/Begin.aspx&quot;&gt;Specialty&amp;#8217;s Cafe&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; Use their sandwich configurator to build a custom sandwich, then order and pay online for pick up in 15 minutes (yes, this actually works!). It&amp;#8217;s like they timed a leisurely walk from Belltown to 5th and Union. My pick: the &lt;a href=&quot;https://twitter.com/#!/troyd/status/70897277027360768&quot;&gt;Taguchi Goat Club&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Spicy Moroccan Pita, &lt;a href=&quot;http://www.zeitooncafe.com/Entree.pdf&quot;&gt;Zeitoon Cafe&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; Update: closed.&lt;/p&gt;
+
+&lt;p&gt; &amp;#8220;Dolme, hummus, tabouli, lettuce, cucumber, garlic sauce, house sauce, hot sauce and tzatziky.&amp;#8221; Pro tip: ask for light or no house sauce, and cut it in half before eating or you&amp;#8217;ll wear some leftovers home.&lt;/p&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The Gaucho Dip or 410 Burger, &lt;a href=&quot;http://www.elgaucho.com/elgaucho/images/menus_seattle/bar.pdf&quot;&gt;El Gaucho Bar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; The menu does its job: &amp;#8220;Sliced Certified angus Beef prime top sirloin, toasted baguette, chimichurri aioli, english Coastal Cheddar, house au jus, taro chips.&amp;#8221; For 50% off, pair with a glass of wine and a friend (or an iPad) during &amp;#8220;The Gaucho 120&amp;#8221; (minutes of happy hour).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A bit about preventing toll fraud</title>
+    <link href="http://troy.yort.com/a-bit-about-preventing-toll-fraud/"/>
+		<updated>2011-05-20T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/a-bit-about-preventing-toll-fraud</id>
+    <content type="html">&lt;p&gt;Recently posted this reply to the voiceops mailing list. Pasted below or &lt;a href=&quot;https://puck.nether.net/pipermail/voiceops/2011-May/002499.html&quot;&gt;read the original&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber wrote:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Hi folks,
+We have been hit twice in the past two days with calls to 011-252-XXXXXXXX
+(calls to Somalia I believe, and the originating IP is from Pakistan)&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Others have suggested NCC-specific firewall policies. I&amp;#8217;ll put in a plug for using per-country-code dialplan routes and omitting really expensive countries.&lt;/p&gt;
+
+&lt;p&gt;Obviously that won&amp;#8217;t work for worldwide wholesale transport carriers. For everyone else, the most expensive CCs to call aren&amp;#8217;t worth the trouble. There are very few folks with legitimate needs to call, say, Sierra Leone, that aren&amp;#8217;t served by Skype. They don&amp;#8217;t represent enough revenue to justify the risk.&lt;/p&gt;
+
+&lt;p&gt;Those few legit higher-volume folks are willing to prepay using reliable methods. They&amp;#8217;re usually apologetic that their countries receive enough fraudulent calls to need such a policy.&lt;/p&gt;
+
+&lt;p&gt;Basically scroll through &lt;a href=&quot;http://www.voicetrading.com/en/calling-rates.html&quot;&gt;http://www.voicetrading.com/en/calling-rates.html&lt;/a&gt; and omit routes for any country that&amp;#8217;s had a civil war in the past 20 years. Fringe benefit: when a country code splits, you won&amp;#8217;t get caught with a rate deck hole (see Timor-Leste, St Maarten).&lt;/p&gt;
+
+&lt;p&gt;If you want to get slick, have a call attempt to those country codes page your admins as a honeynet (honeyroute?). Somebody&amp;#8217;s probably up to something.&lt;/p&gt;
+
+&lt;p&gt;Doesn&amp;#8217;t prevent calls to expensive mobile routes in countries you do reach, they&amp;#8217;re just a lot less interesting to fraudsters (woo, I can call Proximus!?) and the per-minute costs are mostly way lower.&lt;/p&gt;
+
+&lt;p&gt;Troy&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>From concept sketches to live Web page</title>
+    <link href="http://troy.yort.com/from-concept-sketches-to-live-web-page/"/>
+		<updated>2010-10-30T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/from-concept-sketches-to-live-web-page</id>
+    <content type="html">&lt;p&gt;I uploaded a few concept sketches, a final sketch, a final wireframe, and the end result of Cloudvox&amp;#8217;s home page redesign. They&amp;#8217;re in &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157625144671421/&quot;&gt;this Cloudvox Flickr set&lt;/a&gt; with some annotations.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Notes on &#8220;What Makes Startups Succeed&#8221; discussion</title>
+    <link href="http://troy.yort.com/notes-on-what-makes-startups-succeed-discussi/"/>
+		<updated>2009-10-14T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/notes-on-what-makes-startups-succeed-discussi</id>
+    <content type="html">&lt;p&gt;4 VCs, a moderator, and a roomful of people. Here&amp;#8217;s the gist.&lt;/p&gt;
+
+&lt;p&gt;Now that we&amp;#8217;ve publicly launched Cloudvox, and anyone can use it (and buy it!), I finally get to see the outdoors again. I went to this panel on 10/14/2009 and took as many notes as I could. I missed some things, and tried not to take any comments out of context.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Who&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Andy Sack, &lt;a href=&quot;http://www.founderscoop.com/&quot;&gt;Founder&amp;#8217;s Co-Op&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mark Ashida, &lt;a href=&quot;http://www.ovp.com/&quot;&gt;OVP Venture Partners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mike Mathieu, &lt;a href=&quot;http://www.frontseat.org/&quot;&gt;Front Seat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pete Higgins, &lt;a href=&quot;http://www.secondave.com/&quot;&gt;Second Avenue Partners&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Moderated by Dave McShea of &lt;a href=&quot;http://perkinscoie.com/&quot;&gt;Perkins Coie&lt;/a&gt; in Seattle. Notes are chronological over 1 hour. Bold is mine.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you evaluate a company as an investor?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sack: &amp;#8220;Accelerating on the downhill&amp;#8221; (recession) as much more more important than speeding uphill&lt;/p&gt;
+
+&lt;p&gt;Higgins: With right customers, recession means prospects are reevaluating costs, chance to stand out. Cheaper inputs (staff).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What mistakes do you see often?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Business plans hard to understand. Entrepreneur unwilling to &lt;strong&gt;synthesize down to the real bet they&amp;#8217;re making&lt;/strong&gt; &amp;#8211; might mean they don&amp;#8217;t know it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&amp;#8220;We don&amp;#8217;t have any&amp;#8221; competition. &lt;strong&gt;Generally that&amp;#8217;s &amp;#8220;meeting over.&amp;#8221;&lt;/strong&gt; Too narrow def of competition.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Under-rating domain expertise when they have it/have been the customer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Not realizing VCs treat a meeting like an interview or date. Can you work with together deeply? Listen!&lt;strong&gt; Don&amp;#8217;t pitch/sell.&lt;/strong&gt; Testing reactions, pushing buttons.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Mathieu:&lt;/p&gt;
+
+&lt;p&gt;Describe investment as series of risks - then &lt;strong&gt;help investors calculate market price for your risks.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Not getting 2nd meeting probably means risk higher than you think.&lt;/p&gt;
+
+&lt;p&gt;80% * 80% * 80% (series of risks) is worse odds than a coin flip. How can you extract the risks?&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;Team reduces risk - have these people worked together? Experience is risk mitigation&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What constitutes differentiation?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;In the eye of the beholder.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;At Housevalues there wasn&amp;#8217;t a patentable one.&lt;/p&gt;
+
+&lt;p&gt;Likes technical barriers. Stuff that&amp;#8217;s hard to do. Doesn&amp;#8217;t have to be patentable.&lt;/p&gt;
+
+&lt;p&gt;Marketing barrier &amp;#8220;not as confident that it&amp;#8217;s sustainable especially on a national basis.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Barriers are truly lower with SaaS: &lt;strong&gt;domain/customer expertise must be strong differentiator&lt;/strong&gt; &amp;#8220;because it&amp;#8217;s just software&amp;#8221;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;At Amazon, Bezos ranked 25 things to sell before choosing books. How do you sell?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;Book market incredibly fragmented, easy purchase.&lt;/p&gt;
+
+&lt;p&gt;Contrast with selling infrastructure to mobile where 5 guys decide your success. Consider: Do customers tend to buy new stuff?&lt;/p&gt;
+
+&lt;p&gt;Who are adjacent players? Often best to find industry with lots of established players who just haven&amp;#8217;t picked up on changes. Like unmanned airplanes (Insitu).&lt;/p&gt;
+
+&lt;p&gt;Had tailwinds: Gov&amp;#8217;t wanted it, incumbents culturally unable to do small cheap product. &lt;strong&gt;But run when big player decides it&amp;#8217;s strategic. Elephants will step on you.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Mathieu:&lt;/p&gt;
+
+&lt;p&gt;With BetterBills, Seattle City Light finance group loved new bill format, but 6 months of customer delay.&lt;/p&gt;
+
+&lt;p&gt;Competitor emerged who realized that &lt;strong&gt;motivated customer was conservation group, not accounting.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ask who&amp;#8217;s truly motivated to buy&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Cash is king. How do you evaluate capital requirements and manage cash?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Mathieu:&lt;/p&gt;
+
+&lt;p&gt;Cash matters first, then changes to cashflow (&lt;strong&gt;they merge&lt;/strong&gt;).&lt;/p&gt;
+
+&lt;p&gt;You hear all this advice: banks will only give you money when you need it, raise more than you need.&lt;/p&gt;
+
+&lt;p&gt;All Star started with $200k. Got profitable in 3 months, went into 2nd market.&lt;/p&gt;
+
+&lt;p&gt;From cashflow positive to losing $50k/mo. Wife caught on.&lt;/p&gt;
+
+&lt;p&gt;2 changes fixed: 1) marketing must break even on performance 2) tie customer price to your performance.&lt;/p&gt;
+
+&lt;p&gt;Cashflow doesn&amp;#8217;t go away 5 years in, profitable, new controller made many millions worth of payments on same day. Balance -$200k.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use prepay and annual subscriptions. Biggest customer prepaid quarterly&lt;/strong&gt; and cut need for outside capital&lt;/p&gt;
+
+&lt;p&gt;Sack:&lt;/p&gt;
+
+&lt;p&gt;Yeah cash management matters, but so does time: wasting a year of founding team!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;No bank balance to measure this. Certain period to see evidence that dream can be reality (~3 years).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;Like cash, time is a resource that goes away&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;One company: had epiphany 8 months in, changed directions, 18 months in.&lt;/p&gt;
+
+&lt;p&gt;Not exactly where they wanted to be. Should we change again?&lt;/p&gt;
+
+&lt;p&gt;No!  &lt;strong&gt;Won&amp;#8217;t have made any progress before losing confidence.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What VC trends do you see?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;Critical how you get money. VCs running out of money - so much budgeted for existing investments.&lt;/p&gt;
+
+&lt;p&gt;A year behind and all need 1 more round. Not all portfolio cos are covered.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Non-participating VCs will get crushed. Reduced to common, 10:1 reverse not uncommon&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Also 1 person stuck writing $5mm check is way higher bar than 3 sharing.&lt;/p&gt;
+
+&lt;p&gt;Finding new outside VC is hard when tainted by non-participating existing VC&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m probably going to be here long after you&amp;#8217;re gone (longer than founders).&lt;/p&gt;
+
+&lt;p&gt;No escape for us: 7-8 years&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What habits should entrepreneurs use or avoid?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sack:&lt;/p&gt;
+
+&lt;p&gt;Recurring rituals. Write out and book on calendar.&lt;/p&gt;
+
+&lt;p&gt;Daily: blog, tweet, the 1 thing that must get done today.&lt;/p&gt;
+
+&lt;p&gt;Weekly: Sun night look at week ahead and pick 1 priority for week.&lt;/p&gt;
+
+&lt;p&gt;Quarterly: take time off. Have a weekend.&lt;/p&gt;
+
+&lt;p&gt;Mathieu:&lt;/p&gt;
+
+&lt;p&gt;Know yourself.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What types of stuff do you just have to grind through?  Know what&amp;#8217;s missing in you and patch holes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Had demo of alpha-stage niche site. Missing: had no idea of was whether anyone would pay - a must fix.&lt;/p&gt;
+
+&lt;p&gt;Told entrepreneur &lt;strong&gt;&amp;#8220;When you leave you&amp;#8217;re going to go home and say &amp;#8216;I should talk with customers to see whether they&amp;#8217;ll pay, but first I have to fix this bug and add these features&amp;#8230;&amp;#8217;&amp;#8221;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not bad thing as long as you know and fill.&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;After 3 people, entrepreneurs under-manage.&lt;/p&gt;
+
+&lt;p&gt;Board emails: at least 1 a week.&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;1 page &amp;#8220;plan of record&amp;#8221; so when staff overhears stuff, have reference that plan is not changing. A little formal.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What&amp;#8217;s the 1 big mistake that comes to mind?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;#8220;I&amp;#8217;m good at this&amp;#8221; when it&amp;#8217;s clear you&amp;#8217;re not.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Either mis-representing, or poor self-awareness.&lt;/p&gt;
+
+&lt;p&gt;Also not asking what customers actually think. Too much trust where a technology appears to fit w/o asking&lt;/p&gt;
+
+&lt;p&gt;Sack:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It&amp;#8217;s not a pitch, it&amp;#8217;s a conversation.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Engage. What is investor truly interested in? Ask them stuff!&lt;/p&gt;
+
+&lt;p&gt;If I leave without having talked, I&amp;#8217;m not engaged.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Revenue forecasts are a shot in the dark. What should I do?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;Agree. &lt;strong&gt;Somebody told entrepreneurs that 3rd year should be profitable.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How much does it cost to learn/get to the point where you have some confidence?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sack:&lt;/p&gt;
+
+&lt;p&gt;Forecast is to get comfortable playing with model and levers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;See/tweak unit economics.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;Most businesses have an analog.&lt;/p&gt;
+
+&lt;p&gt;Sniff test, ie if you&amp;#8217;re a distribution company and are 10x more profitable than other distributors.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What are VCs looking for an in exit strategy?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;Least successful slide - phrase &amp;#8220;IPO or M&amp;amp;A&amp;#8221; useless.&lt;/p&gt;
+
+&lt;p&gt;Generally look elsewhere when VCs gets particular about exit strategy.&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;Might disagree a bit. Security industry has many exits but small - $10-20mm, bought out in year 2.&lt;/p&gt;
+
+&lt;p&gt;Should inform your raise, plans. We look at P/E and P/S. Ethanol P/S &amp;lt;1, learn from it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;What&amp;#8217;s the weakest point of a recent deal you actually did? How did you address it?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;2 guys from Microsoft. Missing marketing. That was big risk - need to find someone who works well with them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Solved with a (one!) person.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Higgins:&lt;/p&gt;
+
+&lt;p&gt;Not sure it&amp;#8217;s working yet, but: invested in &amp;#8220;3 guys and dog at UW.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;Research risk. New ideas every day but maybe not towards product.&lt;/p&gt;
+
+&lt;p&gt;&amp;#8220;Boring engineering management&amp;#8221; stuff - runs an eng mtg every week. Dates, task list.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Really early seed-stage capital seems broken. What&amp;#8217;s the new model?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Ashida:&lt;/p&gt;
+
+&lt;p&gt;Disagree that there&amp;#8217;s not seed money for good ideas. I&amp;#8217;m willing.&lt;/p&gt;
+
+&lt;p&gt;Symform was 2 guys. Met 7 months before.&lt;/p&gt;
+
+&lt;p&gt;More peer review from ideas in Silicon Valley: &lt;strong&gt;95% of bad ideas there get killed by peers.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sack:&lt;/p&gt;
+
+&lt;p&gt;Seed has gotten harder compared to 18 months ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;#8220;Deal that doesn&amp;#8217;t get done&amp;#8221; is often the best deal&lt;/strong&gt;: No (or much less) VC relaxes the pressure on revenue.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Opinions from Mark Anderson of Strategic News Service (SNS)</title>
+    <link href="http://troy.yort.com/opinions-from-mark-anderson-of-strategic-news/"/>
+		<updated>2009-09-30T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/opinions-from-mark-anderson-of-strategic-news</id>
+    <content type="html">&lt;p&gt;I went to a Q&amp;amp;A with Mark Anderson of &lt;a href=&quot;http://www.stratnews.com/&quot;&gt;Strategic News Service&lt;/a&gt; (SNS) and took down some direct and near-direct quotes. Mark is unique for sharing fairly specific opinions; right or wrong, that&amp;#8217;s rare. Notes are chronological over 90 minutes. I tried not to take any comments out of context.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Unemployment&lt;/strong&gt;: &amp;#8220;Economy has split&amp;#8221; &amp;#8220;Second-order problems caused by joblessness&amp;#8221; &amp;#8220;Large sea anchor attached to the American economy&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Currencies&lt;/strong&gt;: &amp;#8220;Old religion: all currencies traded on open markets&amp;#8221; &amp;#8220;China and Japan will reverse&amp;#8221; past positions (now want weak currencies; US not buying and they are starting to sell to local consumers) Currency buyers and sellers are nations now, making entirely deliberate choices&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;IP in Asia&lt;/strong&gt;: &amp;#8220;You will notice that IP is not strongly protected in Asia, and that is where all the action is now&amp;#8221; &amp;#8220;Don&amp;#8217;t bring the Coke recipe&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Q4 2009&lt;/strong&gt;: &amp;#8220;Q4 is being underrated by almost everyone&amp;#8221; &amp;#8220;netbook will be the best selling format ever&amp;#8221; &amp;#8220;I think it&amp;#8217;s going to be Windows 7&amp;#8221; (vs. Ubuntu) &amp;#8220;huge Christmas&amp;#8221; &amp;#8220;PC sales will be positive&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;FCC&lt;/strong&gt;: &amp;#8220;Current FCC commissioner is great&amp;#8221; (Genachowski)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;USD Inflation&lt;/strong&gt;: how to hedge against the dollar: buy tin for Peruvian shanties (joke) inflation a risk for many or all global currencies, not just USD &amp;#8220;total liquidity pool was $36 trillion, and doubled it in 6 years&amp;#8221; &amp;#8220;huge car wreck that has to come up .. they all know it&amp;#8221; &amp;#8220;no one has ever done it [quantitative easing] right, so let&amp;#8217;s do it now&amp;#8221; (central bankers perspective)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How He&amp;#8217;d Distribute SNS in 2009&lt;/strong&gt;: still probably use email, but hate spam, and still growing problem is identifying senders correctly, and &amp;#8220;multiple levels of knowing one another&amp;#8221; &amp;#8220;it&amp;#8217;s not Facebook&amp;#8221; &amp;#8220;Someone&amp;#8217;s going to figure out what David Anderson [CEO of Sendmail] couldn&amp;#8217;t do&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Peak Oil &amp;amp; Energy&lt;/strong&gt;: &amp;#8220;there is no peak oil&amp;#8221; &amp;#8220;that little scam [peak oil]&amp;#8221; &amp;#8220;need consistent high price for oil. I&amp;#8217;m fine with $80 plus or minus $10 for 10 years&amp;#8221; &amp;#8220;pricing umbrella to convert to something else&amp;#8221; (besides petroleum) &amp;#8220;ultimately I think energy ought to be free&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Countries as Investment Opportunities&lt;/strong&gt;: &amp;#8220;Australia .. Canada&amp;#8221; &amp;#8220;I hate Russia&amp;#8221; &amp;#8220;very careful elsewhere&amp;#8221; of Russia (later): &amp;#8220;all there is is corruption, kleptocracy, and resources&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Heathcare&lt;/strong&gt;: &amp;#8220;heathcare is destroying the competitiveness of our businesses&amp;#8221; &amp;#8220;what killed GM&amp;#8221; (if you asked them) &amp;#8220;I would get rid of all heath insurance companies .. I would dissolve them&amp;#8221; &amp;#8220;I feel no fear from starting from scratch&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What Problems &amp;amp; Opportunities Keep You Awake at Night?&lt;/strong&gt;: &amp;#8220;market manipulation&amp;#8221; &amp;#8220;inability of nation to respond to problems&amp;#8221; most important trend: &amp;#8220;about 2 billion people rise up from UN poverty level of $1/day .. to $2/day or $4/day&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Boeing&lt;/strong&gt;: &amp;#8220;I think Boeing is dead man walking&amp;#8221; used to know &amp;#8220;never to take crowd jewels of IP outof the country&amp;#8221; &amp;#8220;EADS has forced them to this&amp;#8221; competitors will &amp;#8220;all be 10 years [behind]&amp;#8221; .. &amp;#8220;sounds like General Motors to me&amp;#8221; &amp;#8220;biggest customer just became biggest competitor&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Smartphones (iPhone specifically)&lt;/strong&gt;: &amp;#8220;Steve&amp;#8217;s done the world a favor by striking this deal with AT&amp;amp;T&amp;#8221; &amp;#8220;the best software platform we&amp;#8217;ve ever dreamed of&amp;#8221; (smartphones)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Africa&lt;/strong&gt;: &amp;#8220;I don&amp;#8217;t know&amp;#8221; (how to make it self-sustaining)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;American Empire&lt;/strong&gt;: &amp;#8220;Yes we are in the decline of the American empire&amp;#8221; &amp;#8220;we deserve what we got&amp;#8221; &amp;#8220;we aren&amp;#8217;t as smart as we think we are&amp;#8221; &amp;#8220;our promise is so high and our achivement is so low&amp;#8221;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Towards BPM-based &#8220;Exercise Radio&#8221; stations</title>
+    <link href="http://troy.yort.com/towards-bpm-based-exercise-radio-stations/"/>
+		<updated>2009-09-25T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/towards-bpm-based-exercise-radio-stations</id>
+    <content type="html">&lt;p&gt;Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.&lt;/p&gt;
+
+&lt;p&gt;The closest are &lt;a href=&quot;http://developer.echonest.com/&quot;&gt;Echo Nest&amp;#8217;s API&lt;/a&gt; (&lt;code&gt;get_tempo&lt;/code&gt;) and &lt;a href=&quot;http://www.last.fm/api&quot;&gt;Last.fm&amp;#8217;s&lt;/a&gt; API (&lt;code&gt;Track.getInfo&lt;/code&gt;). Echo Nest&amp;#8217;s requires uploading the song audio data (which I don&amp;#8217;t have). Last.fm&amp;#8217;s can be queried with metadata (artist+song name) yet doesn&amp;#8217;t provide BPM. This NYTimes &lt;a href=&quot;http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/&quot;&gt;Gadgetwise blog post&lt;/a&gt; has local file (MP3) and podcast options.&lt;/p&gt;
+
+&lt;p&gt;I posted this to the &lt;a href=&quot;http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730&quot;&gt;Last.fm Web Services&lt;/a&gt; discussion group, and &lt;a href=&quot;http://twitter.com/troyd/status/4352076414&quot;&gt;asked on Twitter&lt;/a&gt;. I&amp;#8217;ll update this post if something comes of it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I prefer to exercise to music, and it&amp;#8217;s much nicer when the beats per minute matches what I&amp;#8217;m physically doing. I think this could happen 3 ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Adding BPM as a new radio station &amp;#8220;station type&amp;#8221; (from &lt;a href=&quot;http://www.last.fm/api/radio&quot;&gt;http://www.last.fm/api/radio&lt;/a&gt; and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if &lt;code&gt;track.getInfo&lt;/code&gt; included BPM.&lt;/p&gt;
+
+&lt;p&gt; There&amp;#8217;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: &lt;a href=&quot;http://developer.echonest.com/docs/method/get_tempo/&quot;&gt;http://developer.echonest.com/docs/method/get_tempo/&lt;/a&gt; (but it too needs the bits; it&amp;#8217;s not an existing database).&lt;/p&gt;
+
+&lt;p&gt; Mass BPM calculations would be a killer use for Map/Reduce.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+	</entry>
+	
+	<entry>
+		<title>Auction lifecycle for data geeks</title>
+    <link href="http://troy.yort.com/auction-lifecycle-for-data-geeks/"/>
+		<updated>2009-09-13T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/auction-lifecycle-for-data-geeks</id>
+    <content type="html">&lt;p&gt;I collected stats from my first sell-side eBay transaction: number of watchers, number of bids, and current item price. Here&amp;#8217;s what I found:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/auction-lifecycle-1.png&quot; alt=&quot;Auction Watchers, Bids, and Price Over Time&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Specifics: eBay, 7 day duration, start $0.01, no reserve, $167.50 sale, digital camera, July 2009&lt;/p&gt;
+
+&lt;h3&gt;30-second Summary&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;30-50% of prospects are trolling for a bargain that probably doesn&amp;#8217;t exist&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;May be an untapped strategy in bidding at 70% of sale price to &amp;#8220;stake a claim&amp;#8221;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Last-minute emotions didn&amp;#8217;t affect the price much&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;7 days may not be long enough for all prospects to discover&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;What&amp;#8217;s noteworthy?&lt;/h3&gt;
+
+&lt;h4&gt;Ratio of watchers:bids (casual interest:purchase intent)&lt;/h4&gt;
+
+&lt;p&gt;For most buyers, this auction was a 2-stage process: find &amp;amp; watch, wait a couple days, then monitor &amp;amp; bid. Visible interest accumulates for 2.5 days, peaking at 11 watchers per 1 bid, then steadily drops to 1.5:1 at sale.&lt;/p&gt;
+
+&lt;p&gt;As the end approaches, there are far fewer lookie-loos relative to participants - most have either bid or left (un-watched) - and the ratio sinks. Nobody bids upfront, probably from past experience: each person knows nobody else will bid, so they just watch too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/auction-lifecycle-2.png&quot; alt=&quot;Ratio of Auction Watchers, Bids, and Price&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;Ratio of price:bids (strength &amp;amp; frequency of purchase intent)&lt;/h4&gt;
+
+&lt;p&gt;Because bidding is idle in days 2 and 3, this ratio starts and stays high ($17 of item price per 1 bid). Then bids trend smaller for 2 days, dropping to an average of $7 per bid. Just like a regular auction, the price increase per new bid is smaller later in the auction, though the absolute price increase is large thanks to lots of bids.&lt;/p&gt;
+
+&lt;p&gt;Only in the last hour does the dollars per bid spike again, and only in relative terms - small change that happens very quickly. That&amp;#8217;s the sniper, who must overshoot because there&amp;#8217;s only one chance to snipe. A larger spike here would indicate a desperate sniper.&lt;/p&gt;
+
+&lt;h4&gt;Ratio of price:watchers (strength &amp;amp; frequency of casual interest)&lt;/h4&gt;
+
+&lt;p&gt;This stays pretty constant throughout the auction until it rises in the last 2 days  I interpret that as bargain hunters bailing (un-watching) while bidding heats up.&lt;/p&gt;
+
+&lt;h3&gt;Analysis&lt;/h3&gt;
+
+&lt;p&gt;Watchers is linear for the first part of the auction, then bargain hunters start to realize they&amp;#8217;re not going to get a steal. They adapt: they un-watch the item before it ends.  Watchers started dropping about 12 hours before the auction ended, when the price was at about 60% of final sale price.  This shows that some buyers still think it&amp;#8217;s a good use of time to hunt for undervalued items. That&amp;#8217;s a challenge with sub-$200 commodity gadgets.&lt;/p&gt;
+
+&lt;p&gt;Assuming our sample size of 1 was representative, one could fit a line to the price ramp and estimate the ending price of a halfway complete auction. This actually might not be far off, at least for auctions matching the same specifics (duration, reserve, category, etc.)&lt;/p&gt;
+
+&lt;p&gt;3 bids arrived in the last 40 seconds, yet those were the only bids in the last few hours. I checked the history of automatic bids (where eBay rebids up to your max allowed amount) vs. user-entered ones: only 2 people (winner and 1 other bidder) were online at 11 AM when the auction ended. Only one of them bid until the last 10 seconds. Unlike live auctions, last-minute emotions didn&amp;#8217;t affect the price much.&lt;/p&gt;
+
+&lt;p&gt;This reinforces that online auctions aren&amp;#8217;t impulse-driven, at least for smaller items that can&amp;#8217;t draw enough live users to start a bidding war. Someone may get caught up in their own re-bidding midway through the auction, and there&amp;#8217;s an adrenaline rush for those few who actively bid when it ends, but in this auction there wasn&amp;#8217;t any going-once gavel pounding.&lt;/p&gt;
+
+&lt;h3&gt;Conclusions&lt;/h3&gt;
+
+&lt;p&gt;Although the winner asked me a question 2-3 days in, their first and only bid was 7 seconds before the end. This was destined to be sniped from the very start.&lt;/p&gt;
+
+&lt;p&gt;No one jumps in and makes a semi-serious bid (say, over 60% of final price) before they need to. The serious prospects believe that by placing a real bid, they&amp;#8217;ll increase the baseline and consequently the sale price. In a sense, we&amp;#8217;re telling ourselves that we might get a steal by not bidding, and that other people&amp;#8217;s bid increases are based on the current price more than their willingness to pay.&lt;/p&gt;
+
+&lt;p&gt;That may be true when many buyers are already watching an item. However, I could see making a bid on day 1 that&amp;#8217;s 70% of final value, and thereby decreasing the number of people who bother to watch it. Basically, you&amp;#8217;d claim the item for yourself, like bluffing in poker. Assuming the higher first bid translated into fewer watchers, I could see that keeping the final price lower.&lt;/p&gt;
+
+&lt;p&gt;Prospective bidders may have still been discovering the item 7 days in. The number of watchers never really flatlined. While the total number of watchers dropped at the very end, we can&amp;#8217;t tell whether those folks un-watching were partially offset by new watchers. Based on how quickly the watchers dropped in the final 12 hours, I&amp;#8217;m guessing the short flat-lining was driven by the auction ending.&lt;/p&gt;
+
+&lt;p&gt;Would more people watch an 8 or 9 day auction?  Probably.  Whether one of those watchers would be willing to pay more is a much harder question.&lt;/p&gt;
+
+&lt;h3&gt;Ideas&lt;/h3&gt;
+
+&lt;p&gt;Because eBay doesn&amp;#8217;t provide an in-depth event history, we don&amp;#8217;t know when the 2 ending bidders watched the item, nor how they found it (search? what keywords? browse? which category?). A deep &amp;#8220;event log&amp;#8221; with timestamps, referral reason, and username could let sellers write custom auction strategy management tools - innovate on selling strategy rather than logistics or sourcing.&lt;/p&gt;
+
+&lt;p&gt;I could see charging for that post-transaction visibility, since pro sellers are the only ones likely to refine listing strategy, and presumably they&amp;#8217;re receiving higher sale prices. Bigger challenge: Prospective buyers would need to acknowledge a warning that their watch interest would be made available to the seller, whether or not they actually bid.&lt;/p&gt;
+
+&lt;p&gt;About 1 in 3 watchers explicitly un-watched this item in the few days after it ended, rather than letting eBay roll it off their watch list. This may mean that eBay can to do a better job of post-auction cleanup or item segmentation, or that 1 in 3 people are really pedantic.&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s still room for an auction format which ends 10 minutes after the final bid. Such a hybrid of &amp;#8220;buy it now&amp;#8221; and traditional auctions that might actually speed the auction up - nobody will be motivated by end time, and that could front-load the bidding. Wouldn&amp;#8217;t take much to be more front-loaded than this auction was.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note&lt;/em&gt;&lt;/strong&gt;: Bid amount is public-facing current bid, and includes automatic bid. By default, eBay post-auction bid history does not include automatic bids.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Anatomy of a malware ad on NYTimes.com</title>
+    <link href="http://troy.yort.com/anatomy-of-a-malware-ad-on-nytimes-com/"/>
+		<updated>2009-09-13T00:00:00-07:00</updated>
+    <id>http://troy.yort.com/anatomy-of-a-malware-ad-on-nytimes-com</id>
+    <content type="html">&lt;p&gt;On Saturday evening, Avast displayed a malware warning as I loaded a nytimes.com article. After some digging, here&amp;#8217;s the malware I found.&lt;/p&gt;
+
+&lt;h3&gt;Ad Delivery&lt;/h3&gt;
+
+&lt;p&gt;nytimes.com article pages include an ad placement with the HTML DOM ID &lt;code&gt;adxBigAd&lt;/code&gt;. From loading a few articles, they seem to rotate between a banner and an iframe. On this article, a 300x250 iframe was inlining this URL: &lt;code&gt;tradenton.com&lt;/code&gt; slash &lt;code&gt;?id=21610438&lt;/code&gt; (note: I don&amp;#8217;t recommend visiting it, and URLs are not linked where possible).&lt;/p&gt;
+
+&lt;p&gt;A comment gave the campaign ID as &lt;code&gt;Vonage01_1163613_nyt12&lt;/code&gt;, though it was obviously unrelated to Vonage. tradenton.com was registered Sept. 2, 2009, so it may have had a previous owner.&lt;/p&gt;
+
+&lt;h3&gt;Injection&lt;/h3&gt;
+
+&lt;p&gt;tradenton.com serves a 15-line HTML snipped containing this JavaScript:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/186462.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;As anyone who has looked at phishing links knows, this is nasty on a couple levels. It&amp;#8217;s &lt;code&gt;eval()&lt;/code&gt;&amp;#8216;ing escaped code, which is almost never needed to serve an ad. Note that the variable &lt;code&gt;action_URL&lt;/code&gt; is defined but never used. After unescaping the code, this is what&amp;#8217;s being run:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/186464.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;What&amp;#8217;s served by &lt;code&gt;harlingens.com&lt;/code&gt; slash &lt;code&gt;includes02.js&lt;/code&gt;? Aha! The eval&amp;#8217;ed JavaScript is requesting a second Javascript, which hits &lt;code&gt;action_URL&lt;/code&gt;:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/186466.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;h3&gt;Malware&lt;/h3&gt;
+
+&lt;p&gt;Now we&amp;#8217;re talking. Requesting that &lt;code&gt;action_UR&lt;/code&gt; on &lt;code&gt;sex-and-the-city.cn&lt;/code&gt; actually serves a HTTP 302 Redirect to &lt;code&gt;protection-check07.com&lt;/code&gt; slash &lt;code&gt;1/?sess=%3DGQx3jzwMi02MyZpcD0yMDguNzUuNTcuMTIxJnRpbWU9MTI1NjgwMI0MaQ%3DN&lt;/code&gt;. And we hit pay dirt. It&amp;#8217;s a fake page for a non-existent antivirus app, which is actually malware. Titled &amp;#8220;My computer Online Scan&amp;#8221;, this page displays this JS alert:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/nytimes-malware-1.jpg&quot; alt=&quot;Popup from malware advertised on nytimes.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then resizes the browser window into a full-screen application-style, as if it had become a virus scanner. Some highlights from the static content and JS on this page:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Dont close this window, if your want you PC to be protected.
+353 trojans
+You need to remove this threat as soon as possible!
+Scan procedures finished.
+431 Probably harmfull items was found!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here&amp;#8217;s a screen shot:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/nytimes-malware-2.jpg&quot; alt=&quot;screenshot of web page of malware advertised on nytimes.com&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s &lt;a href=&quot;http://gist.github.com/186467&quot;&gt;full HTML source&lt;/a&gt; in a gist viewer. As usual, these phishers haven&amp;#8217;t sprung for spelling or grammar checkers.&lt;/p&gt;
+
+&lt;p&gt;The page also uses IP-based geocoding by inlining its own iframe called &lt;code&gt;geoip.php&lt;/code&gt;, which has city-level granularity (though it was off by 1,000 miles for me). The &amp;#8220;Full System Cleanup&amp;#8221; link goes to &lt;code&gt;/download.php?id=2006-63&lt;/code&gt; on the same server, which serves a file called &lt;code&gt;Scanner-b4ba2_2006-63.exe&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;That redirects to &lt;code&gt;/download/Scanner-b4ba2_2006-63.exe&lt;/code&gt;, a static file with the checksum &lt;code&gt;6c5b5669151337ca51ec45b1f5785d02&lt;/code&gt;. Running strings on this 167 KB program - too small for any virus scanner - has it requesting administrator privileges, though I haven&amp;#8217;t done detailed forensics.&lt;/p&gt;
+
+&lt;h3&gt;Notes&lt;/h3&gt;
+
+&lt;p&gt;As of Sept. 12, 2009, &lt;code&gt;tradenton.com&lt;/code&gt; and &lt;code&gt;harlingens.com&lt;/code&gt; resolved to 212.117.166.69. &lt;code&gt;sex-and-the-city.cn&lt;/code&gt; resolved to 94.102.48.29. &lt;code&gt;protection-check07.com&lt;/code&gt; had 3 A records: 91.212.107.5, 94.102.51.26, 88.198.107.25. Also, I changed indentation and spacing for readability, so checksums on gist may not match source files.&lt;/p&gt;
+</content>
+	</entry>
+	
+</feed>
