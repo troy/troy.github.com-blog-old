@@ -15,6 +15,6 @@ Last week that secret weapon took on a life of its own when Taco launched [on Ki
 Even the creator of Rails took notice:
 
 <blockquote class="twitter-tweet"><p>Nice kickstarter for a unified todolist that brings content together from Basecamp, Github, Google, and others: <a href="http://t.co/To88EwsXh6">http://t.co/To88EwsXh6</a></p>&mdash; DHH (@dhh) <a href="https://twitter.com/dhh/statuses/347280173999202304">June 19, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></scripts>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Take a look and see whether it fits the way you work. I look forward to bringing you the same fine productivity I've enjoyed for 2 years.
