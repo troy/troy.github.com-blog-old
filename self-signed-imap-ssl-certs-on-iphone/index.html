@@ -11,7 +11,7 @@
   <title>Self-signed IMAP certs on iPhone - Troy Davis, Seattle</title>
 
   
-  <meta name="description" content="I&#8217;m sure somewhere on the planet, there&#8217;s a second person with an iPhone who doesn&#8217;t use GMail, and perhaps that person uses their &hellip;">
+  <meta name="description" content="I&rsquo;m sure somewhere on the planet, there&rsquo;s a second person with an iPhone who doesn&rsquo;t use GMail, and perhaps that person uses their &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -149,19 +149,19 @@
     
 
 
-<div class="entry-content"><p>I&#8217;m sure somewhere on the planet, there&#8217;s a second person with an iPhone who doesn&#8217;t use GMail, and perhaps that person uses their own self-signed SSL certificate for IMAPS.</p>
+<div class="entry-content"><p>I&rsquo;m sure somewhere on the planet, there&rsquo;s a second person with an iPhone who doesn&rsquo;t use GMail, and perhaps that person uses their own self-signed SSL certificate for IMAPS.</p>
 
-<p>When adding a new Account, iPhone iOS 3 setup will pop up a dialog to confirm the shady self-signed certificate. Even with that acknowledged, it will try to connect and eventually time out. The warning doesn&#8217;t mention (nor prompt to install) the root certificate, which will make the cogs turn.</p>
+<p>When adding a new Account, iPhone iOS 3 setup will pop up a dialog to confirm the shady self-signed certificate. Even with that acknowledged, it will try to connect and eventually time out. The warning doesn&rsquo;t mention (nor prompt to install) the root certificate, which will make the cogs turn.</p>
 
 <p>Put the CA root cert on any Web server (.crt extension and application/x-x509-ca-cert MIME type), then hit the URL in Safari from the phone.</p>
 
-<p>You&#8217;ll see an Install Profile dialog like in the <a href="http://support.apple.com/manuals/en_US/Enterprise_Deployment_Guide.pdf">Enterprise Deployment Guide</a>:</p>
+<p>You&rsquo;ll see an Install Profile dialog like in the <a href="http://support.apple.com/manuals/en_US/Enterprise_Deployment_Guide.pdf">Enterprise Deployment Guide</a>:</p>
 
 <p><img src="http://images.yort.com/blog/self-signed-imap-ssl-1.jpg" alt="Screenshot of iOS Install Profile dialog" /></p>
 
-<p>No need for the Configuration Utility or Enterprise kit. The deployment guide says you can also attach the cert to an email, then open that message on the phone. Apple, clicking through the IMAP cert alert should make that cert trusted, or at least warn why it won&#8217;t work until the root cert is added (and how).</p>
+<p>No need for the Configuration Utility or Enterprise kit. The deployment guide says you can also attach the cert to an email, then open that message on the phone. Apple, clicking through the IMAP cert alert should make that cert trusted, or at least warn why it won&rsquo;t work until the root cert is added (and how).</p>
 
-<p>Update: I&#8217;m no longer the last person on the planet not using GMail.</p>
+<p>Update: I&rsquo;m no longer the last person on the planet not using GMail.</p>
 </div>
 
 

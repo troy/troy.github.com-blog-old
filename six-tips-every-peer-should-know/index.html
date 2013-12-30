@@ -160,29 +160,29 @@
 100 Mb/sec * 70 ms = 12,500,000 bytes/sec * 0.070 sec = 875,000 bytes
 </code></pre>
 
-<p>Each endpoint&#8217;s OS TCP window size must be at least 875 KB, or it will be the bottleneck.</p>
+<p>Each endpoint&rsquo;s OS TCP window size must be at least 875 KB, or it will be the bottleneck.</p>
 
 <h4>Enlightenment through iperf</h4>
 
-<p>iperf beautifully solves two problems. First, how to generate a fixed amount of traffic and measure packet loss at that rate. &#8220;Send 30 Mbps of UDP to this IP, regardless of TCP congestion control, packet loss, or anything else.&#8221;  Second, how to simulate a TCP flow given different parameters (bitate, window size).</p>
+<p>iperf beautifully solves two problems. First, how to generate a fixed amount of traffic and measure packet loss at that rate. &ldquo;Send 30 Mbps of UDP to this IP, regardless of TCP congestion control, packet loss, or anything else.&rdquo;  Second, how to simulate a TCP flow given different parameters (bitate, window size).</p>
 
 <h4>See whole packet payload, not just headers, with tcpdump</h4>
 
 <p>Most folks have used tcpdump to show packet headers. Even handier for diagnosing protocol-related problems is to print the full payload. To disable reverse DNS lookups, sniff eth0, print the payload, and sample whole packet: <code>tcpdump -n -i eth0 -X -s 0</code></p>
 
-<h4>Find a LAN IP&#8217;s port without tracing cables</h4>
+<h4>Find a LAN IP&rsquo;s port without tracing cables</h4>
 
 <p>Get the MAC address. Using another system or router on the same segment, generate traffic to the IP in question. First, get its MAC: <code>arp -a</code> or <code>show arp</code>. Then find the MAC. In IOS: <code>show mac-address-table address 00ff.dead.beef</code></p>
 
 <h4>5 minute samples are almost meaningless for many traffic profiles</h4>
 
-<p>While measuring usage counters every 5 minutes works wonderfully for calculating total traffic passed, in many cases it leads to wildly inaccurate throughput estimates. 5 minute averages round off most useful granularity; when a circuit&#8217;s 5 minute average usage is over 50%, it may already be the bottleneck for on microsecond granularity, depending on number of endpoints, traffic profile, serialization time, and other characteristics.</p>
+<p>While measuring usage counters every 5 minutes works wonderfully for calculating total traffic passed, in many cases it leads to wildly inaccurate throughput estimates. 5 minute averages round off most useful granularity; when a circuit&rsquo;s 5 minute average usage is over 50%, it may already be the bottleneck for on microsecond granularity, depending on number of endpoints, traffic profile, serialization time, and other characteristics.</p>
 
 <p>Try polling 1 device on a 1 minute or 30 second sample and prepare to be amazed.</p>
 
-<h4>Filtering ICMP is not a security requirement, and in fact doesn&#8217;t improve security.</h4>
+<h4>Filtering ICMP is not a security requirement, and in fact doesn&rsquo;t improve security.</h4>
 
-<p>It&#8217;s just really annoying. If you must filter, allow the types  required for basic operation, like TTL Exceeded and Host/Port Unreachable.</p>
+<p>It&rsquo;s just really annoying. If you must filter, allow the types  required for basic operation, like TTL Exceeded and Host/Port Unreachable.</p>
 </div>
 
 

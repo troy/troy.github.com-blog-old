@@ -155,7 +155,7 @@
 
 <p>Just an update for the archives and anyone else debugging this. I went through the <a href="http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16">Python example</a> and it does work for POST requests in the body. I tested CREATE and INSERT.</p>
 
-<p>Here are the 2 things that were tripping up the Ruby GData library coupled with someone&#8217;s monkeypatched OAuth auth_handler (<code>GData::Auth::OAuth</code>). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.</p>
+<p>Here are the 2 things that were tripping up the Ruby GData library coupled with someone&rsquo;s monkeypatched OAuth auth_handler (<code>GData::Auth::OAuth</code>). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.</p>
 
 <p>Here goes:</p>
 
@@ -171,11 +171,11 @@
 </li>
 <li><p>Most language built-in URI encoders are designed for <a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1">x-www-form-urlencoded</a>, with spaces as plus characters. OAuth wants everything UTF-8, ie <code>U+0020</code> or <code>%20</code> for space. The confusing part for Fusion Tables is that this works in GET requests: <a href="" title="https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1">select+*+from+317391+limit+1</a></p>
 
-<p> .. but that space encoding won&#8217;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&#8217;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.</p></li>
+<p> .. but that space encoding won&rsquo;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&rsquo;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.</p></li>
 </ol>
 
 
-<p>Finally, if it helps anyone, here&#8217;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:</p>
+<p>Finally, if it helps anyone, here&rsquo;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:</p>
 
 <pre><code>POST&amp;http%3A%2F%2Fwww.google.com%2Ffusiontables%2Fapi 
 %2Fquery&amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce 
@@ -192,7 +192,7 @@
 <pre><code>sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A+STRING%2C%27col1%27%3A+STRING%29
 </code></pre>
 
-<p>I&#8217;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.</p>
+<p>I&rsquo;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.</p>
 </div>
 
 
