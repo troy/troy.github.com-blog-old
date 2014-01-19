@@ -4,6 +4,8 @@ title: A few days with the SlimFold Tyvek Wallet
 date: Aug 19, 2012
 ---
 
+Update (January 19, 2014): After 2 Slimfolds, I'm still completely satisfied. I ordered a Slimfold Micro today. Read on for my initial experiences.
+
 My [SlimFold Wallet](http://slimfoldwallet.com/) arrived in Bangkok. Here's a photo of mine when loaded.
 
 ![Photo of SlimFold Tyvek Wallet in use](http://images.yort.com/blog/slimfold-tyvek-wallet-1.jpg)
