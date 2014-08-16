@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oaxaca street food recommendations"
-date: 2014-08-16 08:08:23 -0700
+date: 2014-03-30 14:08:23 -0700
 comments: true
 categories: 
 ---
@@ -10,7 +10,11 @@ When I returned from Oaxaca, I found a Chow.com thread titled "Oaxaca
 for dummies." I'd eaten at most of the sit-down restaurants mentioned in
 the discussion, yet they weren't meals I enjoyed most or remembered
 most. Street food was. I wrote [this comment](http://chowhound.chow.com/topics/354760#8849236) 
-with food truck and tianguis/market meal suggestions. It's duplicated below.
+with food truck and tianguis/market meal suggestions. My comment is
+duplicated below.
+
+<blockquote class="twitter-tweet" lang="en"><p>trying to support entrepreneurs in Oaxaca. added Tlayudas Doña Gloria to Google Maps, Flickr: <a href="http://t.co/V7JZmO1nyN">http://t.co/V7JZmO1nyN</a>, <a href="http://t.co/qDbkesD2sP">http://t.co/qDbkesD2sP</a></p>&mdash; Troy Davis (@troyd) <a href="https://twitter.com/troyd/statuses/400324521082642432">November 12, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I just returned from 4 months in Oaxaca. Here's my very condensed
 best-of.
@@ -45,9 +49,6 @@ facing north into the market. Get a torta Hawaiana and a taco.
 
 **CENA - TLAYUDA**: after 8:30 or 8:45 PM (which is not late for dinner in
 Oaxaca), get a tlayuda con tasajo from Cenaduría Doña Gloria: [Google Maps](https://www.google.com/maps/preview?hl=en&cid=12755649183580244725).
-
-<blockquote class="twitter-tweet" lang="en"><p>trying to support entrepreneurs in Oaxaca. added Tlayudas Doña Gloria to Google Maps, Flickr: <a href="http://t.co/V7JZmO1nyN">http://t.co/V7JZmO1nyN</a>, <a href="http://t.co/qDbkesD2sP">http://t.co/qDbkesD2sP</a></p>&mdash; Troy Davis (@troyd) <a href="https://twitter.com/troyd/statuses/400324521082642432">November 12, 2013</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If I picked one must-have meal in Oaxaca, this is it. The food is
 amazing, uniquely Oaxaqueñan, and you're eating on her front porch.
