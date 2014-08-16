@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Troy Davis">
+  <meta name="description" content="Inputs & Outputs">
+
+  <title>Clearer permission message for Chrome new tab extensions - Troy Davis, Seattle</title>
+
+  
+  <meta name="description" content="In creating Taco&rsquo;s Chrome extension, I
+became familiar with Chrome&rsquo;s permission system. An extension defines
+the information it accesses &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://troy.yort.com/clearer-permission-message-for-chrome-new-tab-extensions">
+  <link href="/favicon.png" rel="icon">
+  <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Inputs & Outputs" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7603079-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+
+<body   >
+
+	<div class="container">
+
+		<div class="four columns">
+  			<nav role="navigation"><ul class="title">
+  <li><a href="/">Troy Davis</a></li>
+</ul>
+  
+<ul class="main-navigation">
+  <li class="other"><a href="/">Blog</a></li>
+  <li class="other"><a href="http://twitter.com/troyd">@troyd</a></li>
+  <li class="other"><a href="https://papertrailapp.com/">Papertrail</a></li>
+  <li class="other"><a href="http://tacoapp.com/">Taco</a></li>
+</ul>
+
+
+<ul class="subscription" data-subscription="rss">
+  <li class="other"><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:troy.yort.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+
+
+</nav>
+        <aside class="sidebar">
+          
+            <a href="https://twitter.com/troyd" class="twitter-follow-button" data-show-count="false">Follow @troyd</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<section>
+  <h2>Highlights</h2>
+  <ul id="recent_posts">
+    <li class="post">
+      <a href="/why-web-apps-suck-at-invoices-and-vice-versa/">Why Web apps suck at invoices (and vice versa)</a>
+    </li>
+
+    <li class="post">
+      <a href="/answering-what-one-thing-should-apple-work-on/">Answering "What one thing should Apple work on?"</a>
+    </li>
+
+    <li class="post">
+      <a href="/the-anti-nda/">The Anti-NDA</a>
+    </li>
+
+    <li class="post">
+      <a href="/zipcar-prize-user-sourced-car-sharing-assignm/">Zipcar Prize Proposal: User-sourced car sharing planning algorithm</a>
+    </li>
+  </ul>
+</section>
+
+          
+
+          <section id="habit">
+  <h2>Other</h2>
+  <p><a target="_blank" href="http://twitter.com/PedalOften">@PedalOften</a></p>
+  <p><a target="_blank" href="http://tacoapp.com/">Taco</a></p>
+  <p><a target="_blank" href="http://seattleix.com/">Seattle IX</a></p>
+  <p><a target="_blank" href="https://github.com/troy" target="_blank">GitHub</a></p>         
+</section>
+        </aside>    
+  	</div>
+
+    
+
+  	<div id="main" class="twelve columns">
+	    <div id="content">
+	      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Clearer Permission Message for Chrome New Tab Extensions</h1>
+    
+    
+      <p class="meta">
+        
+      </p>
+    
+  </header>
+
+
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+
+
+<div class="entry-content"><p>In creating Taco&rsquo;s <a href="https://tacoapp.com/chrome">Chrome extension</a>, I
+became familiar with Chrome&rsquo;s permission system. An extension defines
+the information it accesses, as such request history, and Chrome shows
+permission-specific descriptions to end users when they try to install
+it.</p>
+
+<p>I recently added the
+<a href="https://developer.chrome.com/extensions/topSites">topSites</a> permission
+to Taco&rsquo;s extension, which grants very limited access: the URLs and page
+titles of the 20 most frequently visited sites. It&rsquo;s the information
+shown on Chrome&rsquo;s new tab page.</p>
+
+<p>When I added this permission, here&rsquo;s what Chrome presented to users (as
+reported by a justifiably surprised user):</p>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/tacoapp">@tacoapp</a> The reason I ask is that it states on your website that the extension &#39;can&#39;t access your browsing data&#39;… <a href="http://t.co/9EUFn4TrW5">pic.twitter.com/9EUFn4TrW5</a></p>&mdash; Adam Sait (@adamsait) <a href="https://twitter.com/adamsait/statuses/500257116566085632">August 15, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>&ldquo;Read your browsing history&rdquo; isn&rsquo;t an accurate description of the access
+Taco has, especially when a different permission level (&ldquo;history&rdquo;)
+exists which does grant exactly that. I&rsquo;m sure that led some users to
+uninstall the extension instead of upgrading and granting this
+permission, so I wanted to solve the problem for other users like this
+person and for other extension authors.</p>
+
+<p>I found <a href="https://code.google.com/p/chromium/issues/detail?id=362794">this</a>
+Chromium issue about improving permission descriptions and posted
+<a href="https://code.google.com/p/chromium/issues/detail?id=362794#c15">a request</a>
+and a followup <a href="https://code.google.com/p/chromium/issues/detail?id=362794#c17">justification</a>,
+both duplicated below. The justification led to Chromium
+<a href="https://code.google.com/p/chromium/issues/detail?id=404334">issue 404334</a>
+to change the description to something clearer, like &ldquo;Read a list of the
+20 sites you most frequently visit.&rdquo;</p>
+
+<h3>Comment #1 (<a href="https://code.google.com/p/chromium/issues/detail?id=362794#c15">original</a>)</h3>
+
+<p>Our users encountered this problem. Namely, as
+<a href="https://developer.chrome.com/extensions/permission_warnings#warnings">permission warnings</a>
+says, the <code>topSites</code> permission causes users to see the same user-facing
+description as the <code>history</code> permission, even though it has far, far
+less access.</p>
+
+<p>Both permissions say it&rsquo;s possible to &ldquo;Read and modify your browsing
+history.&rdquo; While that&rsquo;s accurate for the history permission, for
+topSites, it should say something like &ldquo;Read the 20 most frequently
+visited URLs&rdquo; or &ldquo;Read most frequently visited URLs.&rdquo;</p>
+
+<p>(If one wanted to be really user-friendly, I could see checking for
+<code>newtab</code> in <code>chrome_url_overrides</code> and adjusting the message for that,
+like &ldquo;Read most frequently visited URLs (such as for new tab pages)&rdquo; or
+linking to a page which says same.)</p>
+
+<p>Anyway, end result is that right now, end users can&rsquo;t tell the
+difference between two permissions which should involve very different
+amounts of trust.</p>
+
+<h3>Comment #2 (<a href="https://code.google.com/p/chromium/issues/detail?id=362794#c17">original</a>)</h3>
+
+<p>Thanks for the fast reply and thoughtful comments, Mustafa. I totally
+agree that none of these is universally perfect. I do think there&rsquo;s 3
+challenges with the current (new) topSites description:</p>
+
+<ol>
+<li><p>When interpreted by almost any user, it&rsquo;s inaccurate. No user thinks
+of &ldquo;browsing history&rdquo; as &ldquo;the most frequently accessed sites,&rdquo; let alone
+&ldquo;the sites on my new tab page.&rdquo; It uses a phrase (&ldquo;browsing history&rdquo;)
+which, while obviously not intentionally wrong, doesn&rsquo;t mean what it&rsquo;s
+intended to.</p>
+
+<p>  Here&rsquo;s an example I encountered today:
+<a href="https://twitter.com/adamsait/status/500242045701988353">tweet</a>. Nobody
+thinks &ldquo;browsing history&rdquo; means &ldquo;URLs of top 20 sites.&rdquo; This manifests
+in lower user satisfaction because users decline to use extensions
+they&rsquo;d actually be comfortable with.</p></li>
+<li><p>Users can&rsquo;t differentiate between 2 very different permission levels.
+By conflating two very different amounts of access (<code>topSites</code> and
+<code>history</code>) into the same single message, a user isn&rsquo;t told the difference.
+Many, maybe a majority of, users who would be uncomfortable granting
+history would be completely comfortable granting topSites.</p>
+
+<p>  In as much as the goal of the permissions system is to let users make
+informed decisions, two very different amounts of access should be
+described differently. (The corollary of this argument: if they aren&rsquo;t
+different enough to justify different descriptions, we might as well
+obsolete topSites and exclusively use history. I don&rsquo;t think that at
+all, though!).</p></li>
+<li><p>It deters extensions from using topSites, or would if extension authors
+knew about this problem ahead of time. I just released an update to a new
+tab page which started using <code>topSites</code>
+(<a href="https://twitter.com/tacoapp/status/500268474560946177">tweet</a>). If I&rsquo;d
+known 24 hours ago what I know now about the permission wording, I would
+not have added topSites support to our extension. Because it&rsquo;s so
+generic, the user message is scarier than the feature justifies.</p></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/oaxaca-street-food-recommendations/" title="Previous Post: Oaxaca street food recommendations">&laquo; Previous post</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+	    </div>
+  	</div>
+  
+  <footer role="contentinfo"  class="sixteen columns"><center>
+<p class="credit">
+  <span class="credit">Powered by <a href="http://github.com">GitHub</a>, <a href="https://github.com/imathis/octopress">Octopress</a>, <a href="https://github.com/ryandeussing/octopress-minimalist">minimalist</a></span>.
+</p>
+</center>
+</footer>
+  
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+
+<script>
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
+</script>
+
+</body>
+</html>
+
+
+	</div> <!-- container -->

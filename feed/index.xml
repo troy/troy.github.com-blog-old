@@ -4,14 +4,120 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2014-08-16T08:45:04-07:00</updated>
+	<updated>2014-08-16T11:00:33-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2014-08-16T08:45:04-07:00</updated>
+  <updated>2014-08-16T11:00:33-07:00</updated>
 	
+	
+	<entry>
+		<title>Clearer permission message for Chrome new tab extensions</title>
+    <link href="http://troy.yort.com/clearer-permission-message-for-chrome-new-tab-extensions/"/>
+		<updated>2014-08-16T10:38:02-07:00</updated>
+    <id>http://troy.yort.com/clearer-permission-message-for-chrome-new-tab-extensions</id>
+    <content type="html">&lt;p&gt;In creating Taco&amp;rsquo;s &lt;a href=&quot;https://tacoapp.com/chrome&quot;&gt;Chrome extension&lt;/a&gt;, I
+became familiar with Chrome&amp;rsquo;s permission system. An extension defines
+the information it accesses, as such request history, and Chrome shows
+permission-specific descriptions to end users when they try to install
+it.&lt;/p&gt;
+
+&lt;p&gt;I recently added the
+&lt;a href=&quot;https://developer.chrome.com/extensions/topSites&quot;&gt;topSites&lt;/a&gt; permission
+to Taco&amp;rsquo;s extension, which grants very limited access: the URLs and page
+titles of the 20 most frequently visited sites. It&amp;rsquo;s the information
+shown on Chrome&amp;rsquo;s new tab page.&lt;/p&gt;
+
+&lt;p&gt;When I added this permission, here&amp;rsquo;s what Chrome presented to users (as
+reported by a justifiably surprised user):&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/tacoapp&quot;&gt;@tacoapp&lt;/a&gt; The reason I ask is that it states on your website that the extension &amp;#39;can&amp;#39;t access your browsing data&amp;#39;… &lt;a href=&quot;http://t.co/9EUFn4TrW5&quot;&gt;pic.twitter.com/9EUFn4TrW5&lt;/a&gt;&lt;/p&gt;&amp;mdash; Adam Sait (@adamsait) &lt;a href=&quot;https://twitter.com/adamsait/statuses/500257116566085632&quot;&gt;August 15, 2014&lt;/a&gt;&lt;/blockquote&gt;
+
+
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&amp;ldquo;Read your browsing history&amp;rdquo; isn&amp;rsquo;t an accurate description of the access
+Taco has, especially when a different permission level (&amp;ldquo;history&amp;rdquo;)
+exists which does grant exactly that. I&amp;rsquo;m sure that led some users to
+uninstall the extension instead of upgrading and granting this
+permission, so I wanted to solve the problem for other users like this
+person and for other extension authors.&lt;/p&gt;
+
+&lt;p&gt;I found &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794&quot;&gt;this&lt;/a&gt;
+Chromium issue about improving permission descriptions and posted
+&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c15&quot;&gt;a request&lt;/a&gt;
+and a followup &lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c17&quot;&gt;justification&lt;/a&gt;,
+both duplicated below. The justification led to Chromium
+&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=404334&quot;&gt;issue 404334&lt;/a&gt;
+to change the description to something clearer, like &amp;ldquo;Read a list of the
+20 sites you most frequently visit.&amp;rdquo;&lt;/p&gt;
+
+&lt;h3&gt;Comment #1 (&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c15&quot;&gt;original&lt;/a&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Our users encountered this problem. Namely, as
+&lt;a href=&quot;https://developer.chrome.com/extensions/permission_warnings#warnings&quot;&gt;permission warnings&lt;/a&gt;
+says, the &lt;code&gt;topSites&lt;/code&gt; permission causes users to see the same user-facing
+description as the &lt;code&gt;history&lt;/code&gt; permission, even though it has far, far
+less access.&lt;/p&gt;
+
+&lt;p&gt;Both permissions say it&amp;rsquo;s possible to &amp;ldquo;Read and modify your browsing
+history.&amp;rdquo; While that&amp;rsquo;s accurate for the history permission, for
+topSites, it should say something like &amp;ldquo;Read the 20 most frequently
+visited URLs&amp;rdquo; or &amp;ldquo;Read most frequently visited URLs.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;(If one wanted to be really user-friendly, I could see checking for
+&lt;code&gt;newtab&lt;/code&gt; in &lt;code&gt;chrome_url_overrides&lt;/code&gt; and adjusting the message for that,
+like &amp;ldquo;Read most frequently visited URLs (such as for new tab pages)&amp;rdquo; or
+linking to a page which says same.)&lt;/p&gt;
+
+&lt;p&gt;Anyway, end result is that right now, end users can&amp;rsquo;t tell the
+difference between two permissions which should involve very different
+amounts of trust.&lt;/p&gt;
+
+&lt;h3&gt;Comment #2 (&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c17&quot;&gt;original&lt;/a&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Thanks for the fast reply and thoughtful comments, Mustafa. I totally
+agree that none of these is universally perfect. I do think there&amp;rsquo;s 3
+challenges with the current (new) topSites description:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;When interpreted by almost any user, it&amp;rsquo;s inaccurate. No user thinks
+of &amp;ldquo;browsing history&amp;rdquo; as &amp;ldquo;the most frequently accessed sites,&amp;rdquo; let alone
+&amp;ldquo;the sites on my new tab page.&amp;rdquo; It uses a phrase (&amp;ldquo;browsing history&amp;rdquo;)
+which, while obviously not intentionally wrong, doesn&amp;rsquo;t mean what it&amp;rsquo;s
+intended to.&lt;/p&gt;
+
+&lt;p&gt;  Here&amp;rsquo;s an example I encountered today:
+&lt;a href=&quot;https://twitter.com/adamsait/status/500242045701988353&quot;&gt;tweet&lt;/a&gt;. Nobody
+thinks &amp;ldquo;browsing history&amp;rdquo; means &amp;ldquo;URLs of top 20 sites.&amp;rdquo; This manifests
+in lower user satisfaction because users decline to use extensions
+they&amp;rsquo;d actually be comfortable with.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Users can&amp;rsquo;t differentiate between 2 very different permission levels.
+By conflating two very different amounts of access (&lt;code&gt;topSites&lt;/code&gt; and
+&lt;code&gt;history&lt;/code&gt;) into the same single message, a user isn&amp;rsquo;t told the difference.
+Many, maybe a majority of, users who would be uncomfortable granting
+history would be completely comfortable granting topSites.&lt;/p&gt;
+
+&lt;p&gt;  In as much as the goal of the permissions system is to let users make
+informed decisions, two very different amounts of access should be
+described differently. (The corollary of this argument: if they aren&amp;rsquo;t
+different enough to justify different descriptions, we might as well
+obsolete topSites and exclusively use history. I don&amp;rsquo;t think that at
+all, though!).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;It deters extensions from using topSites, or would if extension authors
+knew about this problem ahead of time. I just released an update to a new
+tab page which started using &lt;code&gt;topSites&lt;/code&gt;
+(&lt;a href=&quot;https://twitter.com/tacoapp/status/500268474560946177&quot;&gt;tweet&lt;/a&gt;). If I&amp;rsquo;d
+known 24 hours ago what I know now about the permission wording, I would
+not have added topSites support to our extension. Because it&amp;rsquo;s so
+generic, the user message is scarier than the feature justifies.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Oaxaca street food recommendations</title>
@@ -987,83 +1093,6 @@ We have been hit twice in the past two days with calls to 011-252-XXXXXXXX
 &lt;p&gt; Mass BPM calculations would be a killer use for Map/Reduce.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-</content>
-	</entry>
-	
-	<entry>
-		<title>Auction lifecycle for data geeks</title>
-    <link href="http://troy.yort.com/auction-lifecycle-for-data-geeks/"/>
-		<updated>2009-09-13T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/auction-lifecycle-for-data-geeks</id>
-    <content type="html">&lt;p&gt;I collected stats from my first sell-side eBay transaction: number of watchers, number of bids, and current item price. Here&amp;rsquo;s what I found:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/auction-lifecycle-1.png&quot; alt=&quot;Auction Watchers, Bids, and Price Over Time&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Specifics: eBay, 7 day duration, start $0.01, no reserve, $167.50 sale, digital camera, July 2009&lt;/p&gt;
-
-&lt;h3&gt;30-second Summary&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;30-50% of prospects are trolling for a bargain that probably doesn&amp;rsquo;t exist&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;May be an untapped strategy in bidding at 70% of sale price to &amp;ldquo;stake a claim&amp;rdquo;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Last-minute emotions didn&amp;rsquo;t affect the price much&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;7 days may not be long enough for all prospects to discover&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h3&gt;What&amp;rsquo;s noteworthy?&lt;/h3&gt;
-
-&lt;h4&gt;Ratio of watchers:bids (casual interest:purchase intent)&lt;/h4&gt;
-
-&lt;p&gt;For most buyers, this auction was a 2-stage process: find &amp;amp; watch, wait a couple days, then monitor &amp;amp; bid. Visible interest accumulates for 2.5 days, peaking at 11 watchers per 1 bid, then steadily drops to 1.5:1 at sale.&lt;/p&gt;
-
-&lt;p&gt;As the end approaches, there are far fewer lookie-loos relative to participants &amp;ndash; most have either bid or left (un-watched) &amp;ndash; and the ratio sinks. Nobody bids upfront, probably from past experience: each person knows nobody else will bid, so they just watch too.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/auction-lifecycle-2.png&quot; alt=&quot;Ratio of Auction Watchers, Bids, and Price&quot; /&gt;&lt;/p&gt;
-
-&lt;h4&gt;Ratio of price:bids (strength &amp;amp; frequency of purchase intent)&lt;/h4&gt;
-
-&lt;p&gt;Because bidding is idle in days 2 and 3, this ratio starts and stays high ($17 of item price per 1 bid). Then bids trend smaller for 2 days, dropping to an average of $7 per bid. Just like a regular auction, the price increase per new bid is smaller later in the auction, though the absolute price increase is large thanks to lots of bids.&lt;/p&gt;
-
-&lt;p&gt;Only in the last hour does the dollars per bid spike again, and only in relative terms &amp;ndash; small change that happens very quickly. That&amp;rsquo;s the sniper, who must overshoot because there&amp;rsquo;s only one chance to snipe. A larger spike here would indicate a desperate sniper.&lt;/p&gt;
-
-&lt;h4&gt;Ratio of price:watchers (strength &amp;amp; frequency of casual interest)&lt;/h4&gt;
-
-&lt;p&gt;This stays pretty constant throughout the auction until it rises in the last 2 days  I interpret that as bargain hunters bailing (un-watching) while bidding heats up.&lt;/p&gt;
-
-&lt;h3&gt;Analysis&lt;/h3&gt;
-
-&lt;p&gt;Watchers is linear for the first part of the auction, then bargain hunters start to realize they&amp;rsquo;re not going to get a steal. They adapt: they un-watch the item before it ends.  Watchers started dropping about 12 hours before the auction ended, when the price was at about 60% of final sale price.  This shows that some buyers still think it&amp;rsquo;s a good use of time to hunt for undervalued items. That&amp;rsquo;s a challenge with sub-$200 commodity gadgets.&lt;/p&gt;
-
-&lt;p&gt;Assuming our sample size of 1 was representative, one could fit a line to the price ramp and estimate the ending price of a halfway complete auction. This actually might not be far off, at least for auctions matching the same specifics (duration, reserve, category, etc.)&lt;/p&gt;
-
-&lt;p&gt;3 bids arrived in the last 40 seconds, yet those were the only bids in the last few hours. I checked the history of automatic bids (where eBay rebids up to your max allowed amount) vs. user-entered ones: only 2 people (winner and 1 other bidder) were online at 11 AM when the auction ended. Only one of them bid until the last 10 seconds. Unlike live auctions, last-minute emotions didn&amp;rsquo;t affect the price much.&lt;/p&gt;
-
-&lt;p&gt;This reinforces that online auctions aren&amp;rsquo;t impulse-driven, at least for smaller items that can&amp;rsquo;t draw enough live users to start a bidding war. Someone may get caught up in their own re-bidding midway through the auction, and there&amp;rsquo;s an adrenaline rush for those few who actively bid when it ends, but in this auction there wasn&amp;rsquo;t any going-once gavel pounding.&lt;/p&gt;
-
-&lt;h3&gt;Conclusions&lt;/h3&gt;
-
-&lt;p&gt;Although the winner asked me a question 2-3 days in, their first and only bid was 7 seconds before the end. This was destined to be sniped from the very start.&lt;/p&gt;
-
-&lt;p&gt;No one jumps in and makes a semi-serious bid (say, over 60% of final price) before they need to. The serious prospects believe that by placing a real bid, they&amp;rsquo;ll increase the baseline and consequently the sale price. In a sense, we&amp;rsquo;re telling ourselves that we might get a steal by not bidding, and that other people&amp;rsquo;s bid increases are based on the current price more than their willingness to pay.&lt;/p&gt;
-
-&lt;p&gt;That may be true when many buyers are already watching an item. However, I could see making a bid on day 1 that&amp;rsquo;s 70% of final value, and thereby decreasing the number of people who bother to watch it. Basically, you&amp;rsquo;d claim the item for yourself, like bluffing in poker. Assuming the higher first bid translated into fewer watchers, I could see that keeping the final price lower.&lt;/p&gt;
-
-&lt;p&gt;Prospective bidders may have still been discovering the item 7 days in. The number of watchers never really flatlined. While the total number of watchers dropped at the very end, we can&amp;rsquo;t tell whether those folks un-watching were partially offset by new watchers. Based on how quickly the watchers dropped in the final 12 hours, I&amp;rsquo;m guessing the short flat-lining was driven by the auction ending.&lt;/p&gt;
-
-&lt;p&gt;Would more people watch an 8 or 9 day auction?  Probably.  Whether one of those watchers would be willing to pay more is a much harder question.&lt;/p&gt;
-
-&lt;h3&gt;Ideas&lt;/h3&gt;
-
-&lt;p&gt;Because eBay doesn&amp;rsquo;t provide an in-depth event history, we don&amp;rsquo;t know when the 2 ending bidders watched the item, nor how they found it (search? what keywords? browse? which category?). A deep &amp;ldquo;event log&amp;rdquo; with timestamps, referral reason, and username could let sellers write custom auction strategy management tools &amp;ndash; innovate on selling strategy rather than logistics or sourcing.&lt;/p&gt;
-
-&lt;p&gt;I could see charging for that post-transaction visibility, since pro sellers are the only ones likely to refine listing strategy, and presumably they&amp;rsquo;re receiving higher sale prices. Bigger challenge: Prospective buyers would need to acknowledge a warning that their watch interest would be made available to the seller, whether or not they actually bid.&lt;/p&gt;
-
-&lt;p&gt;About 1 in 3 watchers explicitly un-watched this item in the few days after it ended, rather than letting eBay roll it off their watch list. This may mean that eBay can to do a better job of post-auction cleanup or item segmentation, or that 1 in 3 people are really pedantic.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s still room for an auction format which ends 10 minutes after the final bid. Such a hybrid of &amp;ldquo;buy it now&amp;rdquo; and traditional auctions that might actually speed the auction up &amp;ndash; nobody will be motivated by end time, and that could front-load the bidding. Wouldn&amp;rsquo;t take much to be more front-loaded than this auction was.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Note&lt;/em&gt;&lt;/strong&gt;: Bid amount is public-facing current bid, and includes automatic bid. By default, eBay post-auction bid history does not include automatic bids.&lt;/p&gt;
 </content>
 	</entry>
 	
