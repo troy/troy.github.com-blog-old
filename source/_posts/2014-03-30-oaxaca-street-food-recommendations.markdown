@@ -2,7 +2,6 @@
 layout: post
 title: "Oaxaca street food recommendations"
 date: 2014-03-30 14:08:23 -0700
-comments: true
 categories: 
 ---
 
