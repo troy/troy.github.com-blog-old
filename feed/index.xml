@@ -4,13 +4,13 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2014-08-16T11:00:33-07:00</updated>
+	<updated>2014-09-07T15:52:36-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2014-08-16T11:00:33-07:00</updated>
+  <updated>2014-09-07T15:52:36-07:00</updated>
 	
 	
 	<entry>
@@ -55,6 +55,8 @@ both duplicated below. The justification led to Chromium
 to change the description to something clearer, like &amp;ldquo;Read a list of the
 20 sites you most frequently visit.&amp;rdquo;&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h3&gt;Comment #1 (&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c15&quot;&gt;original&lt;/a&gt;)&lt;/h3&gt;
 
 &lt;p&gt;Our users encountered this problem. Namely, as
@@ -76,6 +78,8 @@ linking to a page which says same.)&lt;/p&gt;
 &lt;p&gt;Anyway, end result is that right now, end users can&amp;rsquo;t tell the
 difference between two permissions which should involve very different
 amounts of trust.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3&gt;Comment #2 (&lt;a href=&quot;https://code.google.com/p/chromium/issues/detail?id=362794#c17&quot;&gt;original&lt;/a&gt;)&lt;/h3&gt;
 
@@ -120,6 +124,73 @@ generic, the user message is scarier than the feature justifies.&lt;/p&gt;&lt;/l
 	</entry>
 	
 	<entry>
+		<title>Experience as a customer of Simple.com</title>
+    <link href="http://troy.yort.com/experience-as-a-customer-of-simple-dot-com/"/>
+		<updated>2014-05-21T15:12:54-07:00</updated>
+    <id>http://troy.yort.com/experience-as-a-customer-of-simple-dot-com</id>
+    <content type="html">&lt;p&gt;Jack Gavigan posted &lt;a href=&quot;http://jackgavigan.com/2014/04/14/disruptive-bank/&quot;&gt;What would a disruptive bank look like?&lt;/a&gt;
+and Simple Finance Technology Corp. (AKA Simple.com, formerly
+BankSimple) was one of the services he used as a baseline.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been a customer of Simple since very close to day 1, so I posted
+&lt;a href=&quot;http://jackgavigan.com/2014/04/14/disruptive-bank/#comment-1082&quot;&gt;a comment&lt;/a&gt;
+with off-the-cuff notes. My comment is duplicated below.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here&amp;rsquo;s my notes on experiences as a customer since very close to day 1.&lt;/p&gt;
+
+&lt;h3&gt;Overall&lt;/h3&gt;
+
+&lt;p&gt;Simple does almost everything I want from a basic retail bank. I felt
+like they had enough access and control to try to solve many of the
+problems I&amp;rsquo;d had with other banks. Without the full stack, they still
+had no shortage of ways to stand out.&lt;/p&gt;
+
+&lt;h3&gt;Completeness&lt;/h3&gt;
+
+&lt;p&gt;I actually wanted fewer internally-maintained features than Simple
+provided. For example, I didn&amp;rsquo;t use Simple&amp;rsquo;s goals at all, though I can
+see from Twitter comments that some customers did. As another example,
+Simple&amp;rsquo;s automatic merchant name cleanup was a minor convenience at best,
+and had enough errors that I&amp;rsquo;m not sure it was worth the effort.&lt;/p&gt;
+
+&lt;p&gt;Simple had basically reached maturity for a basic retail bank. Yes, there
+was and is more it could do, but they&amp;rsquo;re the long tail of retail banking
+features. (What would an end-to-end reinvention of a bank let them provide
+that isn&amp;rsquo;t doable today? Perhaps doing less, not more, and exposing &amp;ldquo;raw&amp;rdquo;
+parts of the stack for a future ZenPayroll or Balanced to consume).&lt;/p&gt;
+
+&lt;h3&gt;Support (and paying for it..)&lt;/h3&gt;
+
+&lt;p&gt;Support made or broke the service to a degree that I didn&amp;rsquo;t expect, even
+coming from a bank where I had a personal rep. Simple&amp;rsquo;s site treats support
+discussions as the first-class elements they are. The staff is responsive
+and savvy. It made a huge difference.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know how interchange fees would cover the costs of Simple&amp;rsquo;s customer
+support, let alone software development, ops, and support. Although support
+was very thorough, Simple didn&amp;rsquo;t spend a lot of effort turning answers into
+something that would let other customers find the answer themselves.&lt;/p&gt;
+
+&lt;p&gt;Many of my questions were factual topics which could easily go in a FAQ:
+policies, limits, service features. Obviously I&amp;rsquo;d like my bank to be
+sustainable on the fees it collects, which made it somewhat frustrating when
+I had to ask a question that didn&amp;rsquo;t then end up somewhere in Simple&amp;rsquo;s docs.&lt;/p&gt;
+
+&lt;p&gt;This might be a comprehensive FAQ (yes, there&amp;rsquo;s a FAQ, no, it&amp;rsquo;s not
+comprehensive), a public Discourse-style forum, or giving certain customers
+edit access to the existing FAQ and having staff moderate and release the
+changes. I think Simple was hoping to differentiate mostly on service, so
+providing fewer human interactions didn&amp;rsquo;t really appeal.&lt;/p&gt;
+
+&lt;p&gt;It felt like there was a decision here: either they&amp;rsquo;re a premium bank with
+a monthly price, or they&amp;rsquo;re a friend-of-all consumer bank like what WaMu
+tried to brand themselves as.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Oaxaca street food recommendations</title>
     <link href="http://troy.yort.com/oaxaca-street-food-recommendations/"/>
 		<updated>2014-03-30T14:08:23-07:00</updated>
@@ -136,6 +207,8 @@ duplicated below.&lt;/p&gt;
 
 &lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
+
+&lt;hr /&gt;
 
 &lt;p&gt;I just returned from 4 months in Oaxaca. Here&amp;rsquo;s my very condensed
 best-of.&lt;/p&gt;
@@ -1065,34 +1138,6 @@ We have been hit twice in the past two days with calls to 011-252-XXXXXXXX
 &lt;p&gt;&lt;strong&gt;Africa&lt;/strong&gt;: &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; (how to make it self-sustaining)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;American Empire&lt;/strong&gt;: &amp;ldquo;Yes we are in the decline of the American empire&amp;rdquo; &amp;ldquo;we deserve what we got&amp;rdquo; &amp;ldquo;we aren&amp;rsquo;t as smart as we think we are&amp;rdquo; &amp;ldquo;our promise is so high and our achivement is so low&amp;rdquo;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Towards BPM-based &#8220;Exercise Radio&#8221; stations</title>
-    <link href="http://troy.yort.com/towards-bpm-based-exercise-radio-stations/"/>
-		<updated>2009-09-25T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/towards-bpm-based-exercise-radio-stations</id>
-    <content type="html">&lt;p&gt;Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.&lt;/p&gt;
-
-&lt;p&gt;The closest are &lt;a href=&quot;http://developer.echonest.com/&quot;&gt;Echo Nest&amp;rsquo;s API&lt;/a&gt; (&lt;code&gt;get_tempo&lt;/code&gt;) and &lt;a href=&quot;http://www.last.fm/api&quot;&gt;Last.fm&amp;rsquo;s&lt;/a&gt; API (&lt;code&gt;Track.getInfo&lt;/code&gt;). Echo Nest&amp;rsquo;s requires uploading the song audio data (which I don&amp;rsquo;t have). Last.fm&amp;rsquo;s can be queried with metadata (artist+song name) yet doesn&amp;rsquo;t provide BPM. This NYTimes &lt;a href=&quot;http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/&quot;&gt;Gadgetwise blog post&lt;/a&gt; has local file (MP3) and podcast options.&lt;/p&gt;
-
-&lt;p&gt;I posted this to the &lt;a href=&quot;http://www.last.fm/group/Last.fm+Web+Services/forum/21604/_/568730&quot;&gt;Last.fm Web Services&lt;/a&gt; discussion group, and &lt;a href=&quot;http://twitter.com/troyd/status/4352076414&quot;&gt;asked on Twitter&lt;/a&gt;. I&amp;rsquo;ll update this post if something comes of it.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I prefer to exercise to music, and it&amp;rsquo;s much nicer when the beats per minute matches what I&amp;rsquo;m physically doing. I think this could happen 3 ways:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Faster/slower tempo adjustment of any station. This could be a really awesome subscriber feature.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Adding BPM as a new radio station &amp;ldquo;station type&amp;rdquo; (from &lt;a href=&quot;http://www.last.fm/api/radio&quot;&gt;http://www.last.fm/api/radio&lt;/a&gt; and exposing it in the UI as a Tempo dropdown. For example: lastfm://bpm/140&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A third party app which creates/queues a playlist based on BPM. This would be almost entirely doable with the existing API (get similar artists, add to playlist) if &lt;code&gt;track.getInfo&lt;/code&gt; included BPM.&lt;/p&gt;
-
-&lt;p&gt; There&amp;rsquo;s lots of docs for estimating BPM for a bitstream, but short of someone with a huge music collection, Last.fm would need to pregenerate them and expose it in the API. This API is particularly well thought out: &lt;a href=&quot;http://developer.echonest.com/docs/method/get_tempo/&quot;&gt;http://developer.echonest.com/docs/method/get_tempo/&lt;/a&gt; (but it too needs the bits; it&amp;rsquo;s not an existing database).&lt;/p&gt;
-
-&lt;p&gt; Mass BPM calculations would be a killer use for Map/Reduce.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
 </content>
 	</entry>
 	
