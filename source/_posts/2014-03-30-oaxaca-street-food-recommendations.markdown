@@ -2,7 +2,6 @@
 layout: post
 title: "Oaxaca street food recommendations"
 date: 2014-03-30 14:08:23 -0700
-categories: 
 ---
 
 When I returned from Oaxaca, I found a Chow.com thread titled "Oaxaca
@@ -14,6 +13,8 @@ duplicated below.
 
 <blockquote class="twitter-tweet" lang="en"><p>trying to support entrepreneurs in Oaxaca. added Tlayudas Doña Gloria to Google Maps, Flickr: <a href="http://t.co/V7JZmO1nyN">http://t.co/V7JZmO1nyN</a>, <a href="http://t.co/qDbkesD2sP">http://t.co/qDbkesD2sP</a></p>&mdash; Troy Davis (@troyd) <a href="https://twitter.com/troyd/statuses/400324521082642432">November 12, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+---
 
 I just returned from 4 months in Oaxaca. Here's my very condensed
 best-of.

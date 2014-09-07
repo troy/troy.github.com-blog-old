@@ -2,8 +2,6 @@
 layout: post
 title: "Clearer permission message for Chrome new tab extensions"
 date: 2014-08-16 10:38:02 -0700
-comments: true
-categories: 
 ---
 
 In creating Taco's [Chrome extension](https://tacoapp.com/chrome), I
@@ -40,6 +38,8 @@ both duplicated below. The justification led to Chromium
 to change the description to something clearer, like "Read a list of the
 20 sites you most frequently visit."
 
+---
+
 ### Comment #1 ([original](https://code.google.com/p/chromium/issues/detail?id=362794#c15))
 
 Our users encountered this problem. Namely, as
@@ -61,6 +61,8 @@ linking to a page which says same.)
 Anyway, end result is that right now, end users can't tell the
 difference between two permissions which should involve very different
 amounts of trust.
+
+---
 
 ### Comment #2 ([original](https://code.google.com/p/chromium/issues/detail?id=362794#c17))
 
