@@ -6,7 +6,7 @@ date: 2014-08-16 10:38:02 -0700
 
 In creating Taco's [Chrome extension](https://tacoapp.com/chrome), I
 became familiar with Chrome's permission system. An extension defines
-the information it accesses, as such request history, and Chrome shows
+the information it accesses, like request history, and Chrome shows
 permission-specific descriptions to end users when they try to install
 it.
 
