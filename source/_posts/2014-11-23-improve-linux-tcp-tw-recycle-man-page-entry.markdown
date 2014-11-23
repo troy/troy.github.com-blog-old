@@ -4,7 +4,7 @@ title: "Improve Linux tcp_tw_recycle man page entry"
 date: 2014-11-23 09:01:38 -0800
 ---
 
-I recently identified the cause of a problem affecting one of
+We recently identified the cause of a problem affecting one of
 [Papertrail's](https://papertrailapp.com) service providers. Their hosts 
 occasionally not could establish TCP connections with a seemingly-random 
 small set of Internet hosts.
