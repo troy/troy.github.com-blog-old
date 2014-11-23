@@ -122,3 +122,7 @@ where to learn more.
 > or using NAT (Network Address Translation). Since some NAT gateways
 > pass through IP timestamp values, one IP can appear to have
 > non-increasing timestamps. See RFC 1323 (PAWS), RFC 6191.
+
+There's also a 2013 [BCP](https://tools.ietf.org/html/draft-penno-behave-rfc4787-5382-5508-bis-04#section-3.1.2)
+("Network Address Translation Behavioral Requirements Updates")
+which informs future NAT implementors of this consideration.
