@@ -4,14 +4,171 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2014-09-07T15:52:36-07:00</updated>
+	<updated>2014-11-23T10:28:26-08:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2014-09-07T15:52:36-07:00</updated>
+  <updated>2014-11-23T10:28:26-08:00</updated>
 	
+	
+	<entry>
+		<title>Improve Linux tcp_tw_recycle man page entry</title>
+    <link href="http://troy.yort.com/improve-linux-tcp-tw-recycle-man-page-entry/"/>
+		<updated>2014-11-23T09:01:38-08:00</updated>
+    <id>http://troy.yort.com/improve-linux-tcp-tw-recycle-man-page-entry</id>
+    <content type="html">&lt;p&gt;I recently identified the cause of a problem affecting one of
+&lt;a href=&quot;https://papertrailapp.com&quot;&gt;Papertrail&amp;rsquo;s&lt;/a&gt; service providers. Their hosts
+occasionally not could establish TCP connections with a seemingly-random
+small set of Internet hosts.&lt;/p&gt;
+
+&lt;p&gt;Troubleshooting was difficult because:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The affected hosts changed. One host would oscillate between being able to establish a connection for a
+few hours (or days) and not, seemingly with no pattern.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I didn&amp;rsquo;t have direct access to the service provider&amp;rsquo;s hosts or the end
+users&amp;#8217; hosts. This made reproducing the problem in a controlled environment
+basically impossible. &amp;ldquo;Paste the output of..&amp;rdquo; and &amp;ldquo;Run this packet capture..&amp;rdquo;
+was what I had to work with.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;I couldn&amp;rsquo;t draw conclusions from the end users who reported the problem.
+Fewer than 5 users reported problems and they were biased towards inquisitive
+people (who investigated or reported the first occurrence) or those who
+experienced the problem multiple times. Presumably, some end users couldn&amp;rsquo;t
+connect once and just tried again later.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Among this tiny pool, there was one common theme: the remote hosts traversed
+NAT. My investigation eventually led to &lt;code&gt;tcp_tw_recycle&lt;/code&gt;, a Linux &lt;code&gt;sysctl&lt;/code&gt; flag
+with &lt;a href=&quot;https://www.google.com/search?q=tcp_tw_recycle&quot;&gt;far more Google results&lt;/a&gt;
+than it deserves. Here&amp;rsquo;s why.&lt;/p&gt;
+
+&lt;h3&gt;Linux TCP header verification&lt;/h3&gt;
+
+&lt;p&gt;Modern Linux kernels verify that TCP header values meet certain requirements.
+These include &amp;ldquo;Protect Against Wrapped Sequence numbers&amp;rdquo; or PAWS, defined in
+&lt;a href=&quot;https://www.ietf.org/rfc/rfc1323.txt&quot;&gt;RFC 1323&lt;/a&gt;, and
+&lt;a href=&quot;https://tools.ietf.org/html/rfc6191&quot;&gt;RFC 6191&lt;/a&gt; &amp;ldquo;Reducing the TIME-WAIT State
+Using TCP Timestamps.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;With &lt;code&gt;tcp_tw_recycle&lt;/code&gt; enabled, a connection&amp;rsquo;s TCP header timestamp value is
+retained in cases where it otherwise would not have been kept. From
+&lt;a href=&quot;https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/net/ipv4/tcp_ipv4.c?h=linux-2.6.32.y#n200&quot;&gt;tcp_ipv4.c&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure class=&#39;code&#39;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#39;line-number&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;2&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;3&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;4&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;5&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;6&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;7&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;8&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;9&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;10&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;11&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;12&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;13&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;14&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;15&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#39;code&#39;&gt;&lt;pre&gt;&lt;code class=&#39;&#39;&gt;&lt;span class=&#39;line&#39;&gt;if (tcp_death_row.sysctl_tw_recycle &amp;&amp;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;    !tp-&amp;gt;rx_opt.ts_recent_stamp &amp;&amp; rt-&amp;gt;rt_dst == daddr) {
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        struct inet_peer *peer = rt_get_peer(rt);
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        /*
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;         * VJ&#39;s idea. We save last timestamp seen from
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;         * the destination in peer table, when entering state
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;         * TIME-WAIT * and initialize rx_opt.ts_recent from it,
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;         * when trying new connection.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;         */
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        if (peer != NULL &amp;&amp;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;            peer-&amp;gt;tcp_ts_stamp + TCP_PAWS_MSL &amp;gt;= get_seconds()) {
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;                tp-&amp;gt;rx_opt.ts_recent_stamp = peer-&amp;gt;tcp_ts_stamp;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;                tp-&amp;gt;rx_opt.ts_recent = peer-&amp;gt;tcp_ts;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        }
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;The problem: the TCP timestamp is only tracked on a per-remote-IP basis, yet
+some NAT devices don&amp;rsquo;t rewrite TCP timestamps in the translation process.
+As a result, the Internet-facing IP of a NAT device may transmit valid packets
+with unrelated timestamps.&lt;/p&gt;
+
+&lt;p&gt;The problem we saw manifests when more than one remote host (for example, two
+employees on an office network) try to connect to this Linux host within a few
+minutes of one another. The first connection will succeed, but the
+second connection attempt (from the same public NAT IP) will fail. The
+kernel considers its timestamp invalid.&lt;/p&gt;
+
+&lt;p&gt;In another function, a comment hints at the difference between tracking
+timestamps on a per-host basis and doing so on a per-port-pair basis. From
+&lt;a href=&quot;https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/net/ipv4/tcp_ipv4.c?h=linux-2.6.32.y#n112&quot;&gt;tcp_ipv4.c&lt;/a&gt;:&lt;/p&gt;
+
+&lt;figure class=&#39;code&#39;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#39;line-number&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;2&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;3&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;4&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;5&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;6&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;7&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;8&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;9&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;10&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#39;code&#39;&gt;&lt;pre&gt;&lt;code class=&#39;&#39;&gt;&lt;span class=&#39;line&#39;&gt;/* With PAWS, it is safe from the viewpoint
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   of data integrity. Even without PAWS it is safe provided sequence
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   spaces do not overlap i.e. at data rates &amp;lt;= 80Mbit/sec.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   Actually, the idea is close to VJ&#39;s one, only timestamp cache is
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   held not per host, but per port pair and TW bucket is used as state
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   holder.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   If TW bucket has been already destroyed we fall back to VJ&#39;s scheme
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;   and use initial timestamp retrieved from peer table.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Note: I haven&amp;rsquo;t read anywhere near all of Linux&amp;rsquo;s TCP header source. If you
+find an error in this post, let me know.&lt;/p&gt;
+
+&lt;h3&gt;Root cause&lt;/h3&gt;
+
+&lt;p&gt;Although that&amp;rsquo;s the problem, the root cause is poor documentation. The two
+places that a systems administrator is most likely to consult are
+the kernel &lt;a href=&quot;https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/Documentation/networking/ip-sysctl.txt?h=linux-2.6.32.y#n438&quot;&gt;IP sysctl docs&lt;/a&gt;, which suggests consulting &amp;ldquo;technical experts&amp;rdquo;:&lt;/p&gt;
+
+&lt;figure class=&#39;code&#39;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#39;line-number&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;2&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;3&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#39;code&#39;&gt;&lt;pre&gt;&lt;code class=&#39;&#39;&gt;&lt;span class=&#39;line&#39;&gt;tcp_tw_recycle - BOOLEAN
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        Enable fast recycling TIME-WAIT sockets. Default value is 0.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        It should not be changed without advice/request of technical
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        experts.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;.. and the &lt;a href=&quot;http://man7.org/linux/man-pages/man7/tcp.7.html&quot;&gt;tcp.7 man page&lt;/a&gt;, which says:&lt;/p&gt;
+
+&lt;figure class=&#39;code&#39;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#39;line-number&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;2&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;3&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;4&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#39;code&#39;&gt;&lt;pre&gt;&lt;code class=&#39;&#39;&gt;&lt;span class=&#39;line&#39;&gt;tcp_tw_recycle (Boolean; default: disabled; since Linux 2.4)
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        Enable fast recycling of TIME_WAIT sockets.  Enabling this
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        option is not recommended since this causes problems when
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;        working with NAT (Network Address Translation).&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;Neither of these explain what the option changes or how it interacts with
+NAT. I&amp;rsquo;ve submitted &lt;a href=&quot;http://marc.info/?l=linux-man&amp;amp;m=141676013318902&amp;amp;w=2&quot;&gt;a patch&lt;/a&gt;
+for the man page. The changed copy warns of the possible impact and says
+where to learn more.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Enable fast recycling of TIME_WAIT sockets. Enabling this option is
+not recommended for devices communicating with the general Internet
+or using NAT (Network Address Translation). Since some NAT gateways
+pass through IP timestamp values, one IP can appear to have
+non-increasing timestamps. See RFC 1323 (PAWS), RFC 6191.&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Clearer permission message for Chrome new tab extensions</title>
@@ -20,7 +177,7 @@
     <id>http://troy.yort.com/clearer-permission-message-for-chrome-new-tab-extensions</id>
     <content type="html">&lt;p&gt;In creating Taco&amp;rsquo;s &lt;a href=&quot;https://tacoapp.com/chrome&quot;&gt;Chrome extension&lt;/a&gt;, I
 became familiar with Chrome&amp;rsquo;s permission system. An extension defines
-the information it accesses, as such request history, and Chrome shows
+the information it accesses, like request history, and Chrome shows
 permission-specific descriptions to end users when they try to install
 it.&lt;/p&gt;
 
@@ -1097,47 +1254,6 @@ We have been hit twice in the past two days with calls to 011-252-XXXXXXXX
 &lt;p&gt;Seed has gotten harder compared to 18 months ago.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;ldquo;Deal that doesn&amp;rsquo;t get done&amp;rdquo; is often the best deal&lt;/strong&gt;: No (or much less) VC relaxes the pressure on revenue.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Opinions from Mark Anderson of Strategic News Service (SNS)</title>
-    <link href="http://troy.yort.com/opinions-from-mark-anderson-of-strategic-news/"/>
-		<updated>2009-09-30T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/opinions-from-mark-anderson-of-strategic-news</id>
-    <content type="html">&lt;p&gt;I went to a Q&amp;amp;A with Mark Anderson of &lt;a href=&quot;http://www.stratnews.com/&quot;&gt;Strategic News Service&lt;/a&gt; (SNS) and took down some direct and near-direct quotes. Mark is unique for sharing fairly specific opinions; right or wrong, that&amp;rsquo;s rare. Notes are chronological over 90 minutes. I tried not to take any comments out of context.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;strong&gt;Unemployment&lt;/strong&gt;: &amp;ldquo;Economy has split&amp;rdquo; &amp;ldquo;Second-order problems caused by joblessness&amp;rdquo; &amp;ldquo;Large sea anchor attached to the American economy&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Currencies&lt;/strong&gt;: &amp;ldquo;Old religion: all currencies traded on open markets&amp;rdquo; &amp;ldquo;China and Japan will reverse&amp;rdquo; past positions (now want weak currencies; US not buying and they are starting to sell to local consumers) Currency buyers and sellers are nations now, making entirely deliberate choices&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;IP in Asia&lt;/strong&gt;: &amp;ldquo;You will notice that IP is not strongly protected in Asia, and that is where all the action is now&amp;rdquo; &amp;ldquo;Don&amp;rsquo;t bring the Coke recipe&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Q4 2009&lt;/strong&gt;: &amp;ldquo;Q4 is being underrated by almost everyone&amp;rdquo; &amp;ldquo;netbook will be the best selling format ever&amp;rdquo; &amp;ldquo;I think it&amp;rsquo;s going to be Windows 7&amp;rdquo; (vs. Ubuntu) &amp;ldquo;huge Christmas&amp;rdquo; &amp;ldquo;PC sales will be positive&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;FCC&lt;/strong&gt;: &amp;ldquo;Current FCC commissioner is great&amp;rdquo; (Genachowski)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;USD Inflation&lt;/strong&gt;: how to hedge against the dollar: buy tin for Peruvian shanties (joke) inflation a risk for many or all global currencies, not just USD &amp;ldquo;total liquidity pool was $36 trillion, and doubled it in 6 years&amp;rdquo; &amp;ldquo;huge car wreck that has to come up .. they all know it&amp;rdquo; &amp;ldquo;no one has ever done it [quantitative easing] right, so let&amp;rsquo;s do it now&amp;rdquo; (central bankers perspective)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;How He&amp;rsquo;d Distribute SNS in 2009&lt;/strong&gt;: still probably use email, but hate spam, and still growing problem is identifying senders correctly, and &amp;ldquo;multiple levels of knowing one another&amp;rdquo; &amp;ldquo;it&amp;rsquo;s not Facebook&amp;rdquo; &amp;ldquo;Someone&amp;rsquo;s going to figure out what David Anderson [CEO of Sendmail] couldn&amp;rsquo;t do&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Peak Oil &amp;amp; Energy&lt;/strong&gt;: &amp;ldquo;there is no peak oil&amp;rdquo; &amp;ldquo;that little scam [peak oil]&amp;rdquo; &amp;ldquo;need consistent high price for oil. I&amp;rsquo;m fine with $80 plus or minus $10 for 10 years&amp;rdquo; &amp;ldquo;pricing umbrella to convert to something else&amp;rdquo; (besides petroleum) &amp;ldquo;ultimately I think energy ought to be free&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Countries as Investment Opportunities&lt;/strong&gt;: &amp;ldquo;Australia .. Canada&amp;rdquo; &amp;ldquo;I hate Russia&amp;rdquo; &amp;ldquo;very careful elsewhere&amp;rdquo; of Russia (later): &amp;ldquo;all there is is corruption, kleptocracy, and resources&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Heathcare&lt;/strong&gt;: &amp;ldquo;heathcare is destroying the competitiveness of our businesses&amp;rdquo; &amp;ldquo;what killed GM&amp;rdquo; (if you asked them) &amp;ldquo;I would get rid of all heath insurance companies .. I would dissolve them&amp;rdquo; &amp;ldquo;I feel no fear from starting from scratch&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What Problems &amp;amp; Opportunities Keep You Awake at Night?&lt;/strong&gt;: &amp;ldquo;market manipulation&amp;rdquo; &amp;ldquo;inability of nation to respond to problems&amp;rdquo; most important trend: &amp;ldquo;about 2 billion people rise up from UN poverty level of $1/day .. to $2/day or $4/day&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Boeing&lt;/strong&gt;: &amp;ldquo;I think Boeing is dead man walking&amp;rdquo; used to know &amp;ldquo;never to take crowd jewels of IP outof the country&amp;rdquo; &amp;ldquo;EADS has forced them to this&amp;rdquo; competitors will &amp;ldquo;all be 10 years [behind]&amp;rdquo; .. &amp;ldquo;sounds like General Motors to me&amp;rdquo; &amp;ldquo;biggest customer just became biggest competitor&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Smartphones (iPhone specifically)&lt;/strong&gt;: &amp;ldquo;Steve&amp;rsquo;s done the world a favor by striking this deal with AT&amp;amp;T&amp;rdquo; &amp;ldquo;the best software platform we&amp;rsquo;ve ever dreamed of&amp;rdquo; (smartphones)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Africa&lt;/strong&gt;: &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; (how to make it self-sustaining)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;American Empire&lt;/strong&gt;: &amp;ldquo;Yes we are in the decline of the American empire&amp;rdquo; &amp;ldquo;we deserve what we got&amp;rdquo; &amp;ldquo;we aren&amp;rsquo;t as smart as we think we are&amp;rdquo; &amp;ldquo;our promise is so high and our achivement is so low&amp;rdquo;&lt;/p&gt;
 </content>
 	</entry>
 	
