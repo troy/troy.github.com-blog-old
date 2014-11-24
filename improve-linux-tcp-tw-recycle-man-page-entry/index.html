@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Troy Davis">
+  <meta name="description" content="Inputs & Outputs">
+
+  <title>Improve Linux tcp_tw_recycle man page entry - Troy Davis, Seattle</title>
+
+  
+  <meta name="description" content="We recently identified the cause of a problem affecting one of
+Papertrail&rsquo;s service providers. Their hosts
+occasionally could not establish TCP &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://troy.yort.com/improve-linux-tcp-tw-recycle-man-page-entry">
+  <link href="/favicon.png" rel="icon">
+  <script type="text/javascript" src="http://use.typekit.com/zcp2xbp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/troydavis" rel="alternate" title="Inputs & Outputs" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7603079-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+
+<body   >
+
+	<div class="container">
+
+		<div class="four columns">
+  			<nav role="navigation"><ul class="title">
+  <li><a href="/">Troy Davis</a></li>
+</ul>
+  
+<ul class="main-navigation">
+  <li class="other"><a href="/">Blog</a></li>
+  <li class="other"><a href="http://twitter.com/troyd">@troyd</a></li>
+  <li class="other"><a href="https://papertrailapp.com/">Papertrail</a></li>
+  <li class="other"><a href="http://tacoapp.com/">Taco</a></li>
+</ul>
+
+
+<ul class="subscription" data-subscription="rss">
+  <li class="other"><a href="http://feeds.feedburner.com/troydavis" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:troy.yort.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+
+
+</nav>
+        <aside class="sidebar">
+          
+            <a href="https://twitter.com/troyd" class="twitter-follow-button" data-show-count="false">Follow @troyd</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<section>
+  <h2>Highlights</h2>
+  <ul id="recent_posts">
+    <li class="post">
+      <a href="/why-web-apps-suck-at-invoices-and-vice-versa/">Why Web apps suck at invoices (and vice versa)</a>
+    </li>
+
+    <li class="post">
+      <a href="/answering-what-one-thing-should-apple-work-on/">Answering "What one thing should Apple work on?"</a>
+    </li>
+
+    <li class="post">
+      <a href="/the-anti-nda/">The Anti-NDA</a>
+    </li>
+
+    <li class="post">
+      <a href="/zipcar-prize-user-sourced-car-sharing-assignm/">Zipcar Prize Proposal: User-sourced car sharing planning algorithm</a>
+    </li>
+  </ul>
+</section>
+
+          
+
+          <section id="habit">
+  <h2>Other</h2>
+  <p><a target="_blank" href="http://twitter.com/PedalOften">@PedalOften</a></p>
+  <p><a target="_blank" href="http://tacoapp.com/">Taco</a></p>
+  <p><a target="_blank" href="http://seattleix.com/">Seattle IX</a></p>
+  <p><a target="_blank" href="https://github.com/troy" target="_blank">GitHub</a></p>         
+</section>
+        </aside>    
+  	</div>
+
+    
+
+  	<div id="main" class="twelve columns">
+	    <div id="content">
+	      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Improve Linux Tcp_tw_recycle Man Page Entry</h1>
+    
+    
+      <p class="meta">
+        
+      </p>
+    
+  </header>
+
+
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+
+
+<div class="entry-content"><p>We recently identified the cause of a problem affecting one of
+<a href="https://papertrailapp.com">Papertrail&rsquo;s</a> service providers. Their hosts
+occasionally could not establish TCP connections with a seemingly-random
+small set of Internet hosts.</p>
+
+<p>Troubleshooting was difficult because:</p>
+
+<ul>
+<li><p>The affected hosts changed. One host would oscillate between being able to establish a connection for a
+few hours (or days) and not, seemingly with no pattern.</p></li>
+<li><p>I didn&rsquo;t have direct access to the service provider&rsquo;s hosts or the end
+users&#8217; hosts. This made reproducing the problem in a controlled environment
+basically impossible. &ldquo;Paste the output of..&rdquo; and &ldquo;Run this packet capture..&rdquo;
+was what I had to work with.</p></li>
+<li>I couldn&rsquo;t draw conclusions from the end users who reported the problem.
+Fewer than 5 users reported problems and they were biased towards inquisitive
+people (who investigated or reported the first occurrence) or those who
+experienced the problem multiple times. Presumably, some end users couldn&rsquo;t
+connect once and just tried again later.</li>
+</ul>
+
+
+<p>Among this tiny pool, there was one common theme: the remote hosts traversed
+NAT. My investigation eventually led to <code>tcp_tw_recycle</code>, a Linux <code>sysctl</code> flag
+with <a href="https://www.google.com/search?q=tcp_tw_recycle">far more Google results</a>
+than it deserves. Here&rsquo;s why.</p>
+
+<h3>Linux TCP header verification</h3>
+
+<p>Modern Linux kernels verify that TCP header values meet certain requirements.
+These include &ldquo;Protect Against Wrapped Sequence numbers&rdquo; or PAWS, defined in
+<a href="https://www.ietf.org/rfc/rfc1323.txt">RFC 1323</a>, and
+<a href="https://tools.ietf.org/html/rfc6191">RFC 6191</a> &ldquo;Reducing the TIME-WAIT State
+Using TCP Timestamps.&rdquo;</p>
+
+<p>With <code>tcp_tw_recycle</code> enabled, a connection&rsquo;s TCP header timestamp value is
+retained in cases where it otherwise would not have been kept. From
+<a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/net/ipv4/tcp_ipv4.c?h=linux-2.6.32.y#n200">tcp_ipv4.c</a>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if (tcp_death_row.sysctl_tw_recycle &&
+</span><span class='line'>    !tp-&gt;rx_opt.ts_recent_stamp && rt-&gt;rt_dst == daddr) {
+</span><span class='line'>        struct inet_peer *peer = rt_get_peer(rt);
+</span><span class='line'>        /*
+</span><span class='line'>         * VJ's idea. We save last timestamp seen from
+</span><span class='line'>         * the destination in peer table, when entering state
+</span><span class='line'>         * TIME-WAIT * and initialize rx_opt.ts_recent from it,
+</span><span class='line'>         * when trying new connection.
+</span><span class='line'>         */
+</span><span class='line'>        if (peer != NULL &&
+</span><span class='line'>            peer-&gt;tcp_ts_stamp + TCP_PAWS_MSL &gt;= get_seconds()) {
+</span><span class='line'>                tp-&gt;rx_opt.ts_recent_stamp = peer-&gt;tcp_ts_stamp;
+</span><span class='line'>                tp-&gt;rx_opt.ts_recent = peer-&gt;tcp_ts;
+</span><span class='line'>        }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The problem: the TCP timestamp is only tracked on a per-remote-IP basis, yet
+some NAT devices don&rsquo;t rewrite TCP timestamps in the translation process.
+As a result, the Internet-facing IP of a NAT device may transmit valid packets
+with unrelated timestamps.</p>
+
+<p>The problem we saw manifests when more than one remote host (for example, two
+employees on an office network) try to connect to this Linux host within a few
+minutes of one another. The first connection will succeed, but the
+second connection attempt (from the same public NAT IP) will fail. The
+kernel considers its timestamp invalid.</p>
+
+<p>In another function, a comment hints at the difference between tracking
+timestamps on a per-host basis and doing so on a per-port-pair basis. From
+<a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/net/ipv4/tcp_ipv4.c?h=linux-2.6.32.y#n112">tcp_ipv4.c</a>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/* With PAWS, it is safe from the viewpoint
+</span><span class='line'>   of data integrity. Even without PAWS it is safe provided sequence
+</span><span class='line'>   spaces do not overlap i.e. at data rates &lt;= 80Mbit/sec.
+</span><span class='line'>
+</span><span class='line'>   Actually, the idea is close to VJ's one, only timestamp cache is
+</span><span class='line'>   held not per host, but per port pair and TW bucket is used as state
+</span><span class='line'>   holder.
+</span><span class='line'>
+</span><span class='line'>   If TW bucket has been already destroyed we fall back to VJ's scheme
+</span><span class='line'>   and use initial timestamp retrieved from peer table.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note: I haven&rsquo;t read anywhere near all of Linux&rsquo;s TCP header source. If you
+find an error in this post, let me know.</p>
+
+<h3>Root cause</h3>
+
+<p>Although that&rsquo;s the problem, the root cause is poor documentation. The two
+places that a systems administrator is most likely to consult are
+the kernel <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/tree/Documentation/networking/ip-sysctl.txt?h=linux-2.6.32.y#n438">IP sysctl docs</a>, which suggests consulting &ldquo;technical experts&rdquo;:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tcp_tw_recycle - BOOLEAN
+</span><span class='line'>        Enable fast recycling TIME-WAIT sockets. Default value is 0.
+</span><span class='line'>        It should not be changed without advice/request of technical
+</span><span class='line'>        experts.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>.. and the <a href="http://man7.org/linux/man-pages/man7/tcp.7.html">tcp.7 man page</a>, which says:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>tcp_tw_recycle (Boolean; default: disabled; since Linux 2.4)
+</span><span class='line'>        Enable fast recycling of TIME_WAIT sockets.  Enabling this
+</span><span class='line'>        option is not recommended since this causes problems when
+</span><span class='line'>        working with NAT (Network Address Translation).</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Neither of these explain what the option changes or how it interacts with
+NAT. I&rsquo;ve submitted <a href="http://marc.info/?l=linux-man&amp;m=141676013318902&amp;w=2">a patch</a>
+for the man page. The changed copy warns of the possible impact and says
+where to learn more.</p>
+
+<blockquote><p>Enable fast recycling of TIME_WAIT sockets. Enabling this option is
+not recommended for devices communicating with the general Internet
+or using NAT (Network Address Translation). Since some NAT gateways
+pass through IP timestamp values, one IP can appear to have
+non-increasing timestamps. See RFC 1323 (PAWS), RFC 6191.</p></blockquote>
+
+<p>There&rsquo;s also a 2013 <a href="https://tools.ietf.org/html/draft-penno-behave-rfc4787-5382-5508-bis-04#section-3.1.2">BCP</a>
+(&ldquo;Network Address Translation Behavioral Requirements Updates&rdquo;)
+which informs future NAT implementors of this consideration.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/clearer-permission-message-for-chrome-new-tab-extensions/" title="Previous Post: Clearer permission message for Chrome new tab extensions">&laquo; Previous post</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+	    </div>
+  	</div>
+  
+  <footer role="contentinfo"  class="sixteen columns"><center>
+<p class="credit">
+  <span class="credit">Powered by <a href="http://github.com">GitHub</a>, <a href="https://github.com/imathis/octopress">Octopress</a>, <a href="https://github.com/ryandeussing/octopress-minimalist">minimalist</a></span>.
+</p>
+</center>
+</footer>
+  
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+
+<script>
+  jQuery.noConflict()('li.other').hover (
+    function () {
+    jQuery.noConflict()(this).toggleClass("current-menu-item")
+  });
+</script>
+
+</body>
+</html>
+
+
+	</div> <!-- container -->
