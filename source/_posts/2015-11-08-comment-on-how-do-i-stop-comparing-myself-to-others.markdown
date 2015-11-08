@@ -10,8 +10,8 @@ I posted a [comment](https://news.ycombinator.com/item?id=10528744) on the
 Hacker News thread "[Ask HN: How do I stop comparing myself to others?](https://news.ycombinator.com/item?id=10523788)."
 
 Society didn't offer "Start a geek-centric Web service, then spend years
-building it profitably, and do so while living in a dozen different cities"
-as a viable journey, let alone a valuable goal.
+quietly building it profitably, and do so while living in a dozen different
+cities" as a viable journey, let alone a valuable goal.
 
 Here's the comment:
 
