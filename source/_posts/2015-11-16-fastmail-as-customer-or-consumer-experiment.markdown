@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FastMail as customer-or-consumer experiment"
+title: "FastMail as \"customer or consumer?\" experiment"
 date: 2015-11-16 10:07:23 -0800
 comments: false
 categories:
