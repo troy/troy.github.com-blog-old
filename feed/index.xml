@@ -4,14 +4,41 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2015-11-08T08:14:30-08:00</updated>
+	<updated>2015-11-16T10:15:01-08:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2015-11-08T08:14:30-08:00</updated>
+  <updated>2015-11-16T10:15:01-08:00</updated>
 	
+	
+	<entry>
+		<title>FastMail as customer-or-consumer experiment</title>
+    <link href="http://troy.yort.com/fastmail-as-customer-or-consumer-experiment/"/>
+		<updated>2015-11-16T10:07:23-08:00</updated>
+    <id>http://troy.yort.com/fastmail-as-customer-or-consumer-experiment</id>
+    <content type="html">&lt;p&gt;I posted &lt;a href=&quot;https://news.ycombinator.com/item?id=10575488&quot;&gt;this comment&lt;/a&gt; on &lt;a href=&quot;https://news.ycombinator.com/item?id=10572597&quot;&gt;FastMail: Shutting down our XMPP service&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Background: A &lt;a href=&quot;https://news.ycombinator.com/item?id=10572819&quot;&gt;comment&lt;/a&gt;
+criticized people for wanting to be &amp;ldquo;consumers&amp;rdquo; instead of &amp;ldquo;customers.&amp;rdquo;
+Many other comments implied that people should want to pay for service received
+and/or to encourage interoperability. That&amp;rsquo;s a fine opinion, but not when
+concurrently using Google because it&amp;rsquo;s free.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the comment.&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash;&lt;/p&gt;
+
+&lt;p&gt;When someone raises this concern, I ask who hosts their personal email. 30-50% use a legacy free Google Apps account or Gmail. When I ask why, it&amp;rsquo;s a variation on &amp;ldquo;because FastMail &lt;a href=&quot;https://www.fastmail.com/help/ourservice/pricing.html&quot;&gt;costs&lt;/a&gt; ~$40/year.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Of the rest, more than half host their own MX. While that&amp;rsquo;s totally reasonable, it means the percentage of people willing to pay just $3/month to be a customer is even smaller than it seems. And $40/year is the cheapest that one could ever hope &amp;ldquo;being a customer&amp;rdquo; would cost.&lt;/p&gt;
+
+&lt;p&gt;So, lots of people say they want to be customers, but even when doing so is close to free, very few actually do.&lt;/p&gt;
+
+&lt;p&gt;(Nothing wrong with using Google because it&amp;rsquo;s free, only while concurrently claiming to want to be a customer. I agree with your point and I&amp;rsquo;m a happy FastMail customer. I&amp;rsquo;m amazed FastMail can make a profit at $40 and it&amp;rsquo;s a huge credit to them that they can.)&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Comment on: How do I stop comparing myself to others?</title>
@@ -987,37 +1014,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 
 
 &lt;p&gt;Enjoy!&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>A bit about preventing toll fraud</title>
-    <link href="http://troy.yort.com/a-bit-about-preventing-toll-fraud/"/>
-		<updated>2011-05-20T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/a-bit-about-preventing-toll-fraud</id>
-    <content type="html">&lt;p&gt;Recently posted this reply to the voiceops mailing list. Pasted below or &lt;a href=&quot;https://puck.nether.net/pipermail/voiceops/2011-May/002499.html&quot;&gt;read the original&lt;/a&gt;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;On Tue, May 17, 2011 at 3:53 PM, Darren Schreiber wrote:&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Hi folks,
-We have been hit twice in the past two days with calls to 011-252-XXXXXXXX
-(calls to Somalia I believe, and the originating IP is from Pakistan)&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Others have suggested NCC-specific firewall policies. I&amp;rsquo;ll put in a plug for using per-country-code dialplan routes and omitting really expensive countries.&lt;/p&gt;
-
-&lt;p&gt;Obviously that won&amp;rsquo;t work for worldwide wholesale transport carriers. For everyone else, the most expensive CCs to call aren&amp;rsquo;t worth the trouble. There are very few folks with legitimate needs to call, say, Sierra Leone, that aren&amp;rsquo;t served by Skype. They don&amp;rsquo;t represent enough revenue to justify the risk.&lt;/p&gt;
-
-&lt;p&gt;Those few legit higher-volume folks are willing to prepay using reliable methods. They&amp;rsquo;re usually apologetic that their countries receive enough fraudulent calls to need such a policy.&lt;/p&gt;
-
-&lt;p&gt;Basically scroll through &lt;a href=&quot;http://www.voicetrading.com/en/calling-rates.html&quot;&gt;http://www.voicetrading.com/en/calling-rates.html&lt;/a&gt; and omit routes for any country that&amp;rsquo;s had a civil war in the past 20 years. Fringe benefit: when a country code splits, you won&amp;rsquo;t get caught with a rate deck hole (see Timor-Leste, St Maarten).&lt;/p&gt;
-
-&lt;p&gt;If you want to get slick, have a call attempt to those country codes page your admins as a honeynet (honeyroute?). Somebody&amp;rsquo;s probably up to something.&lt;/p&gt;
-
-&lt;p&gt;Doesn&amp;rsquo;t prevent calls to expensive mobile routes in countries you do reach, they&amp;rsquo;re just a lot less interesting to fraudsters (woo, I can call Proximus!?) and the per-minute costs are mostly way lower.&lt;/p&gt;
-
-&lt;p&gt;Troy&lt;/p&gt;
 </content>
 	</entry>
 	
