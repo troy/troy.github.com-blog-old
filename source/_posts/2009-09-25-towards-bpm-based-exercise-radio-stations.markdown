@@ -4,8 +4,9 @@ title: Towards BPM-based "Exercise Radio" stations
 date: Sep 25, 2009
 ---
 
-**Update**: Spotify has this! [Spotify Running](https://www.spotify.com/us/running/),
-including automatic tempo calculation.
+**Update** (2015-11-23): Spotify has this! Check out
+[Spotify Running](https://www.spotify.com/us/running/) for tempo-based
+playlists and automatic tempo calculation.
 
 Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.
 
