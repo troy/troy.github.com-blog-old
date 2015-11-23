@@ -4,6 +4,9 @@ title: Towards BPM-based "Exercise Radio" stations
 date: Sep 25, 2009
 ---
 
+**Update**: Spotify has this! [Spotify Running](https://www.spotify.com/us/running/),
+including automatic tempo calculation.
+
 Someone, somewhere has the metadata and music chops to deliver BPM-based radio streams. DJs and gym rats will follow. A couple ideas.
 
 The closest are [Echo Nest's API](http://developer.echonest.com/) (`get_tempo`) and [Last.fm's](http://www.last.fm/api) API (`Track.getInfo`). Echo Nest's requires uploading the song audio data (which I don't have). Last.fm's can be queried with metadata (artist+song name) yet doesn't provide BPM. This NYTimes [Gadgetwise blog post](http://gadgetwise.blogs.nytimes.com/2009/06/19/marathon-tech-review-music-you-can-run-to/) has local file (MP3) and podcast options.
