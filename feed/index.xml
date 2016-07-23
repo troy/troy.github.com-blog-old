@@ -4,13 +4,13 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2015-11-23T08:34:12-08:00</updated>
+	<updated>2016-07-23T15:32:53-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2015-11-23T08:34:12-08:00</updated>
+  <updated>2016-07-23T15:32:53-07:00</updated>
 	
 	
 	<entry>
@@ -61,6 +61,24 @@ cities&amp;rdquo; as a viable journey, let alone a valuable goal.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s way harder to think about what you want than to hop on to society&amp;rsquo;s defaults (schools, work prestige, wealth, looks, ..). &lt;a href=&quot;http://www.paulgraham.com/love.html&quot;&gt;http://www.paulgraham.com/love.html&lt;/a&gt; touches on this (&amp;ldquo;if you admire two kinds of work equally, [choose the less prestigious]&amp;rdquo;).&lt;/p&gt;
 
 &lt;p&gt;When no one else is trying to accomplish the same thing in the same way, only absolute measurements matter: how close did you get? How much did you enjoy the ride?&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Papertrail joins SolarWinds and accelerates growth</title>
+    <link href="http://troy.yort.com/papertrail-joins-solarwinds-and-accelerates-growth/"/>
+		<updated>2015-04-28T09:00:00-07:00</updated>
+    <id>http://troy.yort.com/papertrail-joins-solarwinds-and-accelerates-growth</id>
+    <content type="html">&lt;p&gt;(This post was actually published on July 23, 2016 when I realized that the
+draft was never published)&lt;/p&gt;
+
+&lt;p&gt;I’m thrilled that Papertrail is now part of SolarWinds. Here&amp;rsquo;s more:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.papertrailapp.com/papertrail-joins-solarwinds-and-accelerates-growth/&quot;&gt;Papertrail joins SolarWinds and accelerates growth&lt;/a&gt; on papertrailapp.com&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.solarwinds.com/company/newsroom/press_releases/solarwinds_adds_cloud_based_log_management_acquisition_of_papertrail.aspx&quot;&gt;SolarWinds Adds Cloud-based Log Management Capabilities with Acquisition of Papertrail&lt;/a&gt; on solarwinds.com&lt;/li&gt;
+&lt;/ul&gt;
+
 </content>
 	</entry>
 	
@@ -975,45 +993,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;I&amp;rsquo;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>6 tasty sandwiches in Belltown</title>
-    <link href="http://troy.yort.com/6-tasty-sandwiches-in-belltown/"/>
-		<updated>2011-05-29T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/6-tasty-sandwiches-in-belltown</id>
-    <content type="html">&lt;p&gt;Guest posted on BelltownPeople.com nd copied below.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a few well-executed sandwiches in or near our &amp;lsquo;hood. Using the most liberal possible definition of &amp;ldquo;sandwich&amp;rdquo; and in no particular order:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;El Cubano, &lt;a href=&quot;http://www.cyclopsseattle.com/menu/menu.html&quot;&gt;Cyclops&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt; Sweet meets savory: &amp;ldquo;Roasted pulled pork, sliced pit ham, Jarlsberg cheese, thin sliced pickle, dijon mustard and poblano aioli on a grilled ciabatta.&amp;rdquo; Early-afternoon weekend brunch material here.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;East Coast or Chicken Chipotle, &lt;a href=&quot;http://www.yelp.com/biz/mikes-east-coast-sandwiches-seattle&quot;&gt;Mike&amp;rsquo;s East Coast Sandwiches&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; Update: Moved to Pioneer Square.&lt;/p&gt;
-
-&lt;p&gt; Fresh off the panini grill at Cafe Two at Antioch College (with Stumptown drip coffee), Forza Coffee at Fisher Plaza, and Motore Coffee (9th &amp;amp; Lenora).&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;New Town Special, &lt;a href=&quot;http://www.yelp.com/biz/new-town-market-seattle&quot;&gt;New Town Market&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; I recommend smoked turkey instead of peppermill turkey. The same Boar&amp;rsquo;s Head menu is available at &lt;a href=&quot;http://www.yelp.com/biz/westlake-specialty-market-seattle&quot;&gt;Westlake Specialty Market&lt;/a&gt; (7th &amp;amp; Westlake).&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Your custom deli sandwich, ordered online, &lt;a href=&quot;http://www.specialtys.com/Begin.aspx&quot;&gt;Specialty&amp;rsquo;s Cafe&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; Use their sandwich configurator to build a custom sandwich, then order and pay online for pick up in 15 minutes (yes, this actually works!). It&amp;rsquo;s like they timed a leisurely walk from Belltown to 5th and Union. My pick: the &lt;a href=&quot;https://twitter.com/#!/troyd/status/70897277027360768&quot;&gt;Taguchi Goat Club&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Spicy Moroccan Pita, &lt;a href=&quot;http://www.zeitooncafe.com/Entree.pdf&quot;&gt;Zeitoon Cafe&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; Update: closed.&lt;/p&gt;
-
-&lt;p&gt; &amp;ldquo;Dolme, hummus, tabouli, lettuce, cucumber, garlic sauce, house sauce, hot sauce and tzatziky.&amp;rdquo; Pro tip: ask for light or no house sauce, and cut it in half before eating or you&amp;rsquo;ll wear some leftovers home.&lt;/p&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;The Gaucho Dip or 410 Burger, &lt;a href=&quot;http://www.elgaucho.com/elgaucho/images/menus_seattle/bar.pdf&quot;&gt;El Gaucho Bar&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; The menu does its job: &amp;ldquo;Sliced Certified angus Beef prime top sirloin, toasted baguette, chimichurri aioli, english Coastal Cheddar, house au jus, taro chips.&amp;rdquo; For 50% off, pair with a glass of wine and a friend (or an iPad) during &amp;ldquo;The Gaucho 120&amp;rdquo; (minutes of happy hour).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Enjoy!&lt;/p&gt;
 </content>
 	</entry>
 	
