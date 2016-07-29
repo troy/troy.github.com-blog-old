@@ -4,14 +4,33 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2016-07-23T15:32:53-07:00</updated>
+	<updated>2016-07-29T11:15:12-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2016-07-23T15:32:53-07:00</updated>
+  <updated>2016-07-29T11:15:12-07:00</updated>
 	
+	
+	<entry>
+		<title>If Yelp put quality above quantity…</title>
+    <link href="http://troy.yort.com/if-yelp-put-quality-above-quantity-dot-dot-dot/"/>
+		<updated>2016-07-29T11:09:35-07:00</updated>
+    <id>http://troy.yort.com/if-yelp-put-quality-above-quantity-dot-dot-dot</id>
+    <content type="html">&lt;p&gt;I posted &lt;a href=&quot;https://news.ycombinator.com/item?id=12188315&quot;&gt;this comment&lt;/a&gt; on &lt;a href=&quot;https://news.ycombinator.com/item?id=12184688&quot;&gt;this Hacker News thread&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;If Yelp put accuracy and completeness ahead of # of reviews, they&amp;rsquo;d have already made 2 changes:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Let anyone comment on other people&amp;rsquo;s comments &amp;ndash; like HN or Reddit, with similar reputation (points) and up/downvotes.
+ Right now, unless an owner monitors and responds to every negative comment, there&amp;rsquo;s no recourse for being unreasonable or flat-out inaccurate. Even when an owner does so, the recourse is minimal. Let any other Yelp user reply, turning each comment into a thread.&lt;/li&gt;
+&lt;li&gt;When someone posts a 1- or 2-star review, show a second, required comment field for &amp;ldquo;What happened when you informed the retailer?&amp;rdquo;
+ If someone is served a meal they don&amp;rsquo;t like and says nothing at the time, they skipped a &amp;ndash; the &amp;ndash; critical step. While there are cases where a low review could be justified without ever giving the retailer a chance to address the perceived problem (like if someone showed up twice during posted business hours and the retailer was closed), they cause fewer than 10% of 1- and 2-star ratings and they&amp;rsquo;re easy to explain. Otherwise, the minimum for a negative review to be constructive is having informed the retailer (and let them try to address it).&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>FastMail as &#8220;customer or consumer?&#8221; experiment</title>
@@ -941,58 +960,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;p&gt;I could even see a $X tax on same-day alternative destination lot reservations, although that negates some of the long-term value it would create for Zipcar. Eventually, you&amp;rsquo;d want everyone using this with reckless abandon, since it turns customers into your car gofers and makes otherwise-impractical trips affordable.&lt;/p&gt;
 
 &lt;p&gt;If something like a Netflix Contest is interesting, or you already have these data files), please let me know.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>2 common problems with OAuth client libraries</title>
-    <link href="http://troy.yort.com/2-common-problems-with-oauth-client-libraries/"/>
-		<updated>2011-06-12T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/2-common-problems-with-oauth-client-libraries</id>
-    <content type="html">&lt;p&gt;I posted a long &lt;a href=&quot;http://groups.google.com/group/fusion-tables-users-group/msg/535854503fa21868&quot;&gt;explanation&lt;/a&gt; to the fusion-tables-users group about using third-party libraries with Fusion Tables over OAuth. It might also help folks debugging OAuth problems or adding OAuth support to existing libraries. Full text below.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Just an update for the archives and anyone else debugging this. I went through the &lt;a href=&quot;http://code.google.com/p/fusion-tables-client-python/source/browse/trunk/src/samples/oauth_example.py?r=16&quot;&gt;Python example&lt;/a&gt; and it does work for POST requests in the body. I tested CREATE and INSERT.&lt;/p&gt;
-
-&lt;p&gt;Here are the 2 things that were tripping up the Ruby GData library coupled with someone&amp;rsquo;s monkeypatched OAuth auth_handler (&lt;code&gt;GData::Auth::OAuth&lt;/code&gt;). They basically boil down to not being designed for, or frequently used with, POST requests. From skimming other libraries, these problems are endemic to lesser-used OAuth libraries.&lt;/p&gt;
-
-&lt;p&gt;Here goes:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The &lt;code&gt;GData::Auth::OAuth&lt;/code&gt; only pulled out GET params from the URL, not POST params in the request body. POST params need to be sorted alongside the OAuth parameters when creating the signature base, so this immediately made my signatures invalid.&lt;/p&gt;
-
-&lt;p&gt; I saw a couple causes for this in other libraries:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;designing for GET and then exposing a convenience POST method as&amp;nbsp;an afterthought (without looking at the body params)&lt;/li&gt;
-&lt;li&gt;one person wrote the HTTP client, another wrote the OAuth signer, and a third wrote the Fusion Tables library or GData extension, and a corner case got missed (or callers can sign requests before a body is even defined)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Most language built-in URI encoders are designed for &lt;a href=&quot;http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1&quot;&gt;x-www-form-urlencoded&lt;/a&gt;, with spaces as plus characters. OAuth wants everything UTF-8, ie &lt;code&gt;U+0020&lt;/code&gt; or &lt;code&gt;%20&lt;/code&gt; for space. The confusing part for Fusion Tables is that this works in GET requests: &lt;a href=&quot;&quot; title=&quot;https://www.google.com/fusiontables/api/query?sql=select+*+from+317391+limit+1&quot;&gt;select+*+from+317391+limit+1&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; .. but that space encoding won&amp;rsquo;t work in OAuth signature hashes (and thus not the request body itself), and will show up as 401 Unauthorized rather than an app error. If you&amp;rsquo;re adapting an existing Fusion Tables library to work with OAuth, this is something to consider.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;Finally, if it helps anyone, here&amp;rsquo;s a signature base string for a CREATE statement (private values replaced), for the table schema in the Python example code:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;POST&amp;amp;http%3A%2F%2Fwww.google.com%2Ffusiontables%2Fapi 
-%2Fquery&amp;amp;oauth_consumer_key%3Ddomain.com%26oauth_nonce 
-%3D75556368%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp 
-%3D1305155510%26oauth_token 
-%3D1%252F98y2rqyfdfhuaiheworh327rahyADYSAIYuioydadio%26oauth_version 
-%3D1.0%26sql%3DCREATE%2520TABLE%2520%2527data.csv 
-%2527%2520%2528%2527col2%2527%253A%2520STRING%252C%2527col3%2527%253A 
-%2520STRING%252C%2527col1%2527%253A%2520STRING%2529
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;that signature string is for the param:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sql=CREATE+TABLE+%27data.csv%27+%28%27col2%27%3A+STRING%2C%27col3%27%3A+STRING%2C%27col1%27%3A+STRING%29
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I&amp;rsquo;ve tested OAuth POST requests sent as the HTTP Authorization header as well as in the body of the POST, and both work.&lt;/p&gt;
 </content>
 	</entry>
 	
