@@ -4,14 +4,47 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2016-07-29T11:15:42-07:00</updated>
+	<updated>2017-10-22T11:47:35-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2016-07-29T11:15:42-07:00</updated>
+  <updated>2017-10-22T11:47:35-07:00</updated>
 	
+	
+	<entry>
+		<title>Questions to ask before joining a startup</title>
+    <link href="http://troy.yort.com/questions-to-ask-before-joining-a-startup/"/>
+		<updated>2017-10-22T11:16:16-07:00</updated>
+    <id>http://troy.yort.com/questions-to-ask-before-joining-a-startup</id>
+    <content type="html">&lt;p&gt;A friend asked what I&amp;rsquo;d want to know about a startup, even a late-stage one, in order to better evaluate a job offer. Here&amp;rsquo;s the short list of less-obvious questions I&amp;rsquo;d ask before joining a startup.&lt;/p&gt;
+
+&lt;h4&gt;The role&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you could make one impact in the business in your first 6-12 months, what what would it be (according to them)? This is as much to understand the metric they chose &amp;ndash; revenue? product usage? features shipped? employees hired? &amp;ndash; and why it&amp;rsquo;s important as it is to understand the amount.&lt;/li&gt;
+&lt;li&gt;Where do you see the company in 3 years? What internal or industry changes might make you cut the vision short or significantly change the goal?&lt;/li&gt;
+&lt;li&gt;Is there an employee who everyone thinks of as very connected and savvy, who you could use as a mentor for a few months to learn the communication style? If you&amp;rsquo;re remote, ideally this person will be too.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4&gt;The offer&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get enough understanding of the company&amp;rsquo;s cap table to have an idea what your offer represents. At a minimum, ask what percent of the shares currently outstanding your options would be, if they were vested.&lt;/li&gt;
+&lt;li&gt;What happens to vested options if you leave. Have they solved &lt;a href=&quot;http://www.businessinsider.com/pinterest-will-let-employees-exercise-options-for-seven-years-after-leaving-2015-3&quot;&gt;this&lt;/a&gt; &lt;a href=&quot;https://news.ycombinator.com/item?id=9253497&quot;&gt;problem&lt;/a&gt;? If not, it dramatically decreases the value of the options; you basically have to stay until IPO (or some resale event) or acquisition, or take a risk that few people would (exercise illiquid options), or leave with no shares. 7 years is a reasonable length. 3 years is not awful. Given how long companies remain private, 1 year or less is insane; those options are basically toys.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4&gt;Meta&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Is the company forthcoming with the answers? Best case: the company not only answers the questions thoroughly, but also gives detailed reasoning behind their answers. If it seems like they&amp;rsquo;re reluctant to answer (or worse, dismissive of your need to know), that may be a hint how important employees&amp;#8217; concerns are, how much they&amp;rsquo;ve thought about the role you&amp;rsquo;d be doing, or how savvy other recent new employees are.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>If Yelp put quality above quantity…</title>
@@ -907,59 +940,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;p&gt;Here&amp;rsquo;s the printer options from System Preferences. I didn&amp;rsquo;t make any changes:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Zipcar Prize proposal: user-sourced car sharing planning algorithm</title>
-    <link href="http://troy.yort.com/zipcar-prize-user-sourced-car-sharing-assignm/"/>
-		<updated>2011-06-12T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/zipcar-prize-user-sourced-car-sharing-assignm</id>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Update (December, 2012)&lt;/strong&gt;: &lt;a href=&quot;http://car2go.com&quot;&gt;Car2Go&lt;/a&gt; seems to be trying this and even uses municipal parking spaces, so trips could end essentially anywhere.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.zipcar.com/&quot;&gt;Zipcar&lt;/a&gt; customers must return a car to the same parking spot that it was borrowed from. That means customers must rent (and pay for) one specific car for their entire trip, even when it will be parked in an urban area for many hours during the trip.&lt;/p&gt;
-
-&lt;p&gt;In 2009, I emailed Zipcar about cloning &lt;a href=&quot;http://www.netflixprize.com/&quot;&gt;The Netflix Prize&lt;/a&gt; for a similar purpose: crowd-sourcing (really, expert-sourcing) a set of algorithms, incentives, and restrictions that would let Zipcar offer one-way rentals. Like Netflix, The Zipcar Prize would release an anonymized set of trip data, parking space locations, and an evaluation method (which might emphasize certain aspects, as Netflix &lt;a href=&quot;http://www.netflixprize.com//faq#prize&quot;&gt;did&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;This would be a mix of:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;incentives&lt;/strong&gt;: &amp;ldquo;We&amp;rsquo;ll discount $2 for returning it a mere 5 blocks away from your preferred location&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;fees&lt;/strong&gt;: &amp;ldquo;Returning to this location will cost $4 more&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;enforced policies&lt;/strong&gt;, like: must reserve 1 day in advance; one-way trip can&amp;rsquo;t leave a lot empty; only offered at certain urban lots (initially)&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The email after the jump has lots more details (slightly formatted and edited). As far as I know, no one has tackled this. Zipcar hasn&amp;rsquo;t and I didn&amp;rsquo;t receive a reply.&lt;/p&gt;
-
-&lt;p&gt;The first car-sharing service to pull it off will have an amazing competitive advantage: paying for only what you actually need and the ability to &lt;strong&gt;get&lt;/strong&gt; a car to the right place at the right time.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Hi &amp;lt;Zipcar executive&gt;,&lt;/p&gt;
-
-&lt;p&gt;Hope this finds you well. I signed up for Zipcar and found that it didn&amp;rsquo;t have the killer feature for me: the ability to return a car to a different lot, even if that spot had to be selected at reservation time. &lt;a href=&quot;http://twitter.com/troyd/status/3625900233&quot;&gt;This tweet&lt;/a&gt; has a bit more.&lt;/p&gt;
-
-&lt;p&gt;Nothing new there, but here&amp;rsquo;s why I&amp;rsquo;m emailing. Wishing for this feature (and not finding it in the &lt;a href=&quot;http://www.zipcar.com/how/&quot;&gt;FAQ&lt;/a&gt;) led me to wonder whether, as a technical and generally creative guy, I could try my hand at a skunkworks location/availability optimization for returning cars to a second location. Specifically, at:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;minimizing additional parking spaces&lt;/li&gt;
-&lt;li&gt;maximizing availability of at least 1 car at every lot&lt;/li&gt;
-&lt;li&gt;minimizing distance between user&amp;rsquo;s requested destination lot and system&amp;rsquo;s permitted destistination lot&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The first hard part is getting a machine-parsable, anonymized rental history and lot locations, which is why I&amp;rsquo;m emailing. With an anonymized rental history (where users are identified by GUIDs) and &amp;ldquo;home&amp;rdquo; car locations, I or anyone could make 5 or 10 fake scenarios where some percent of users request different destination lots at time of reservation.&lt;/p&gt;
-
-&lt;p&gt;It could play out like a &lt;a href=&quot;http://www.netflixprize.com/&quot;&gt;Netflix Prize&lt;/a&gt; for scheduling. Zipcar would get a ton of press, customers would try to solve one of your most intriguing scale problems, it would go a long way to associate Zipcar with open source and open government (which the Flexcar brand had a stronger association to), and it would cement Zipcar&amp;rsquo;s justification for a $50 late fee as necessary rather than onerous.&lt;/p&gt;
-
-&lt;p&gt;At least in metro Seattle, I think you have enough cars to pull it off, especially with a few restrictions, like that you can&amp;rsquo;t return a car to a different destination lot when it leaves the origin lot empty (because all other cars there are already reserved). That restriction would reduce &amp;ndash; potentially avoid &amp;ndash; any decrease in local coverage, preserving customer satisfaction.&lt;/p&gt;
-
-&lt;p&gt;Moreover, that restriction would motivate people to make one-way reservations farther in advance, which would let the system guide folks to alternative destination lots (&amp;ldquo;You&amp;rsquo;re starting in Ballard. We can&amp;rsquo;t let you return it to 4th &amp;amp; Wall, but we&amp;rsquo;d love for you to return it to 2nd &amp;amp; Vine 5 blocks away.&amp;rdquo;).&lt;/p&gt;
-
-&lt;p&gt;I could even see a $X tax on same-day alternative destination lot reservations, although that negates some of the long-term value it would create for Zipcar. Eventually, you&amp;rsquo;d want everyone using this with reckless abandon, since it turns customers into your car gofers and makes otherwise-impractical trips affordable.&lt;/p&gt;
-
-&lt;p&gt;If something like a Netflix Contest is interesting, or you already have these data files), please let me know.&lt;/p&gt;
 </content>
 	</entry>
 	
