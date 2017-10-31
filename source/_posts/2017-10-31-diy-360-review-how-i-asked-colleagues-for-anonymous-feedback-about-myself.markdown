@@ -30,7 +30,7 @@ I was most interested in things which don't come up on their own in daily conver
 3. What is Troy worst at?
 4. When I interact with Troy, it's (choose one): Painful; Tolerable; Unremarkable; Enjoyable; Great; Describe it yourself
 5. Complete the sentence: "My own work with Troy would be more gratifying if he…"
-6. Tell my anything - things I suck at, life advice, whatever.
+6. Tell me anything - things I suck at, life advice, whatever.
 
 If you do this, adapt the questions and answers to your personality and situation. I've this twice, so the questions above
 
