@@ -4,14 +4,114 @@
 	<title type="text" xml:lang="en"></title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2017-10-22T11:52:14-07:00</updated>
+	<updated>2017-10-31T07:45:14-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2017-10-22T11:52:14-07:00</updated>
+  <updated>2017-10-31T07:45:14-07:00</updated>
 	
+	
+	<entry>
+		<title>DIY 360° review: how I asked colleagues for anonymous feedback about myself</title>
+    <link href="http://troy.yort.com/diy-360-review-how-i-asked-colleagues-for-anonymous-feedback-about-myself/"/>
+		<updated>2017-10-28T10:01:31-07:00</updated>
+    <id>http://troy.yort.com/diy-360-review-how-i-asked-colleagues-for-anonymous-feedback-about-myself</id>
+    <content type="html">&lt;p&gt;I explicitly asked colleagues, customers, and friends for anonymous feedback about myself – a self-administered &lt;a href=&quot;https://en.wikipedia.org/wiki/360-degree_feedback&quot;&gt;360° review&lt;/a&gt;. Here&amp;rsquo;s how I did so (twice in 5 years), and how anyone with 30 minutes can do so for free.&lt;/p&gt;
+
+&lt;h2&gt;Why I did this&lt;/h2&gt;
+
+&lt;p&gt;I thought that my role could make it less likely I&amp;rsquo;d receive unsolicited negative feedback, and that those negative comments were disproportionately valuable (compared to, say, compliments). Specifically:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I mostly work with people whom I hired or at least chose to work with, so I&amp;rsquo;m part of the furniture. It&amp;rsquo;s easy to think of me as an aspect of the company that can&amp;rsquo;t change, or that at least requires taking a risk to change.&lt;/li&gt;
+&lt;li&gt;While I regularly ask coworkers for feedback, making the feedback totally anonymous transfers the burden of interpretation on to the recipient, me. Since I care about the happiness of everyone I solicited feedback from, that&amp;rsquo;s ideal. I want someone to feel safe saying anything, even if it&amp;rsquo;s totally subjective and unsubstantiated. I can choose to disagree with and not act on it.&lt;/li&gt;
+&lt;li&gt;In a small company, there&amp;rsquo;s little or no formal HR. If I don&amp;rsquo;t solicit this feedback (or more broadly, try to personally improve), no one else is going to do it.&lt;/li&gt;
+&lt;li&gt;Although my main goal was incremental improvement, if I or the company did have any true blind spots, this could be the only way I&amp;rsquo;d find out. Sometimes a blind spot isn&amp;rsquo;t even a personal trait or skill, it&amp;rsquo;s not accommodating different &lt;a href=&quot;https://www.yahoo.com/style/biggest-blind-spot-based-myers-briggs-type-173754783.html&quot;&gt;personality-based perceptions&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;What I wanted to learn&lt;/h2&gt;
+
+&lt;p&gt;In product management, asking users for non-specific comments (&amp;ldquo;Do you like our product?&amp;rdquo;) usually leads to less actionable feedback than providing a bit of focus, or even a lot of focus.&lt;/p&gt;
+
+&lt;p&gt;I wanted this survey to take less than 10 minutes, and if a recipient didn&amp;rsquo;t have much to say, less than 5. That meant I couldn&amp;rsquo;t ask many questions. I asked open-ended questions for recipients who wanted them, but also tried to save time with short answer form fields and some pre-populated choices.&lt;/p&gt;
+
+&lt;p&gt;I was most interested in things which don&amp;rsquo;t come up on their own in daily conversation, so here&amp;rsquo;s what I asked:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;When you think of Troy, do any word(s) come to mind?&lt;/li&gt;
+&lt;li&gt;What is Troy best at?&lt;/li&gt;
+&lt;li&gt;What is Troy worst at?&lt;/li&gt;
+&lt;li&gt;When I interact with Troy, it&amp;rsquo;s (choose one): Painful; Tolerable; Unremarkable; Enjoyable; Great; Describe it yourself&lt;/li&gt;
+&lt;li&gt;Complete the sentence: &amp;ldquo;My own work with Troy would be more gratifying if he…&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Tell my anything &amp;ndash; things I suck at, life advice, whatever.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;If you do this, adapt the questions and answers to your personality and situation. I&amp;rsquo;ve this twice, so the questions above&lt;/p&gt;
+
+&lt;h2&gt;How I asked&lt;/h2&gt;
+
+&lt;h4&gt;A Wufoo form&lt;/h4&gt;
+
+&lt;p&gt;I chose Wufoo because its form URLs are so simple: anyone can see they don&amp;rsquo;t contain personally-identifiable information like a UUID, so it&amp;rsquo;s relatively anonymous. I also stated that in the preface. Also, Wufoo&amp;rsquo;s standard themes feel very approachable.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the form exactly as reviewers saw it:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/diy-360-review-wufoo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4&gt;An email request&lt;/h4&gt;
+
+&lt;p&gt;I emailed myself and BCC&amp;#8217;ed about 20:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Coworkers&lt;/li&gt;
+&lt;li&gt;Business counterparties, though not only those who I interacted with the most. I biased the sample towards edge cases: projects where I wasn&amp;rsquo;t sure how satisfied the other person was (an open feedback loop), one-off tasks which I felt pushed my skills or where I may have under-executed, and personality types whom I didn&amp;rsquo;t interact with very often. Basically, I tried to get as wide a range, and as much criticism, as I could.&lt;/li&gt;
+&lt;li&gt;Friends&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Here&amp;rsquo;s the email, exactly as sent:&lt;/p&gt;
+
+&lt;figure class=&#39;code&#39;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre class=&quot;line-numbers&quot;&gt;&lt;span class=&#39;line-number&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;2&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;3&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;4&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;5&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;6&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;7&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;8&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;9&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;10&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;11&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;12&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;13&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;14&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;15&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;16&lt;/span&gt;
+&lt;span class=&#39;line-number&#39;&gt;17&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#39;code&#39;&gt;&lt;pre&gt;&lt;code class=&#39;&#39;&gt;&lt;span class=&#39;line&#39;&gt;Hi,
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;I&#39;m conducting an anonymous 360-degree review of myself.  You&#39;re
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;receiving this because we&#39;ve worked or interacted a lot, over a long
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;period of time, or in a unique situation, and I value your feedback.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;I&#39;d really appreciate 5-10 minutes of your time, preferably by Sunday,
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;April 14. Head over here:
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;    http://example.wufoo.com/my-form
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;The URL has more. Again, it&#39;s completely anonymous and should only
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;take a few minutes. If you have questions, just reply.
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;Thank you!
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;
+&lt;/span&gt;&lt;span class=&#39;line&#39;&gt;Troy&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/figure&gt;
+
+</content>
+	</entry>
 	
 	<entry>
 		<title>Questions to ask before joining a startup</title>
@@ -898,48 +998,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;img src=&quot;http://images.yort.com/blog/wireless-dashboard-2.png&quot; alt=&quot;Wireless dashboard sketch #2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Same wireframes as a &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157627583858838/&quot;&gt;Flickr set&lt;/a&gt;.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>One-click Canon PIXMA MX870 scanning in OS X</title>
-    <link href="http://troy.yort.com/one-click-canon-pixma-mx870-scanning-in-os-x/"/>
-		<updated>2011-08-28T00:00:00-07:00</updated>
-    <id>http://troy.yort.com/one-click-canon-pixma-mx870-scanning-in-os-x</id>
-    <content type="html">&lt;p&gt;Problem: Canon PIXMA MX870 says &amp;ldquo;Set the PC to start scanning&amp;rdquo; when the &amp;ldquo;Black&amp;rdquo; or &amp;ldquo;Color&amp;rdquo; scan start buttons are pressed.&lt;/p&gt;
-
-&lt;p&gt;Solution: How I enabled one-button scanning&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Install most of the OS X drivers and software from &lt;a href=&quot;http://usa.canon.com/cusa/consumer/products/printers_multifunction/office_all_in_one_inkjet_printers/pixma_mx870#DriversAndSoftware&quot;&gt;canon.com&lt;/a&gt;. I think I installed all of the drivers, or at least ran their downloaded installers. As of this writing, that&amp;rsquo;s ICA Driver, CUPS Driver, Scanner Driver, Mini Master Setup. I also installed MP Navigator and IJ Network Tool from the software downloads. Reboot.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;After installing the &amp;ldquo;Canon IJ Network Scanner Selector,&amp;rdquo; a printer/scanner icon should appear in the dock. The installer sets up the app to run at startup, which I left enabled. The dock dropdown &amp;ldquo;Scan images using the operations panel of the scanner&amp;rdquo; option is enabled. The scanner MAC address is listed and selected in &amp;ldquo;Open Settings&amp;rdquo;:&lt;/p&gt;
-
-&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Run MP Navigator (3.1) and on the main menu, there&amp;rsquo;s an option in the upper right &amp;ldquo;One-click.&amp;rdquo; Mouseover it and a different menu will be shown, including a &amp;ldquo;Start scanning by clicking the button&amp;rdquo; checkbox. This was not the default. I wish I was making this up.&lt;/p&gt;
-
-&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;On that MP Navigator One-click screen, click Preferences. Note that you may have 2 entries under &amp;ldquo;Product Name&amp;rdquo; (&amp;ldquo;MX870 Series&amp;rdquo; and &amp;ldquo;MX870 Series (Network: &lt;Your MAC&gt;).&amp;rdquo; I disabled &amp;ldquo;Compress scanned images when transferring&amp;rdquo; for both product names. On the Scanner Button Settings screen, I changed the paths under &amp;ldquo;Save to PC&amp;rdquo; but didn&amp;rsquo;t make any other changes.&lt;/p&gt;
-
-&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;After making these changes, I was still seeing &amp;ldquo;Set the PC to start scanning&amp;rdquo; when I tried to scan. I shut down MP Navigator and restarted the printer (with the PC on) and it started auto-scanning. I didn&amp;rsquo;t restart the PC except after step 1. I&amp;rsquo;m not sure whether the problem was a one-time issue because the settings changed or a recurring one with the order that they were originally powered on.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;My scanner LCD options (Document or Photo, DPI) are interpreted correctly. Scanning PDFs from the document feeder and bitmap images from the platen both work. Bitmaps from the ADF are not supported (the scanner says to use the platen). I haven&amp;rsquo;t tried PDFs from the platen.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Tested with: OS X 10.6.8, Canon IJ Network Scanner Selector 4.5.0, MP Navigator EX 3.1.3, MX870 driver 10.51.1.0.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Here&amp;rsquo;s the printer options from System Preferences. I didn&amp;rsquo;t make any changes:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/canon-pixma-mx870-6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
