@@ -73,3 +73,7 @@ Thank you!
 
 Troy
 ```
+
+## Results
+
+I received the same number of form submissions as received my email, so in as much as I can measure, 100% responded. None of the comments were totally surprising (not a bad thing!) and they actually skewed more positive than I expected. There's no substitute for seeing people's assessments in their own words, though. The return for the time - mine and others' - was very high. I did this twice over 3 years and I'll do it again if I'm in a similar working situation.
