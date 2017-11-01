@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	
-	<title type="text" xml:lang="en"></title>
+	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2017-10-31T08:32:19-07:00</updated>
+	<updated>2017-11-01T07:43:48-07:00</updated>
   <id>http://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2017-10-31T08:32:19-07:00</updated>
+  <updated>2017-11-01T07:43:48-07:00</updated>
 	
 	
 	<entry>
