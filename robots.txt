@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://troy.yort.com/sitemap.xml 
+Sitemap: https://troy.yort.com/sitemap.xml 
