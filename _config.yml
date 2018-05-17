@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://troy.yort.com
+url: https://troy.yort.com
 title: Inputs & Outputs
 subtitle: Head over to http://twitter.com/troyd to see my more frequent updates.
 author: Troy Davis
@@ -18,7 +18,7 @@ root_desc: Troy Davis
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: http://feeds.feedburner.com/troydavis
+subscribe_rss: https://feeds.feedburner.com/troydavis
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
