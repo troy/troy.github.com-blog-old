@@ -13,7 +13,7 @@ layout: nil
     <name><![CDATA[{{ site.author | strip_html }}]]></name>
     {% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
   </author>
-  <generator uri="http://troy.yort.com/">Troy Davis</generator>
+  <generator uri="https://troy.yort.com/">Troy Davis</generator>
 
   {% for post in site.categories[page.category] limit: 5 %}
   <entry>
