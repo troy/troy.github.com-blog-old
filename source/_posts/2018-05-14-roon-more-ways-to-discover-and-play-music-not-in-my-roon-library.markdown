@@ -14,7 +14,7 @@ Here's the suggestion:
 
 Hey all, here's a wish and a few possible implementation ideas. Please understand that I'm spending the effort to write this down because I care about seeing Roon succeed, not because I want to slam Roon.
 
-Also, as with any feature request, some of this is almost certainly wrong or doesn't apply to Roon's business :slight_smile:
+Also, as with any feature request, some of this is almost certainly wrong or doesn't apply to Roon's business :-)
 
 ## Summary
 
