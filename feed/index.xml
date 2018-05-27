@@ -4,19 +4,19 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2018-05-27T11:07:37-07:00</updated>
+	<updated>2018-05-27T11:17:45-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2018-05-27T11:07:37-07:00</updated>
+  <updated>2018-05-27T11:17:45-07:00</updated>
 	
 	
 	<entry>
 		<title>Chrome loves auto-play, but do users?</title>
     <link href="https://troy.yort.com/chrome-loves-autoplay-but-do-users/"/>
-		<updated>2018-05-27T10:46:01-07:00</updated>
+		<updated>2018-05-17T10:46:01-07:00</updated>
     <id>https://troy.yort.com/chrome-loves-autoplay-but-do-users</id>
     <content type="html">&lt;p&gt;After &lt;a href=&quot;https://news.ycombinator.com/item?id=17036803#17037992&quot;&gt;many&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=16367457#16370471&quot;&gt;many&lt;/a&gt; &lt;a href=&quot;https://news.ycombinator.com/item?id=17008991#17009630&quot;&gt;examples&lt;/a&gt; that:&lt;/p&gt;
 
@@ -33,6 +33,18 @@
 &lt;p&gt;Google has never explained nor substantiated its decisions to allow muted autoplay by default, and not let users change that policy, at least globally and perhaps on a per-site basis. Since Google has a clear conflict of interest, both decisions justify more transparency than they&amp;rsquo;ve been given.&lt;/p&gt;
 
 &lt;p&gt;I don&amp;rsquo;t have any data about user preferences for muted auto-play. I do know that no one likes the current behavior and that Chrome has per-domain controls for far less frequently used – and less polarizing – features, like whether to clear cookies on exit.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s my Chromium bug tracker comment:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Anyone have some data that substantiates the theory that users want muted videos to autoplay by default (rather than, say, on a per-domain basis like cookie retention and &amp;ldquo;Clear cookies on exit&amp;rdquo; settings)?&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s entirely anecdotal (that&amp;rsquo;s why I&amp;rsquo;m asking for data…), but everyone I know can&amp;rsquo;t stand muted autoplay. Google didn&amp;rsquo;t provide any reasoning or substantiation why &amp;ldquo;Muted autoplay is always allowed&amp;rdquo; in &lt;a href=&quot;https://developers.google.com/web/updates/2017/09/autoplay-policy-changes.&quot;&gt;https://developers.google.com/web/updates/2017/09/autoplay-policy-changes.&lt;/a&gt; Advertisers and consumer-facing sites abuse that privilege by autoplaying muted unrelated videos.&lt;/p&gt;
+
+&lt;p&gt;Clearly some users want autoplay for some domains. My question is whether at least a meaningful percentage of users would prefer to disable autoplay entirely, even for muted videos, at least for some domains.&lt;/p&gt;
+
+&lt;p&gt;Related discussion: &lt;a href=&quot;https://news.ycombinator.com/item?id=17036803#17037890&quot;&gt;https://news.ycombinator.com/item?id=17036803#17037890&lt;/a&gt;&lt;/p&gt;
 </content>
 	</entry>
 	
