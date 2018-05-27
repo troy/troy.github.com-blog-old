@@ -4,14 +4,88 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2018-05-17T15:29:32-07:00</updated>
+	<updated>2018-05-27T10:44:34-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2018-05-17T15:29:32-07:00</updated>
+  <updated>2018-05-27T10:44:34-07:00</updated>
 	
+	
+	<entry>
+		<title>Roon: More ways to discover/play music not in my Roon library</title>
+    <link href="https://troy.yort.com/roon-more-ways-to-discover-and-play-music-not-in-my-roon-library/"/>
+		<updated>2018-05-14T10:40:08-07:00</updated>
+    <id>https://troy.yort.com/roon-more-ways-to-discover-and-play-music-not-in-my-roon-library</id>
+    <content type="html">&lt;p&gt;I recently started using &lt;a href=&quot;https://roonlabs.com/&quot;&gt;Roon Labs&lt;/a&gt; and &lt;a href=&quot;https://community.roonlabs.com/t/more-any-ways-to-discover-play-music-not-in-my-roon-library/43136&quot;&gt;posted this suggestion&lt;/a&gt; in their customer Discourse forum.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s the suggestion:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hey all, here&amp;rsquo;s a wish and a few possible implementation ideas. Please understand that I&amp;rsquo;m spending the effort to write this down because I care about seeing Roon succeed, not because I want to slam Roon.&lt;/p&gt;
+
+&lt;p&gt;Also, as with any feature request, some of this is almost certainly wrong or doesn&amp;rsquo;t apply to Roon&amp;rsquo;s business :slight_smile:&lt;/p&gt;
+
+&lt;h2&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Make it easier &amp;ndash; heck, make it possible &amp;ndash; to play music that I haven&amp;rsquo;t explicitly added to my library. At a minimum, expose Tidal&amp;rsquo;s artist radio and track radio.&lt;/p&gt;
+
+&lt;p&gt;One step up from there, make navigating between Roon&amp;rsquo;s version of an artist and Tidal&amp;rsquo;s more seamless, like letting me see my favorited or frequently played albums on Roon&amp;rsquo;s view of an artist (instead of a separate &amp;ldquo;Go to Tidal artist&amp;rdquo; dropdown choice and &amp;ldquo;Tidal artist&amp;rdquo; in search results).&lt;/p&gt;
+
+&lt;p&gt;One step up from there, let me treat Tidal as my Roon library, at least in concept if not in implementation.&lt;/p&gt;
+
+&lt;p&gt;Ideally, eliminate the idea of a binary &amp;ldquo;it&amp;rsquo;s in or it&amp;rsquo;s out&amp;rdquo; library entirely and split that into 2 concepts: music Roon has access to, and a continuum of opinions about that music (from love to hate). &amp;ldquo;The longer-term solution&amp;rdquo; has more on that.&lt;/p&gt;
+
+&lt;h2&gt;Background&lt;/h2&gt;
+
+&lt;p&gt; It feels like 10 or 15 years ago, the standard for music software was to play the music I had. Roon&amp;rsquo;s current feature set is basically the perfect implementation of what I wanted, and would have been thrilled with, in about 2005.&lt;/p&gt;
+
+&lt;p&gt;In the last 10 years, a couple things changed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Access to music. Thanks to Tidal (and before it, Rdio, Spotify, etc.) &amp;ldquo;My library&amp;rdquo; is actually almost the entire North American music catalog. I don&amp;rsquo;t have an &amp;ldquo;it&amp;rsquo;s in or out&amp;rdquo; library (where anything in the library should never be played), I have a continuum of I love, like, am so-so about, dislike, or never want to hear again.&lt;/li&gt;
+&lt;li&gt;Quality of that music. Tidal is as good or better than anything I&amp;rsquo;d ever have locally. In the last 2 years, lossless and MQA eliminated the last reason that music from other sources might not be as play-worthy as &amp;ldquo;library&amp;rdquo; music.&lt;/li&gt;
+&lt;li&gt;Expectations. Between the size of someone&amp;rsquo;s &amp;ldquo;library&amp;rdquo; (ie, all Tidal music) and the rise of machine learning, a computer (think Discover Weekly) can do a great job of finding new music I like &amp;mdash; way better than I&amp;rsquo;d do with manual curation, and good enough that I&amp;rsquo;d put my effort into correcting it rather than creating playlists myself.&lt;/li&gt;
+&lt;li&gt;Publishing rate. The number of new songs appearing on even Tidal, let alone Spotify or Soundcloud, makes it impossible to listen to and curate new stuff even if I wanted to. I&amp;rsquo;d literally be listening to only new stuff just to decide whether I liked it.&lt;/li&gt;
+&lt;li&gt;User persona. 10 years ago, Roon would have been most valuable to folks with hundreds of albums (in a sense, Roon depended on a substantial investment in media). Not only is that no longer true, it might not even be a predictor of/correlated with interest in music or playback portability anymore. Now that lossless subscriptions exist, I&amp;rsquo;d guess that an appreciation for audio quality (ie, lossless playback) plus ownership of more than 1 output are better predictors of suitability for Roon than, say, a desire or past experience collecting albums.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;To boil this down: The idea of a binary &amp;ldquo;it&amp;rsquo;s in or out&amp;rdquo; library was a byproduct of needing to collect albums or at least ripped MP3s. Today, the hard part isn&amp;rsquo;t playing stuff that I know I like; that&amp;rsquo;s table stakes. The hard part is surfacing new stuff that I didn&amp;rsquo;t know I liked, and delivering a great playlist from the entire music catalog that (a) matches my mood or interests, and (b) doesn&amp;rsquo;t require explicit curation. That&amp;rsquo;s also the only viable way to surface new music at the scale it&amp;rsquo;s currently released.&lt;/p&gt;
+
+&lt;p&gt;This is also where the market is going. In 3 years, the idea of a manually-curated library will feel even more outdated than it does now. Even if Roon considers music fanatics to be its only target user (and isn&amp;rsquo;t ever trying to serve a more mainstream audience), having a manually-curated library is not correlated with that category anymore. And if Roon does want to serve a mass market at some point, it&amp;rsquo;s a gatekeeper to doing that.&lt;/p&gt;
+
+&lt;h2&gt;The problem&lt;/h2&gt;
+
+&lt;p&gt;Roon is built on the idea of a binary &amp;ldquo;in or out&amp;rdquo; library, which makes it difficult &amp;ndash; actually, almost impossible &amp;ndash; to play anything not in my library that I don&amp;rsquo;t curate manually (say, manually creating a playlist or going to a specific album).&lt;/p&gt;
+
+&lt;p&gt;As an extreme example, if one uses Roon&amp;rsquo;s &amp;ldquo;Focus&amp;rdquo; feature and the Focus only matches a single song in one&amp;rsquo;s library, Roon will play that one song on a continuous loop.&lt;/p&gt;
+
+&lt;p&gt;Imagine if, instead of listening to an entire set from Imogen Heap, you want a multi-artist playlist of stuff similar to or related to her or a song of hers, across all music you have access to (ie, Tidal, not one&amp;rsquo;s library). As I understand it and Roon&amp;rsquo;s staff confirmed, there&amp;rsquo;s no way to do that in Roon today.&lt;/p&gt;
+
+&lt;p&gt;The obvious example is dynamic artist or track-inspired radio, what Tidal calls &amp;ldquo;Track radio&amp;rdquo; and &amp;ldquo;Artist radio.&amp;rdquo; These aren&amp;rsquo;t currently exposed anywhere in Roon. So, my first and probably simplest wish would be new choices in the &amp;ldquo;Play&amp;rdquo; dropdown for &amp;ldquo;Track radio&amp;rdquo; and &amp;ldquo;Artist radio&amp;rdquo; that use Tidal&amp;rsquo;s implementations of same.&lt;/p&gt;
+
+&lt;h2&gt;The longer-term solution&lt;/h2&gt;
+
+&lt;p&gt;If one agrees with the factors in &amp;ldquo;Background,&amp;rdquo; then having access to lossless versions of almost every song ever released should cause Roon to adapt. Today, the library serves 2 purposes:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ability to play. Roon considers the library to be the music that it has access to (other than being specifically told to play an album not in my library)&lt;/li&gt;
+&lt;li&gt;Preferences. Roon considers adding something to my library as a proxy for my preferences. Music in one&amp;rsquo;s library is presumed to be loved (it&amp;rsquo;s the only music that Focus and Roon Radio will play), and music not in one&amp;rsquo;s library is presumed to be hated (never played automatically).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;These were never actually the same thing, though. Only item 1 &amp;ndash; &amp;ldquo;Do I have a way to play this song?&amp;rdquo; &amp;ndash; is binary. Item 2 is not binary. Right now, item 2 is treated as binary even though it&amp;rsquo;s not, and item 1 isn&amp;rsquo;t treated as a separate construct.&lt;/p&gt;
+
+&lt;p&gt;Using Roon&amp;rsquo;s terminology, I want a way to add the entire Tidal catalog to my library. Obviously that&amp;rsquo;s probably not the best actual implementation, but it&amp;rsquo;s a good explanation. At that point, item 1 is actually correct (my library is all music that can be played, so Focus and Roon Radio can consider way more music), and item 2 would adjust based on ratings at playback.&lt;/p&gt;
+
+&lt;p&gt;In practice, it probably means splitting these two purposes. Item 1 becomes &amp;ldquo;Anything on a remote service that I have access to, plus anything I have locally&amp;rdquo; and might eliminate the concept of a library.&lt;/p&gt;
+
+&lt;p&gt;Hopefully obvious, but just to say it: none of this is mutually exclusive with local music storage. Someone with no Tidal subscription and purely locally-stored music is just a different set of item 1 &amp;mdash; it&amp;rsquo;s no worse for them than today. The core concept is recognizing that for many Roon users, items 1 and 2 are actually separate concepts, so that for users who do have access to a ton of music (Tidal subscription), Roon automatically makes use of it.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>DIY 360° review: how I asked colleagues for anonymous feedback about myself</title>
@@ -982,24 +1056,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;p&gt;So my challenge, my wish, is that in a few years I can name 9 more thriving OS X ISVs instead of just Omni Group. It&amp;rsquo;s that I can iOS app authors whose businesses have thrived not just because of the App Store, but because Apple took an interest in their businesses and identified ways to bring their products to more people, improve the integration, or just make their lives easier as ISVs.&lt;/p&gt;
 
 &lt;p&gt;(Obligatory disclaimer: I&amp;rsquo;m not an ISV and I don&amp;rsquo;t have a horse in this race. My only hat is as a user.)&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Towards a transparent wireless carrier customer dashboard</title>
-    <link href="https://troy.yort.com/towards-a-transparent-wireless-carrier-custom/"/>
-		<updated>2011-09-03T00:00:00-07:00</updated>
-    <id>https://troy.yort.com/towards-a-transparent-wireless-carrier-custom</id>
-    <content type="html">&lt;p&gt;This is the mobile carrier customer dashboard that I want (or see as a &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157627583858838/&quot;&gt;Flickr set&lt;/a&gt;). The annotations tell the story.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m hoping that at least one of Sprint, T-Mobile, Verizon, or AT&amp;amp;T will eventually realize that transparency is a differentiator (if only because they run out of other ways to stand out). Most of these dashboard elements are possible with existing data that carriers already collect, and in some cases already have in this form for internal use.&lt;/p&gt;
-
-&lt;p&gt;This shows two variations on the same dashboard landing page.&amp;nbsp;Click for larger versions to read the annotations.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/wireless-dashboard-1.png&quot; alt=&quot;Wireless dashboard sketch #1&quot; /&gt;
-&lt;img src=&quot;http://images.yort.com/blog/wireless-dashboard-2.png&quot; alt=&quot;Wireless dashboard sketch #2&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Same wireframes as a &lt;a href=&quot;http://www.flickr.com/photos/yortlabs/sets/72157627583858838/&quot;&gt;Flickr set&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
 	
