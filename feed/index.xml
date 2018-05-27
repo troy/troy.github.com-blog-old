@@ -4,13 +4,13 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2018-05-27T11:18:37-07:00</updated>
+	<updated>2018-05-27T11:19:35-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2018-05-27T11:18:37-07:00</updated>
+  <updated>2018-05-27T11:19:35-07:00</updated>
 	
 	
 	<entry>
@@ -34,7 +34,7 @@
 
 &lt;p&gt;I don&amp;rsquo;t have any data about user preferences for muted auto-play. I do know that no one likes the current behavior and that Chrome has per-domain controls for far less frequently used – and less polarizing – features, like whether to clear cookies on exit.&lt;/p&gt;
 
-&lt;p&gt;Here&amp;rsquo;s my Chromium bug tracker comment:&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s my Chromium bug tracker &lt;a href=&quot;https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126&quot;&gt;comment&lt;/a&gt;:&lt;/p&gt;
 
 &lt;hr /&gt;
 
