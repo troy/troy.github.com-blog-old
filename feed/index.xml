@@ -4,14 +4,37 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2018-05-27T10:44:34-07:00</updated>
+	<updated>2018-05-27T11:07:37-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2018-05-27T10:44:34-07:00</updated>
+  <updated>2018-05-27T11:07:37-07:00</updated>
 	
+	
+	<entry>
+		<title>Chrome loves auto-play, but do users?</title>
+    <link href="https://troy.yort.com/chrome-loves-autoplay-but-do-users/"/>
+		<updated>2018-05-27T10:46:01-07:00</updated>
+    <id>https://troy.yort.com/chrome-loves-autoplay-but-do-users</id>
+    <content type="html">&lt;p&gt;After &lt;a href=&quot;https://news.ycombinator.com/item?id=17036803#17037992&quot;&gt;many&lt;/a&gt;, &lt;a href=&quot;https://news.ycombinator.com/item?id=16367457#16370471&quot;&gt;many&lt;/a&gt; &lt;a href=&quot;https://news.ycombinator.com/item?id=17008991#17009630&quot;&gt;examples&lt;/a&gt; that:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;In some cases, users don&amp;rsquo;t want Chrome to auto-play any videos – even muted ones (mostly because sites abuse the privilege by autoplaying unrelated overlay videos), and&lt;/li&gt;
+&lt;li&gt;Users incorrectly think Chrome&amp;rsquo;s &lt;code&gt;chrome://flags/#autoplay-policy&lt;/code&gt; flag disables auto-playing videos, when it only affects auto-playing videos that aren&amp;rsquo;t muted&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;As of this writing, Chrome&amp;rsquo;s actual &lt;a href=&quot;https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#new-behaviors&quot;&gt;policy&lt;/a&gt; is that &amp;ldquo;Muted autoplay is always allowed.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve responded a few times on Hacker News to clarify the current behavior (see above links). The confusion and the unmet demand for disabling autoplay entirely, at least for certain domains, led me to and &lt;a href=&quot;https://twitter.com/troyd/status/994578157058441217&quot;&gt;tweet&lt;/a&gt; inviting the Chrome product management team to respond, then when they didn&amp;rsquo;t, to &lt;a href=&quot;https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126&quot;&gt;comment on the Chromium bug tracker&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Google has never explained nor substantiated its decisions to allow muted autoplay by default, and not let users change that policy, at least globally and perhaps on a per-site basis. Since Google has a clear conflict of interest, both decisions justify more transparency than they&amp;rsquo;ve been given.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t have any data about user preferences for muted auto-play. I do know that no one likes the current behavior and that Chrome has per-domain controls for far less frequently used – and less polarizing – features, like whether to clear cookies on exit.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Roon: More ways to discover/play music not in my Roon library</title>
@@ -1016,46 +1039,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 &lt;p&gt;Also, SSH authorized keys still work (assuming the SSH config permits them), so you can decide how annoying one-time passwords will be.&lt;/p&gt;
 
 &lt;p&gt;Finally, worth noting that this setup is completely separate from having a Google account. An account isn&amp;rsquo;t required. This setup uses Google&amp;rsquo;s mobile app implementation of &lt;a href=&quot;http://tools.ietf.org/html/rfc6238&quot;&gt;time-based one-time passwords&lt;/a&gt;, the app&amp;rsquo;s ability to import your own key(s), and a PAM that they maintain, all of which are &lt;a href=&quot;http://code.google.com/p/google-authenticator/source/browse&quot;&gt;OSS&lt;/a&gt;.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Answering &#8220;What one thing should Apple work on?&#8221;</title>
-    <link href="https://troy.yort.com/answering-what-one-thing-should-apple-work-on/"/>
-		<updated>2012-05-21T00:00:00-07:00</updated>
-    <id>https://troy.yort.com/answering-what-one-thing-should-apple-work-on</id>
-    <content type="html">&lt;p&gt;Apple market research surveys often end with a wonderfully engaging question: what one thing should Apple work on? Here&amp;rsquo;s my most recent answer (submitted on May 20, 2012).&lt;/p&gt;
-
-&lt;p&gt;Context:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;I&amp;rsquo;m an incredibly satisfied Apple customer. If I could come up with a glaring problem, it would be below. Although this is my #1 suggestion, in absolute terms it hardly ranks.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;I mentioned &amp;ldquo;non-Apple apps&amp;rdquo; because other survey questions differentiated between Apple and third-party apps. It isn&amp;rsquo;t how I categorize them.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;This is an unedited Web form submission, not an essay.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;As an aside, this question is infinitely more useful than the question that most short surveys ask, &amp;ldquo;Would you recommend us to someone else?&amp;rdquo; (&lt;a href=&quot;http://en.wikipedia.org/wiki/Net_Promoter&quot;&gt;Net Promoter&lt;/a&gt; Score).&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Question: What one thing should Apple work on?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Short&lt;/strong&gt;: Use Apple resources to help encourage the next 10 Omni Groups and the next 10 Instapapers.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Long&lt;/strong&gt;: A lot of my time is spent using non-Apple apps, which is completely fine, but makes me wonder how many opportunities exist for Apple to reach out to authors of popular niche or &amp;ldquo;power user&amp;rdquo; apps &amp;ndash; Simplenote, Notational Velocity, Sublime Text, iTerm, TextMate, WindowShade X, and many more &amp;ndash; and find ways to either make their lives easier as ISVs, or make the power of those apps available to more users.&lt;/p&gt;
-
-&lt;p&gt;Some of these ISV apps have mainstream potential, and those that don&amp;rsquo;t still have tons more appeal beyond the distribution they get today (people actively seeking them out). Apple&amp;rsquo;s decision to create Reading List rather than work with Instapaper made its NIH perspective really obvious: even an amazing product from one of the most.&lt;/p&gt;
-
-&lt;p&gt;Apple has tons of happy fanboy ISVs who are eager (thrilled!) to adapt or even design their strategies around Apple&amp;rsquo;s. There&amp;rsquo;s zero risk of being abandoned by ISVs or partners due to lack of relevance, like happened with CodeWarrior and nearly with Office.&lt;/p&gt;
-
-&lt;p&gt;The very real risk is not making the most of the fanboys that Apple has, or tempering their excitement until they recede from True Fans to merely satisfied users. Apple has done an amazing job of creating opportunities for commercial success with the iOS and Mac App Stores, but they&amp;rsquo;ve been very hands-off, fairly self-serving (with the well-jusified 30% fee), and rarely backed by actual Apple resources, strategic decisions (&amp;ldquo;wow, users love Instapaper, it&amp;rsquo;s cheap, the author is as committed as anyone can ever be to the platform &amp;mdash; let&amp;rsquo;s bundle Instapaper&amp;rdquo;) or, well, passion.&lt;/p&gt;
-
-&lt;p&gt;(The best counterexample I can think of is actually Apple&amp;rsquo;s iPhone TV commercials, and they&amp;rsquo;re only counterexamples in that they show just how big of an impact Apple can have when it uses strategic resources to help ISVs.)&lt;/p&gt;
-
-&lt;p&gt;So my challenge, my wish, is that in a few years I can name 9 more thriving OS X ISVs instead of just Omni Group. It&amp;rsquo;s that I can iOS app authors whose businesses have thrived not just because of the App Store, but because Apple took an interest in their businesses and identified ways to bring their products to more people, improve the integration, or just make their lives easier as ISVs.&lt;/p&gt;
-
-&lt;p&gt;(Obligatory disclaimer: I&amp;rsquo;m not an ISV and I don&amp;rsquo;t have a horse in this race. My only hat is as a user.)&lt;/p&gt;
 </content>
 	</entry>
 	
