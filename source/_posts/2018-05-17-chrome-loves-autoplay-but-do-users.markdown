@@ -19,7 +19,7 @@ Google has never explained nor substantiated its decisions to allow muted autopl
 
 I don't have any data about user preferences for muted auto-play. I do know that no one likes the current behavior and that Chrome has per-domain controls for far less frequently used – and less polarizing – features, like whether to clear cookies on exit.
 
-Here's my Chromium bug tracker comment:
+Here's my Chromium bug tracker [comment](https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126):
 
 ---
 
