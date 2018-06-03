@@ -6,12 +6,12 @@ comments: true
 categories:
 ---
 
-After [many](https://news.ycombinator.com/item?id=17036803#17037992), [many](https://news.ycombinator.com/item?id=16367457#16370471) [examples](https://news.ycombinator.com/item?id=17008991#17009630) that:
+I've encountered [many](https://news.ycombinator.com/item?id=17036803#17037992), [many](https://news.ycombinator.com/item?id=16367457#16370471) [examples](https://news.ycombinator.com/item?id=17008991#17009630) that:
 
-1. In some cases, users don't want Chrome to auto-play any videos – even muted ones (mostly because sites abuse the privilege by autoplaying unrelated overlay videos), and
-2. Users incorrectly think Chrome's `chrome://flags/#autoplay-policy` flag disables auto-playing videos, when it only affects auto-playing videos that aren't muted
+1. in some cases, users don't want Chrome to auto-play any videos – even muted ones (mostly because sites abuse the privilege by autoplaying unrelated overlay videos), and
+2. users incorrectly think Chrome's `chrome://flags/#autoplay-policy` flag disables auto-playing videos, when it only affects auto-playing videos that aren't muted
 
-As of this writing, Chrome's actual [policy](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#new-behaviors) is that "Muted autoplay is always allowed."
+Unfortunately, as of this post, Chrome's [policy](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#new-behaviors) is that "Muted autoplay is always allowed."
 
 I've responded a few times on Hacker News to clarify the current behavior (see above links). The confusion and the unmet demand for disabling autoplay entirely, at least for certain domains, led me to and [tweet](https://twitter.com/troyd/status/994578157058441217) inviting the Chrome product management team to respond, then when they didn't, to [comment on the Chromium bug tracker](https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126).
 
