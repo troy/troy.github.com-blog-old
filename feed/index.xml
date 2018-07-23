@@ -4,13 +4,13 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2018-06-03T07:59:21-07:00</updated>
+	<updated>2018-07-23T13:42:10-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2018-06-03T07:59:21-07:00</updated>
+  <updated>2018-07-23T13:42:10-07:00</updated>
 	
 	
 	<entry>
@@ -28,7 +28,7 @@
 
 &lt;p&gt;Unfortunately, as of this post, Chrome&amp;rsquo;s &lt;a href=&quot;https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#new-behaviors&quot;&gt;policy&lt;/a&gt; is that &amp;ldquo;Muted autoplay is always allowed.&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;ve responded a few times on Hacker News to clarify the current behavior (see above links). The confusion and the unmet demand for disabling autoplay entirely, at least for certain domains, led me to and &lt;a href=&quot;https://twitter.com/troyd/status/994578157058441217&quot;&gt;tweet&lt;/a&gt; inviting the Chrome product management team to respond, then when they didn&amp;rsquo;t, to &lt;a href=&quot;https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126&quot;&gt;comment on the Chromium bug tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve responded a few times on Hacker News to clarify the current behavior (see above links). The confusion and the unmet demand for disabling autoplay entirely, at least for certain domains, led me to &lt;a href=&quot;https://twitter.com/troyd/status/994578157058441217&quot;&gt;tweet&lt;/a&gt; inviting the Chrome product management team to respond, then when they didn&amp;rsquo;t, to &lt;a href=&quot;https://bugs.chromium.org/p/chromium/issues/detail?id=840866#c126&quot;&gt;comment on the Chromium bug tracker&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Google has never explained nor substantiated its decisions to allow muted autoplay by default, and not let users change that policy, at least globally and perhaps on a per-site basis. Since Google has a clear conflict of interest, both decisions justify more transparency than they&amp;rsquo;ve been given.&lt;/p&gt;
 
