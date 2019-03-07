@@ -10,7 +10,7 @@ date: Mar 21, 2009
 
 **Solution**: I have this bash function in my .bashrc (update: two versions by request -- shell script and Ruby). You can [download micro-whois here](http://gist.github.com/82956).
 
-<script src="https://gist.github.com/82956.js"></script>
+<script src="https://gist.github.com/troy/82956.js"></script>
 
 and voila, zero-effort domain name availability:
 
