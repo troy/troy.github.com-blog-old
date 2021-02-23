@@ -4,13 +4,13 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2019-03-07T07:36:49-08:00</updated>
+	<updated>2021-02-23T10:58:18-08:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2019-03-07T07:36:49-08:00</updated>
+  <updated>2021-02-23T10:58:18-08:00</updated>
 	
 	
 	<entry>
@@ -61,11 +61,11 @@
 
 &lt;p&gt;Hey all, here&amp;rsquo;s a wish and a few possible implementation ideas. Please understand that I&amp;rsquo;m spending the effort to write this down because I care about seeing Roon succeed, not because I want to slam Roon.&lt;/p&gt;
 
-&lt;p&gt;Also, as with any feature request, some of this is almost certainly wrong or doesn&amp;rsquo;t apply to Roon&amp;rsquo;s business :&amp;ndash;)&lt;/p&gt;
+&lt;p&gt;Also, as with any feature request, some of this is almost certainly wrong or doesn&amp;rsquo;t apply to Roon&amp;rsquo;s business :-)&lt;/p&gt;
 
 &lt;h2&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;Make it easier &amp;ndash; heck, make it possible &amp;ndash; to play music that I haven&amp;rsquo;t explicitly added to my library. At a minimum, expose Tidal&amp;rsquo;s artist radio and track radio.&lt;/p&gt;
+&lt;p&gt;Make it easier - heck, make it possible - to play music that I haven&amp;rsquo;t explicitly added to my library. At a minimum, expose Tidal&amp;rsquo;s artist radio and track radio.&lt;/p&gt;
 
 &lt;p&gt;One step up from there, make navigating between Roon&amp;rsquo;s version of an artist and Tidal&amp;rsquo;s more seamless, like letting me see my favorited or frequently played albums on Roon&amp;rsquo;s view of an artist (instead of a separate &amp;ldquo;Go to Tidal artist&amp;rdquo; dropdown choice and &amp;ldquo;Tidal artist&amp;rdquo; in search results).&lt;/p&gt;
 
@@ -82,7 +82,7 @@
 &lt;ul&gt;
 &lt;li&gt;Access to music. Thanks to Tidal (and before it, Rdio, Spotify, etc.) &amp;ldquo;My library&amp;rdquo; is actually almost the entire North American music catalog. I don&amp;rsquo;t have an &amp;ldquo;it&amp;rsquo;s in or out&amp;rdquo; library (where anything in the library should never be played), I have a continuum of I love, like, am so-so about, dislike, or never want to hear again.&lt;/li&gt;
 &lt;li&gt;Quality of that music. Tidal is as good or better than anything I&amp;rsquo;d ever have locally. In the last 2 years, lossless and MQA eliminated the last reason that music from other sources might not be as play-worthy as &amp;ldquo;library&amp;rdquo; music.&lt;/li&gt;
-&lt;li&gt;Expectations. Between the size of someone&amp;rsquo;s &amp;ldquo;library&amp;rdquo; (ie, all Tidal music) and the rise of machine learning, a computer (think Discover Weekly) can do a great job of finding new music I like &amp;mdash; way better than I&amp;rsquo;d do with manual curation, and good enough that I&amp;rsquo;d put my effort into correcting it rather than creating playlists myself.&lt;/li&gt;
+&lt;li&gt;Expectations. Between the size of someone&amp;rsquo;s &amp;ldquo;library&amp;rdquo; (ie, all Tidal music) and the rise of machine learning, a computer (think Discover Weekly) can do a great job of finding new music I like &amp;ndash; way better than I&amp;rsquo;d do with manual curation, and good enough that I&amp;rsquo;d put my effort into correcting it rather than creating playlists myself.&lt;/li&gt;
 &lt;li&gt;Publishing rate. The number of new songs appearing on even Tidal, let alone Spotify or Soundcloud, makes it impossible to listen to and curate new stuff even if I wanted to. I&amp;rsquo;d literally be listening to only new stuff just to decide whether I liked it.&lt;/li&gt;
 &lt;li&gt;User persona. 10 years ago, Roon would have been most valuable to folks with hundreds of albums (in a sense, Roon depended on a substantial investment in media). Not only is that no longer true, it might not even be a predictor of/correlated with interest in music or playback portability anymore. Now that lossless subscriptions exist, I&amp;rsquo;d guess that an appreciation for audio quality (ie, lossless playback) plus ownership of more than 1 output are better predictors of suitability for Roon than, say, a desire or past experience collecting albums.&lt;/li&gt;
 &lt;/ul&gt;
@@ -94,7 +94,7 @@
 
 &lt;h2&gt;The problem&lt;/h2&gt;
 
-&lt;p&gt;Roon is built on the idea of a binary &amp;ldquo;in or out&amp;rdquo; library, which makes it difficult &amp;ndash; actually, almost impossible &amp;ndash; to play anything not in my library that I don&amp;rsquo;t curate manually (say, manually creating a playlist or going to a specific album).&lt;/p&gt;
+&lt;p&gt;Roon is built on the idea of a binary &amp;ldquo;in or out&amp;rdquo; library, which makes it difficult - actually, almost impossible - to play anything not in my library that I don&amp;rsquo;t curate manually (say, manually creating a playlist or going to a specific album).&lt;/p&gt;
 
 &lt;p&gt;As an extreme example, if one uses Roon&amp;rsquo;s &amp;ldquo;Focus&amp;rdquo; feature and the Focus only matches a single song in one&amp;rsquo;s library, Roon will play that one song on a continuous loop.&lt;/p&gt;
 
@@ -112,13 +112,13 @@
 &lt;/ol&gt;
 
 
-&lt;p&gt;These were never actually the same thing, though. Only item 1 &amp;ndash; &amp;ldquo;Do I have a way to play this song?&amp;rdquo; &amp;ndash; is binary. Item 2 is not binary. Right now, item 2 is treated as binary even though it&amp;rsquo;s not, and item 1 isn&amp;rsquo;t treated as a separate construct.&lt;/p&gt;
+&lt;p&gt;These were never actually the same thing, though. Only item 1 - &amp;ldquo;Do I have a way to play this song?&amp;rdquo; - is binary. Item 2 is not binary. Right now, item 2 is treated as binary even though it&amp;rsquo;s not, and item 1 isn&amp;rsquo;t treated as a separate construct.&lt;/p&gt;
 
 &lt;p&gt;Using Roon&amp;rsquo;s terminology, I want a way to add the entire Tidal catalog to my library. Obviously that&amp;rsquo;s probably not the best actual implementation, but it&amp;rsquo;s a good explanation. At that point, item 1 is actually correct (my library is all music that can be played, so Focus and Roon Radio can consider way more music), and item 2 would adjust based on ratings at playback.&lt;/p&gt;
 
 &lt;p&gt;In practice, it probably means splitting these two purposes. Item 1 becomes &amp;ldquo;Anything on a remote service that I have access to, plus anything I have locally&amp;rdquo; and might eliminate the concept of a library.&lt;/p&gt;
 
-&lt;p&gt;Hopefully obvious, but just to say it: none of this is mutually exclusive with local music storage. Someone with no Tidal subscription and purely locally-stored music is just a different set of item 1 &amp;mdash; it&amp;rsquo;s no worse for them than today. The core concept is recognizing that for many Roon users, items 1 and 2 are actually separate concepts, so that for users who do have access to a ton of music (Tidal subscription), Roon automatically makes use of it.&lt;/p&gt;
+&lt;p&gt;Hopefully obvious, but just to say it: none of this is mutually exclusive with local music storage. Someone with no Tidal subscription and purely locally-stored music is just a different set of item 1 &amp;ndash; it&amp;rsquo;s no worse for them than today. The core concept is recognizing that for many Roon users, items 1 and 2 are actually separate concepts, so that for users who do have access to a ton of music (Tidal subscription), Roon automatically makes use of it.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -155,7 +155,7 @@
 &lt;li&gt;What is Troy worst at?&lt;/li&gt;
 &lt;li&gt;When I interact with Troy, it&amp;rsquo;s (choose one): Painful; Tolerable; Unremarkable; Enjoyable; Great; Describe it yourself&lt;/li&gt;
 &lt;li&gt;Complete the sentence: &amp;ldquo;My own work with Troy would be more gratifying if he…&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Tell me anything &amp;ndash; things I suck at, life advice, whatever.&lt;/li&gt;
+&lt;li&gt;Tell me anything - things I suck at, life advice, whatever.&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -222,7 +222,7 @@
 
 &lt;h2&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;I received the same number of form submissions as received my email, so in as much as I can measure, 100% responded. None of the comments were totally surprising (not a bad thing!) and they actually skewed more positive than I expected. There&amp;rsquo;s no substitute for seeing people&amp;rsquo;s assessments in their own words, though. The return for the time &amp;ndash; mine and others&amp;#8217; &amp;ndash; was very high. I did this twice over 3 years and I&amp;rsquo;ll do it again if I&amp;rsquo;m in a similar working situation.&lt;/p&gt;
+&lt;p&gt;I received the same number of form submissions as received my email, so in as much as I can measure, 100% responded. None of the comments were totally surprising (not a bad thing!) and they actually skewed more positive than I expected. There&amp;rsquo;s no substitute for seeing people&amp;rsquo;s assessments in their own words, though. The return for the time - mine and others&amp;#8217; - was very high. I did this twice over 3 years and I&amp;rsquo;ll do it again if I&amp;rsquo;m in a similar working situation.&lt;/p&gt;
 </content>
 	</entry>
 	
@@ -236,7 +236,7 @@
 &lt;h4&gt;The role&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;If you could make one impact in the business in your first 6-12 months, what what would it be (according to them)? This is as much to understand the metric they chose &amp;ndash; revenue? product usage? features shipped? employees hired? &amp;ndash; and why it&amp;rsquo;s important as it is to understand the amount.&lt;/li&gt;
+&lt;li&gt;If you could make one impact in the business in your first 6-12 months, what what would it be (according to them)? This is as much to understand the metric they chose - revenue? product usage? features shipped? employees hired? - and why it&amp;rsquo;s important as it is to understand the amount.&lt;/li&gt;
 &lt;li&gt;Where do you see the company in 3 years? What internal or industry changes might make you cut the vision short or significantly change the goal?&lt;/li&gt;
 &lt;li&gt;Is there an employee who everyone thinks of as very connected and savvy, who you could use as a mentor for a few months to learn the communication style? If you&amp;rsquo;re remote, ideally this person will be too.&lt;/li&gt;
 &lt;/ul&gt;
@@ -269,10 +269,10 @@
 &lt;p&gt;If Yelp put accuracy and completeness ahead of # of reviews, they&amp;rsquo;d have already made 2 changes:&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Let anyone comment on other people&amp;rsquo;s comments &amp;ndash; like HN or Reddit, with similar reputation (points) and up/downvotes.
+&lt;li&gt;Let anyone comment on other people&amp;rsquo;s comments - like HN or Reddit, with similar reputation (points) and up/downvotes.
  Right now, unless an owner monitors and responds to every negative comment, there&amp;rsquo;s no recourse for being unreasonable or flat-out inaccurate. Even when an owner does so, the recourse is minimal. Let any other Yelp user reply, turning each comment into a thread.&lt;/li&gt;
 &lt;li&gt;When someone posts a 1- or 2-star review, show a second, required comment field for &amp;ldquo;What happened when you informed the retailer?&amp;rdquo;
- If someone is served a meal they don&amp;rsquo;t like and says nothing at the time, they skipped a &amp;ndash; the &amp;ndash; critical step. While there are cases where a low review could be justified without ever giving the retailer a chance to address the perceived problem (like if someone showed up twice during posted business hours and the retailer was closed), they cause fewer than 10% of 1- and 2-star ratings and they&amp;rsquo;re easy to explain. Otherwise, the minimum for a negative review to be constructive is having informed the retailer (and let them try to address it).&lt;/li&gt;
+ If someone is served a meal they don&amp;rsquo;t like and says nothing at the time, they skipped a - the - critical step. While there are cases where a low review could be justified without ever giving the retailer a chance to address the perceived problem (like if someone showed up twice during posted business hours and the retailer was closed), they cause fewer than 10% of 1- and 2-star ratings and they&amp;rsquo;re easy to explain. Otherwise, the minimum for a negative review to be constructive is having informed the retailer (and let them try to address it).&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
@@ -293,7 +293,7 @@ concurrently using Google because it&amp;rsquo;s free.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;rsquo;s the comment.&lt;/p&gt;
 
-&lt;p&gt;&amp;mdash;&lt;/p&gt;
+&lt;p&gt;&amp;ndash;&lt;/p&gt;
 
 &lt;p&gt;When someone raises this concern, I ask who hosts their personal email. 30-50% use a legacy free Google Apps account or Gmail. When I ask why, it&amp;rsquo;s a variation on &amp;ldquo;because FastMail &lt;a href=&quot;https://www.fastmail.com/help/ourservice/pricing.html&quot;&gt;costs&lt;/a&gt; ~$40/year.&amp;rdquo;&lt;/p&gt;
 
@@ -732,35 +732,35 @@ duplicated below.&lt;/p&gt;
 &lt;p&gt;I just returned from 4 months in Oaxaca. Here&amp;rsquo;s my very condensed
 best-of.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;DESAYUNO &amp;ndash; TACOS&lt;/strong&gt;: 2 taco stands setup on the sidewalk at the far NW
+&lt;p&gt;&lt;strong&gt;DESAYUNO - TACOS&lt;/strong&gt;: 2 taco stands setup on the sidewalk at the far NW
 corner of the Templo del Carmen Alto starting at 8:30:
 &lt;a href=&quot;https://www.google.com/maps/place/Registro+Civil+del+Estado/@17.0673634,-96.7241585,20z&quot;&gt;Google Maps&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Get a tinga taco from the southern-most one (in the corner), then walk
 on to the northern one on the sidewalk. If the northernmost one isn&amp;rsquo;t
-there that day, get 1 tinga and 1 chorizo :&amp;ndash;) It&amp;rsquo;s actually
+there that day, get 1 tinga and 1 chorizo :-) It&amp;rsquo;s actually
 &lt;a href=&quot;https://foursquare.com/v/tacos-de-chorizo-del-carmen-alto/4ebd8b1b61af9815e138f31d&quot;&gt;on Foursquare&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;DESAYUNO &amp;ndash; MUFFIN&lt;/strong&gt;: the Cafe Brujula on Garcia Vigil bakes berry muffins
+&lt;p&gt;&lt;strong&gt;DESAYUNO - MUFFIN&lt;/strong&gt;: the Cafe Brujula on Garcia Vigil bakes berry muffins
 every morning. They come out at about 9:
 &lt;a href=&quot;http://cafebrujula.com/index.php?lang=en#locations&quot;&gt;Cafe Brujula&lt;/a&gt;. Most
 pastries in Mexico are little more than sugar and flour. These muffins
 are amazing and the venue is nice for wifi. Skip the banana loaf thing
 if that&amp;rsquo;s all they have.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;COMIDA &amp;ndash; TOSTADAS&lt;/strong&gt;: Tostadas at a stand about 3 meters into Parque El
+&lt;p&gt;&lt;strong&gt;COMIDA - TOSTADAS&lt;/strong&gt;: Tostadas at a stand about 3 meters into Parque El
 Llano (off of Avenida Juarez). There are a handful of stands throughout
 the park, so I&amp;rsquo;ve attached a map with an X where this one is. At least
 as of this writing, it has a green awning and is run by 1 woman and
 sometimes a man. They&amp;rsquo;re around every day. Recommend 1 or 2 tostadas
 with tinga, tasajo, or whatever she&amp;rsquo;s got.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;COMIDA &amp;ndash; TORTA&lt;/strong&gt;: Every Friday, there&amp;rsquo;s a mercado at Parque El Llano. At
+&lt;p&gt;&lt;strong&gt;COMIDA - TORTA&lt;/strong&gt;: Every Friday, there&amp;rsquo;s a mercado at Parque El Llano. At
 the southernmost street bordering the park, there&amp;rsquo;s a taco stand called.
 Chitos Tacos or Chatos Tacos It&amp;rsquo;s across the street from 100% Natural,
 facing north into the market. Get a torta Hawaiana and a taco.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;CENA &amp;ndash; TLAYUDA&lt;/strong&gt;: after 8:30 or 8:45 PM (which is not late for dinner in
+&lt;p&gt;&lt;strong&gt;CENA - TLAYUDA&lt;/strong&gt;: after 8:30 or 8:45 PM (which is not late for dinner in
 Oaxaca), get a tlayuda con tasajo from Cenaduría Doña Gloria: &lt;a href=&quot;https://www.google.com/maps/preview?hl=en&amp;amp;cid=12755649183580244725&quot;&gt;Google Maps&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If I picked one must-have meal in Oaxaca, this is it. The food is
@@ -942,7 +942,7 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 
 &lt;p&gt;Thank you for your email regarding the protection of personally identifiable information on the Lending Club website.  Lending Club takes consumer privacy seriously and has implemented procedures and policies designed to protect consumer information.  We appreciate your detailed feedback and have discussed your suggestions regarding our Privacy Policy and disclosures to members.  However, we believe that our Privacy Policy is consistent and does not contain material discrepancies.&lt;/p&gt;
 
-&lt;p&gt;As part of our consumer privacy efforts, Lending Club informs applicants regarding the type of information that will be disclosed to the public both in the Privacy Policy itself and throughout the application via the use of tool tips, a pop-up that notifies the applicant that information placed into certain fields is made available to the public.  We also review loan titles and free-form answers provided by applicants in an attempt to limit the exposure of personally identifiable information that applicants may provide outside the marked application fields.  Lastly, credit information is only available for viewing by Lending Club members and not available to non-members merely perusing the site.  As you noted, from the information available on our site, members such as yourself can view the information about borrowers that Lending Club must file with the Securities and Exchange Commission.  We do not agree, however, that this constitutes &amp;ldquo;personally identifiable&amp;rdquo; information.  Your letter indicates that you were only able to take an &amp;ldquo;educated guess&amp;rdquo; about the identity of some borrowers using information you gathered from other sources.  The fact that certain limited information regarding borrowers is viewable through the Lending Club website &amp;mdash; which, again, Lending Club flags as publicly disclosed in the application itself and in our Privacy Policy &amp;mdash; and that similar information may also be available through external sources that contain additional information does not, in our view, indicate that Lending Club displays personally identifiable information or that our Privacy Policy contains material discrepancies.  We also do not believe that the manner in which certain personal information is presented on the website is inconsistent with our Privacy Policy or other consumer protection initiatives.&lt;/p&gt;
+&lt;p&gt;As part of our consumer privacy efforts, Lending Club informs applicants regarding the type of information that will be disclosed to the public both in the Privacy Policy itself and throughout the application via the use of tool tips, a pop-up that notifies the applicant that information placed into certain fields is made available to the public.  We also review loan titles and free-form answers provided by applicants in an attempt to limit the exposure of personally identifiable information that applicants may provide outside the marked application fields.  Lastly, credit information is only available for viewing by Lending Club members and not available to non-members merely perusing the site.  As you noted, from the information available on our site, members such as yourself can view the information about borrowers that Lending Club must file with the Securities and Exchange Commission.  We do not agree, however, that this constitutes &amp;ldquo;personally identifiable&amp;rdquo; information.  Your letter indicates that you were only able to take an &amp;ldquo;educated guess&amp;rdquo; about the identity of some borrowers using information you gathered from other sources.  The fact that certain limited information regarding borrowers is viewable through the Lending Club website &amp;ndash; which, again, Lending Club flags as publicly disclosed in the application itself and in our Privacy Policy &amp;ndash; and that similar information may also be available through external sources that contain additional information does not, in our view, indicate that Lending Club displays personally identifiable information or that our Privacy Policy contains material discrepancies.  We also do not believe that the manner in which certain personal information is presented on the website is inconsistent with our Privacy Policy or other consumer protection initiatives.&lt;/p&gt;
 
 &lt;p&gt;Although we disagree with your conclusions and interpretations, we appreciate your email and thank you for your feedback.  We periodically review our consumer privacy policies and processes and will take your specific suggestions under consideration as part of that review process.  Thank you very much for your time and your interest in Lending Club.&lt;/p&gt;
 
@@ -965,7 +965,7 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 
 &lt;p&gt;&lt;img src=&quot;http://images.yort.com/blog/slimfold-tyvek-wallet-1.jpg&quot; alt=&quot;Photo of SlimFold Tyvek Wallet in use&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After five days &amp;ndash; and two walks through monsoonal downpours &amp;ndash; I highly recommend it. A few smart UX choices make all the difference.&lt;/p&gt;
+&lt;p&gt;After five days - and two walks through monsoonal downpours - I highly recommend it. A few smart UX choices make all the difference.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Each section actually holds two cards. In the photo, you can see both card pockets on one of the sections. There&amp;rsquo;s two more sections (four pockets) inside. It doesn&amp;rsquo;t try to make a statement about how much crap I should carry.&lt;/p&gt;&lt;/li&gt;
@@ -1021,7 +1021,7 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
     <id>https://troy.yort.com/making-2-factor-authentication-viral</id>
     <content type="html">&lt;p&gt;I&amp;rsquo;m doing what I can to spread the gospel of 2-factor authentication. My hope is that it will be adopted at a faster-than-linear rate, ideally much faster.&lt;/p&gt;
 
-&lt;p&gt;2FA isn&amp;rsquo;t a silver bullet, but it&amp;rsquo;s a gigantic improvement for relatively little effort. The elements that prevented mainstream adoption &amp;ndash; key fobs, constantly re-entering keys &amp;ndash; are not present in modern implementations like Google&amp;rsquo;s. With most of the usability tradeoffs eliminated, we&amp;rsquo;re left with a fairly typical sales problem (and of course, more operators implementing Google&amp;rsquo;s 2FA or an equally elegant alternative).&lt;/p&gt;
+&lt;p&gt;2FA isn&amp;rsquo;t a silver bullet, but it&amp;rsquo;s a gigantic improvement for relatively little effort. The elements that prevented mainstream adoption - key fobs, constantly re-entering keys - are not present in modern implementations like Google&amp;rsquo;s. With most of the usability tradeoffs eliminated, we&amp;rsquo;re left with a fairly typical sales problem (and of course, more operators implementing Google&amp;rsquo;s 2FA or an equally elegant alternative).&lt;/p&gt;
 
 &lt;p&gt;For my part, &amp;ldquo;doing what I can&amp;rdquo; means:&lt;/p&gt;
 
