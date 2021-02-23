@@ -4,14 +4,26 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2021-02-23T10:58:18-08:00</updated>
+	<updated>2021-02-23T12:22:10-08:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2021-02-23T10:58:18-08:00</updated>
+  <updated>2021-02-23T12:22:10-08:00</updated>
 	
+	
+	<entry>
+		<title>Checklist for configuring iPad for regular people</title>
+    <link href="https://troy.yort.com/checklist-for-configuring-ipad-for-regular-people/"/>
+		<updated>2021-02-03T12:19:17-08:00</updated>
+    <id>https://troy.yort.com/checklist-for-configuring-ipad-for-regular-people</id>
+    <content type="html">&lt;p&gt;I configured some iPads for regular people. If you&amp;rsquo;re configuring an iPad for a
+parent, young child, or a good friend who is new to the iPad or new to
+computers, maybe &lt;a href=&quot;https://discussions.apple.com/thread/252404401&quot;&gt;the checklist I posted&lt;/a&gt;
+will give you a starting point.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Chrome loves auto-play, but do users?</title>
@@ -1011,46 +1023,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 
 
 &lt;p&gt;Source: King County &lt;a href=&quot;http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf&quot;&gt;Bike Share Business Plan&lt;/a&gt; (2012-01-27), pages 26-27, 36.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Making 2-factor authentication grow faster than linear</title>
-    <link href="https://troy.yort.com/making-2-factor-authentication-viral/"/>
-		<updated>2012-07-16T00:00:00-07:00</updated>
-    <id>https://troy.yort.com/making-2-factor-authentication-viral</id>
-    <content type="html">&lt;p&gt;I&amp;rsquo;m doing what I can to spread the gospel of 2-factor authentication. My hope is that it will be adopted at a faster-than-linear rate, ideally much faster.&lt;/p&gt;
-
-&lt;p&gt;2FA isn&amp;rsquo;t a silver bullet, but it&amp;rsquo;s a gigantic improvement for relatively little effort. The elements that prevented mainstream adoption - key fobs, constantly re-entering keys - are not present in modern implementations like Google&amp;rsquo;s. With most of the usability tradeoffs eliminated, we&amp;rsquo;re left with a fairly typical sales problem (and of course, more operators implementing Google&amp;rsquo;s 2FA or an equally elegant alternative).&lt;/p&gt;
-
-&lt;p&gt;For my part, &amp;ldquo;doing what I can&amp;rdquo; means:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;requiring 2FA on systems I maintain, at least where SSH keys aren&amp;rsquo;t practical or aren&amp;rsquo;t sufficient&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;sharing my success stories, especially how I solved common objections to 2FA (it&amp;rsquo;s annoying to use; I only have a few users; it&amp;rsquo;s a pain to setup)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;helping others find accurate, deep descriptions of current threats (like &lt;a href=&quot;http://krebsonsecurity.com/&quot;&gt;Krebs on Security&lt;/a&gt;) so they treat malware and botnets (and thus keystroke logging) as an endemic threat&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;I think with enough satisfied users as advocates, 2FA could grow exponentially for a while (albeit with a &lt;a href=&quot;http://www.wolframalpha.com/input/?i=1.03%5Ex&quot;&gt;tiny base&lt;/a&gt; today). Google has basically turned 2FA into an impulse decision with a simple pitch: &amp;ldquo;Have 5 minutes? Use wifi hotspots? Protect your email from hackers (free).&amp;rdquo; I&amp;rsquo;d settle for &lt;a href=&quot;http://en.wikipedia.org/wiki/Logistic_function&quot;&gt;logistic growth&lt;/a&gt; up to something short of 100% adoption, though I&amp;rsquo;m not sure a hard &lt;a href=&quot;http://20bits.com/article/three-myths-of-viral-growth&quot;&gt;carrying capacity&lt;/a&gt; exists. Future incremental usability improvements should make it palatable for more people.&lt;/p&gt;
-
-&lt;p&gt;Sales starts with awareness: that it exists, that it&amp;rsquo;s already being used by seemingly-sane people to solve similar problems (indeed, &lt;a href=&quot;http://en.wikipedia.org/wiki/Social_proof&quot;&gt;social proof&lt;/a&gt;), and that it stands up to daily production use. Here&amp;rsquo;s an email that I sent to the Seattle Internet Exchange &lt;a href=&quot;http://www.seattleix.net/faq.htm&quot;&gt;chat&lt;/a&gt; mailing list.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;To: chat@&lt;/p&gt;
-
-&lt;p&gt;Passing this on in case anyone else could use flexible, painless, free 2-factor auth for servers and network devices.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been testing Google&amp;rsquo;s 2-factor authentication via a &lt;a href=&quot;http://code.google.com/p/google-authenticator/wiki/PamModuleInstructions&quot;&gt;PAM&lt;/a&gt;. It&amp;rsquo;s working beautifully. Google has iOS, Android, and Blackberry one-time password &lt;a href=&quot;http://support.google.com/accounts/bin/answer.py?hl=en&amp;amp;amp;answer=1066447&quot;&gt;apps&lt;/a&gt;. Ubuntu and Debian package the module as libpam-google-authenticator. During setup, it spits out the key as an ASCII QR code that the mobile apps read.&lt;/p&gt;
-
-&lt;p&gt;I haven&amp;rsquo;t tried having RADIUS use google-authenticator&amp;rsquo;s PAM, but it seems like it would work. Other people talk about using it: &lt;a href=&quot;http://code.google.com/p/google-authenticator/issues/detail?id=145&quot;&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;By default, SSH with challenge/response prompts for the challenge first (with a prompt of its own), but PAM supports a &lt;a href=&quot;http://code.google.com/p/google-authenticator/issues/detail?id=39&quot;&gt;concatenated mode&lt;/a&gt; where the OTP is prepended to the static secret. This should play well with network devices that present a single password prompt. Google&amp;rsquo;s module validates the OTP, then passes the secret on to the next module as usual.&lt;/p&gt;
-
-&lt;p&gt;Also, SSH authorized keys still work (assuming the SSH config permits them), so you can decide how annoying one-time passwords will be.&lt;/p&gt;
-
-&lt;p&gt;Finally, worth noting that this setup is completely separate from having a Google account. An account isn&amp;rsquo;t required. This setup uses Google&amp;rsquo;s mobile app implementation of &lt;a href=&quot;http://tools.ietf.org/html/rfc6238&quot;&gt;time-based one-time passwords&lt;/a&gt;, the app&amp;rsquo;s ability to import your own key(s), and a PAM that they maintain, all of which are &lt;a href=&quot;http://code.google.com/p/google-authenticator/source/browse&quot;&gt;OSS&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
 	
