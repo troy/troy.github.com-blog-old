@@ -4,14 +4,69 @@
 	<title type="text" xml:lang="en">Troy Davis</title>
 	<link type="application/atom+xml" href="http://troy.yort.com/feed/" rel="self"/>
   <link type="text" href="http://troy.yort.com/" rel="alternate"/>
-	<updated>2021-02-23T12:30:21-08:00</updated>
+	<updated>2021-03-19T07:41:16-07:00</updated>
   <id>https://troy.yort.com/</id>
   <author>
     <name></name>
   </author>
   <rights> is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.</rights>
-  <updated>2021-02-23T12:30:21-08:00</updated>
+  <updated>2021-03-19T07:41:16-07:00</updated>
 	
+	
+	<entry>
+		<title>Letter to Washington State legislators about consumer data privacy bill (SB 5062)</title>
+    <link href="https://troy.yort.com/letter-to-washington-state-legislators-about-consumer-data-privacy-bill-sb-5062/"/>
+		<updated>2021-03-19T07:09:05-07:00</updated>
+    <id>https://troy.yort.com/letter-to-washington-state-legislators-about-consumer-data-privacy-bill-sb-5062</id>
+    <content type="html">&lt;p&gt;The Washington State legislature is considering a consumer data privacy bill, &lt;a href=&quot;https://app.leg.wa.gov/billsummary?BillNumber=5062&amp;amp;Year=2021&amp;amp;Initiative=false#documentSection&quot;&gt;Senate Bill 5062&lt;/a&gt; (&lt;a href=&quot;http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bill%20Reports/House/5062-S2%20HBA%20CRJ%2021.pdf?q=20210319070334&quot;&gt;summary&lt;/a&gt;). While I was creating &lt;a href=&quot;https://simpleoptout.com/&quot;&gt;Simple Opt Out&lt;/a&gt;, I assumed that the &lt;a href=&quot;https://oag.ca.gov/privacy/ccpa&quot;&gt;CCPA&lt;/a&gt; made consumers opt-out of paid data sharing - not a business sharing data to target their own ads, but selling consumers&amp;#8217; personal data to unaffiliated third parties for compensation - due to an oversight. When the CCPA was in process, not everyone realized that retailers would sell their customers&amp;#8217; purchase history to anyone who would pay. It may not have stood out from targeted advertising and may have actually been an oversight.&lt;/p&gt;
+
+&lt;p&gt;Not for this Washington State bill. Turns out that many, if not all of this bill&amp;rsquo;s sponsors know that its default protection is incredibly weak. By now, legislators are aware that consumers&amp;#8217; data is sold to unaffiliated third parties - and that no consumer would opt in to that. They just don&amp;rsquo;t care or don&amp;rsquo;t care enough to do anything about it.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s why I sent this letter to the Washington State House of Representatives &lt;a href=&quot;https://leg.wa.gov/House/Committees/CRJ/Pages/default.aspx&quot;&gt;Civil Rights &amp;amp; Judiciary Committee&lt;/a&gt; and individual members. While Washington is probably stuck with this bill - and privacy for a vanishingly small number of residents - I hope my self-contained explanation helps another state or motivates a Washington State legislator to close the data sales loophole.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s my letter.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subject: SB 5062 - Please don&amp;rsquo;t let businesses sell my data unless I opt out&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Dear Chair Hansen and Civil Rights &amp;amp; Judiciary committee members,&lt;/p&gt;
+
+&lt;p&gt;My comments are about requiring consumers to opt out of having their data sold to third parties for compensation, as SB 5062 currently does.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you’ve purchased from Ace Hardware, Crate and Barrel, Home Depot, the Seattle Art Museum, or hundreds of other companies, they sell or trade your information - often including purchase history, contact information, and preferences - to third parties&lt;/strong&gt; for a few extra cents of gain. Yes, completely unrelated companies know what you bought at many traditional and online retailers.&lt;/p&gt;
+
+&lt;p&gt;These businesses don’t do this in order to operate or market their business (as is the case with targeted advertising). Rather, this is turning the consumer into the product: selling customer information to completely unrelated businesses, merely because they’ll pay for it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Reasonable people can debate the pros and cons of targeted advertising, but the practice I’m talking about, selling detailed data about customers to third parties, has no pros. It shouldn’t have ever been legal.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I know because I spent 100+ hours reading privacy policies, finding these practices, and creating a directory of opt-out instructions. My not-for-profit site, &lt;a href=&quot;https://simpleoptout.com/&quot;&gt;https://SimpleOptOut.com&lt;/a&gt;, has made it a bit easier for tens or hundreds of thousands of people to opt out of data sharing that they would never have opted in to.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I want the Washington legislature to make my Web site obsolete.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This bill begins with ”The legislature finds that the people of Washington regard their privacy as a fundamental right” … and.. then it disregards that statement by requiring Washingtonians to opt out of these sales. Has anyone on the committee actually tried to opt out of data sharing? I have. You’ll spend most of a day digging through privacy policies, calling phone numbers, filling out web forms, and printing and mailing letters. If you’re lucky, after doing that 30 or 40 or 50 times, you’ll cover about half of the businesses that sell your data. My Web site makes that easier, but not easy – and that’s only because I’ve tried to mitigate a problem that the legislature should solve.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Opting out of data sharing requires so much time that less than 1% of Washington residents will actually do it.&lt;/strong&gt; Instead of 100% of Washington residents having this so-called “fundamental right,” this bill will provide it to less than 1%. And that 1% will be well-educated computer engineers and attorneys. This bill makes privacy contingent on resources, on privilege and for no commercial justification. &lt;strong&gt;Unlike advertising, this doesn’t help a business deliver or market their products.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Since literally zero Washingtonians would opt in to having businesses sell their personal information for extra revenue, forcing each of us to opt out with each business is nonsensical.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine if, in order to have First Amendment protection for something you wrote, you needed to visit every web site which might publish it or have access to it, find their instructions for opting out of First Amendment violations, and follow them - which could take two minutes or twenty minutes each - and then hope the business actually processed your request.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Or, imagine if every time you moved, you needed to call or visit the new city, county, state, and federal police and fill out a “Fourth Amendment violation opt-out” form.&lt;/strong&gt; This form requested that they not unreasonably search or seize your property. Oh, you didn’t spend the time to opt-out of Fourth Amendment violations? You must not mind them.&lt;/p&gt;
+
+&lt;p&gt;That’s how this bill handles unnecessary data sharing. The right to &lt;em&gt;request&lt;/em&gt; that an entity &lt;em&gt;not&lt;/em&gt; sell my personal information to third parties… that’s not privacy. &lt;strong&gt;Privacy is not needing to do that in the first place.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s a better way. &lt;strong&gt;Require residents to opt in to data sharing for compensation.&lt;/strong&gt; If privacy is a fundamental right like this bill says, then privacy should be the default. &lt;strong&gt;Nobody needs to opt out of having their other rights violated, and we shouldn’t need to opt out of having our privacy violated, either.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Alternatively, if the bill is going to require opting out, then change the rest of the bill so it’s accurate. Instead of stating that privacy is a fundamental right, explain that privacy is a luxury that the legislature is offering to state’s most privileged and technically experienced residents. Explain that businesses can assume residents don’t deserve and shouldn’t receive privacy, unless and until each individual informs each business using whatever method the business prefers.&lt;/p&gt;
+
+&lt;p&gt;If you’re thinking, “Wow, that sounds terrible,” you’re right. It does, because it is. All I did is accurately describe the bill&amp;rsquo;s current treatment of selling data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Businesses should be able to deliver the products and services that we depend on, and to market them effectively, but not to share or sell our personal information with unaffiliated third parties for compensation.&lt;/strong&gt; Please change this bill to deliver privacy for 100% of Washingtonians, not less than 1% like it does now.&lt;/p&gt;
+
+&lt;p&gt;Thank you,&lt;/p&gt;
+
+&lt;p&gt;Troy&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Checklist for configuring iPad for regular people</title>
@@ -988,41 +1043,6 @@ been prototyping and using daily for 23 months.&amp;rdquo;&lt;/p&gt;&lt;/blockqu
 
 
 &lt;p&gt;The creator notes that he made and tested over 100 prototypes, and it shows. It&amp;rsquo;s available in Plutonian Gray, Steal Me Orange, and now Everyone Asks For It Black.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
-		<title>Cost analysis of King County Bike Share Business Plan</title>
-    <link href="https://troy.yort.com/cost-analysis-of-king-county-bike-share-busin/"/>
-		<updated>2012-08-09T00:00:00-07:00</updated>
-    <id>https://troy.yort.com/cost-analysis-of-king-county-bike-share-busin</id>
-    <content type="html">&lt;p&gt;I posted &lt;a href=&quot;http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/#comment-168712&quot;&gt;a comment&lt;/a&gt; on this Seattle Bike Blog &lt;a href=&quot;http://seattlebikeblog.com/2012/08/09/the-plan-for-puget-sound-bike-share/&quot;&gt;post&lt;/a&gt; with a basic cost analysis of the King County Bike Share Business Plan (&lt;a href=&quot;http://pugetsoundbikeshare.org/&quot;&gt;site&lt;/a&gt;, &lt;a href=&quot;http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf&quot;&gt;PDF&lt;/a&gt;). This is the text of my comment.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;At scale, the project forecasts 2200 bikes supported by an annual operating (not build out) cost of $4.6 million. That&amp;rsquo;s $2090/bike. It forecasts 2.68 million trips per year at an average of 2 miles/trip. If those numbers are accurate, a trip would cost $1.72. A mile, $0.86.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have a strong reaction to those costs. I would gladly pay $2/trip myself as an entirely usage-based fee. The forecasted cost is in line with Metro and Sound Transit fares. While it&amp;rsquo;s lower than their costs per boarding (for Metro, $3.70 in 2008; &lt;a href=&quot;http://en.wikipedia.org/wiki/King_County_Metro#Operating_Costs&quot;&gt;source&lt;/a&gt;), the shorter, denser routes are much cheaper to deliver than the system-wide average.&lt;/p&gt;
-
-&lt;p&gt;The data to compare route-level stats doesn&amp;rsquo;t exist. Shorter, denser routes are the closest comparables to phase 1. However, one could see bike sharing allowing the last mile of trips that would have otherwise been taken by car (and instead use bus or train). Not enough data to know.&lt;/p&gt;
-
-&lt;p&gt;My own conclusion: the costs are definitely &amp;ldquo;in the zone&amp;rdquo; for transit and might be a little cheaper than existing options.&lt;/p&gt;
-
-&lt;p&gt;Crucially, the total cost is incredibly small compared to any other transit implementation, and thereby, much lower risk. As a point of reference, Metro received $37.5 million to add 2 RapidRide Bus Rapid Transit (BRT) routes (&lt;a href=&quot;http://www.dot.gov/affairs/2012/fta3812.html&quot;&gt;source&lt;/a&gt;). Even excluding all other revenue sources, the total build out costs of all phases are equivalent to one BRT route.&lt;/p&gt;
-
-&lt;p&gt;As another perspective, the 4.3 mile Northgate light rail extension has a lifetime budget of $2.1 billion (70x-100x more than the total 5 year projected cost), and the South Lake Union Streetcar was $56.4 million (&lt;a href=&quot;http://en.wikipedia.org/wiki/South_Lake_Union_Streetcar&quot;&gt;source&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t mean to provide these as comparables. For me, the lower cost just means the barrier for my endorsement is much lower. In urban transit, $20 million is an experiment. In this case, the &amp;ldquo;experiment&amp;rdquo; happens to fund the whole system.&lt;/p&gt;
-
-&lt;p&gt;Notes:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;relies on internally-created usage forecasts. While the forecasted 2.4 trips/bike in year 1 is within the range seen in other cities, that range is very broad (0.9 to 3.7). As you&amp;rsquo;d expect of a transit system, usage is the key to a low cost per trip.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;ignores the $14.4 million in build out expenses because they do seem to be one-time (stations) or long depreciation (vending machines), and because the report notes &amp;ldquo;presenting sponsorship is expected to cover all but $2.15 [of] .. $14.4 million.&amp;rdquo; The unfunded 2.15 million is not a material impact.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Source: King County &lt;a href=&quot;http://pugetsoundbikeshare.org/wp-content/uploads/2012/07/KCBS_Business_Plan_FINAL.pdf&quot;&gt;Bike Share Business Plan&lt;/a&gt; (2012-01-27), pages 26-27, 36.&lt;/p&gt;
 </content>
 	</entry>
 	
